@@ -2,16 +2,16 @@ import json
 import os
 import re
 import shutil
-import sys
 from glob import glob
 from pprint import pprint
-
 
 OLD_VERSION = "0.9.0"
 NEW_VERSION = "0.9.0.11307"
 
 DID_GENERATE_TRANSLATION = True
 
+HPP = (('은', '는', True), ('이', '가', True), ('을', '를', True), ('과', '와', True), ('아', '야', True),
+       ('이어', '여', True), ('이에', '예', True), ('이었', '였', True), ('으로', '로', False))
 
 if __name__ == "__main__":
     ko_old = json.load(open(f'data/ko-{OLD_VERSION}.json'))
@@ -84,11 +84,14 @@ if __name__ == "__main__":
                 with open(f'diff/diff-{OLD_VERSION}-{NEW_VERSION}-ko-{name}-{i}.txt', 'w') as f:
                     f.write('')
 
+
         write_diff(ja_diff, "ja")
         write_diff(en_diff, "en")
     else:
         # 새 한국어 파일 생성
         def write_korean(key_file_name, original_file_name, ko_file_name):
+            to_return = False
+
             keys = open(key_file_name).read().splitlines()
             original = open(original_file_name).read().splitlines()
             ko = open(ko_file_name).read().splitlines()
@@ -105,13 +108,13 @@ if __name__ == "__main__":
 
                 for preserve in re.findall(r'\[[\d\.]+?\]', original_value) + re.findall(r'{.+?}', original_value):
                     if preserve not in value:
-                        print(f'missing\n{key}\n{original_value}\n{value}\n{preserve}')
-                        assert False
+                        print(f'missing\n{key}\n{original_value}\n{value}\n{preserve}\n')
+                        to_return = True
 
                 for preserve in re.findall(r'\[[\d\.]+?\]', value) + re.findall(r'{.+?}', value):
                     if preserve not in original_value:
-                        print(f'excessive\n{key}\n{original_value}\n{value}\n{preserve}')
-                        assert False
+                        print(f'excessive\n{key}\n{original_value}\n{value}\n{preserve}\n')
+                        to_return = True
 
                 table, entry = key.split('/')
                 if table not in ko_old:
@@ -121,16 +124,84 @@ if __name__ == "__main__":
 
                 should_blank = not should_blank
 
-        key_files = [file for file in glob('diff/*.txt') if f'{OLD_VERSION}-{NEW_VERSION}-keys' in file]
-        for key_file in key_files:
-            write_korean(key_file, key_file.replace('keys-', ''), key_file.replace('keys', 'ko'))
+            return to_return
 
+
+        key_files = [file for file in glob('diff/*.txt') if f'{OLD_VERSION}-{NEW_VERSION}-keys' in file]
+        should_fix = False
+        for key_file in key_files:
+            should_fix |= write_korean(key_file, key_file.replace('keys-', ''), key_file.replace('keys', 'ko'))
+        if should_fix:
+            assert False
+
+        # override 처리
         ko_override = json.load(open('data/handwritten/ko-override.json'))
         for table, pairs in ko_override.items():
             assert table in ko_old
-            for key, _ in pairs:
+            for key, _ in pairs.items():
                 assert key in ko_old[table]
-        ko_old.update(ko_override)
+            ko_old[table].update(pairs)
+
+        should_fix = False
+        ko_word_override = json.load(open('data/handwritten/ko-word-override.json'))
+        for table, pairs in ko_old.items():
+            for key, value in pairs.items():
+                if table not in ja_new or key not in ja_new[table]:
+                    continue
+
+                for override_item in ko_word_override:
+                    override_key = override_item['ja']
+                    override_value = override_item['ko']
+                    exemptions = override_item.get('exemption', [])
+
+
+                    def does_counts_mismatch():
+                        count = ja_new[table][key].count(override_key)
+                        find_index = 0
+                        for i in range(count):
+                            index = ja_new[table][key].find(override_key, find_index)
+                            for exemption in exemptions:
+                                if ja_new[table][key][index:].startswith(exemption):
+                                    count -= 1
+                                    break
+                            find_index = index + 1
+                        return count != value.count(override_value)
+
+                    if does_counts_mismatch():
+                        for auto_fix_word in override_item['auto_fix']:
+                            index = value.find(auto_fix_word)
+                            if index == -1:
+                                continue
+
+                            if (ord('가') <= ord(auto_fix_word[-1]) <= ord('힣') and
+                                    ord('가') <= ord(override_value[-1]) <= ord('힣')):
+                                fix_word_jong = (ord(auto_fix_word[-1]) - 0xAC00) % 28
+                                override_jong = (ord(override_value[-1]) - 0xAC00) % 28
+                                if (fix_word_jong == 0) == (override_jong == 0):
+                                    for w_consonant, wo_consonant, treat_rieul_as_consonant in HPP:
+                                        fix_use = w_consonant \
+                                            if (fix_word_jong != 0 and
+                                                (treat_rieul_as_consonant or fix_word_jong != 8)) else wo_consonant
+                                        override_use = w_consonant \
+                                            if (override_jong != 0 and
+                                                (treat_rieul_as_consonant or override_jong != 8)) else wo_consonant
+                                        if index + len(auto_fix_word) - 1 + len(fix_use) >= len(value):
+                                            continue
+
+                                        if value[index + len(auto_fix_word):
+                                                 index + len(auto_fix_word) + len(fix_use)] == fix_use:
+                                            value = (value[:index + len(auto_fix_word)] +
+                                                     override_use +
+                                                     value[index + len(auto_fix_word) + len(fix_use):])
+                                            break
+                            value = value.replace(auto_fix_word, override_value)
+                            ko_old[table][key] = value
+
+                    if does_counts_mismatch():
+                        print(f'{table}\t{key}\n{ja_new[table][key]}\n{value}\n{override_key}\t{override_value}\n')
+                        should_fix = True
+        if should_fix:
+            assert False
 
         with open(f'out/ko-{NEW_VERSION}.json', 'w') as f:
             json.dump(ko_old, f, ensure_ascii=False, indent=2)
@@ -165,24 +236,11 @@ if __name__ == "__main__":
         with open(f'out/ko-{NEW_VERSION}.json', 'w') as f:
             json.dump(ko_new, f, ensure_ascii=False, indent=2)
 
-        # 엔진 번역 파일 생성
-        engine_ja = json.load(open('data/engine-ja.json'))
-        engine_ko_override = json.load(open('data/handwritten/engine-ko.json'))
-        for table, pairs in engine_ko_override.items():
-            assert table in engine_ja
-            for key, _ in pairs:
-                assert key in engine_ja[table]
-        engine_ja.update(engine_ko_override)
-
-        with open(f'out/engine-ko.json', 'w') as f:
-            json.dump(engine_ja, f, ensure_ascii=False, indent=2)
-
         # json을 locres 파일로 변환
         cwd = os.getcwd().replace('\\', '/')
 
         shutil.rmtree('out/pakchunk0-Windows_P/', ignore_errors=True)
-        os.mkdir('out/pakchunk0-Windows_P/')
-        shutil.copytree('pak_template/AbioticFactor/', 'out/pakchunk0-Windows_P/AbioticFactor/')
+        shutil.copytree('pak_template', 'out/pakchunk0-Windows_P')
 
         shutil.copy2(f'data/en-{NEW_VERSION}.json', 'tools/LocRes-Builder-v0.1.2/out/Game/en.json')
         shutil.copy2(f'out/ko-{NEW_VERSION}.json', 'tools/LocRes-Builder-v0.1.2/out/Game/ja.json')
@@ -190,28 +248,15 @@ if __name__ == "__main__":
         with open('tools/LocRes-Builder-v0.1.2/out/Game/locmeta.json', 'r+') as f:
             meta = json.load(f)
             meta['local_languages'] = ['ja']
+            f.seek(0)
             json.dump(meta, f, indent=2)
+            f.truncate()
 
         os.system(f'"{cwd}/tools/LocRes-Builder-v0.1.2/convert.bat" '
                   f'{cwd}/tools/LocRes-Builder-v0.1.2/out/Game/locmeta.json')
 
         shutil.copy2('tools/LocRes-Builder-v0.1.2/out/Game/ja/Game.locres',
                      'out/pakchunk0-Windows_P/AbioticFactor/Content/Localization/Game/ja/Game.locres')
-
-        # 엔진 번역 json을 locres 파일로 변환
-        shutil.copy2(f'data/engine-en.json', 'tools/LocRes-Builder-v0.1.2/out/Engine/en.json')
-        shutil.copy2(f'out/engine-ko.json', 'tools/LocRes-Builder-v0.1.2/out/Engine/ja.json')
-
-        with open('tools/LocRes-Builder-v0.1.2/out/Engine/locmeta.json', 'r+') as f:
-            meta = json.load(f)
-            meta['local_languages'] = ['ja']
-            json.dump(meta, f, indent=2)
-
-        os.system(f'"{cwd}/tools/LocRes-Builder-v0.1.2/convert.bat" '
-                  f'{cwd}/tools/LocRes-Builder-v0.1.2/out/Engine/locmeta.json')
-
-        shutil.copy2('tools/LocRes-Builder-v0.1.2/out/Engine/ja/Engine.locres',
-                     'out/pakchunk0-Windows_P/Engine/Content/Localization/Engine/ja/Engine.locres')
 
         # 모든 작업 완료. 패킹
         os.system(f'"{cwd}/tools/repak_cli-x86_64-pc-windows-msvc/repak.exe" '
