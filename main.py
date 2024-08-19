@@ -125,6 +125,13 @@ if __name__ == "__main__":
         for key_file in key_files:
             write_korean(key_file, key_file.replace('keys-', ''), key_file.replace('keys', 'ko'))
 
+        ko_override = json.load(open('data/handwritten/ko-override.json'))
+        for table, pairs in ko_override.items():
+            assert table in ko_old
+            for key, _ in pairs:
+                assert key in ko_old[table]
+        ko_old.update(ko_override)
+
         with open(f'out/ko-{NEW_VERSION}.json', 'w') as f:
             json.dump(ko_old, f, ensure_ascii=False, indent=2)
 
@@ -158,6 +165,18 @@ if __name__ == "__main__":
         with open(f'out/ko-{NEW_VERSION}.json', 'w') as f:
             json.dump(ko_new, f, ensure_ascii=False, indent=2)
 
+        # 엔진 번역 파일 생성
+        engine_ja = json.load(open('data/engine-ja.json'))
+        engine_ko_override = json.load(open('data/handwritten/engine-ko.json'))
+        for table, pairs in engine_ko_override.items():
+            assert table in engine_ja
+            for key, _ in pairs:
+                assert key in engine_ja[table]
+        engine_ja.update(engine_ko_override)
+
+        with open(f'out/engine-ko.json', 'w') as f:
+            json.dump(engine_ja, f, ensure_ascii=False, indent=2)
+
         # json을 locres 파일로 변환
         cwd = os.getcwd().replace('\\', '/')
 
@@ -179,7 +198,7 @@ if __name__ == "__main__":
         shutil.copy2('tools/LocRes-Builder-v0.1.2/out/Game/ja/Game.locres',
                      'out/pakchunk0-Windows_P/AbioticFactor/Content/Localization/Game/ja/Game.locres')
 
-        # 엔진 번역 파일
+        # 엔진 번역 json을 locres 파일로 변환
         shutil.copy2(f'data/engine-en.json', 'tools/LocRes-Builder-v0.1.2/out/Engine/en.json')
         shutil.copy2(f'out/engine-ko.json', 'tools/LocRes-Builder-v0.1.2/out/Engine/ja.json')
 
