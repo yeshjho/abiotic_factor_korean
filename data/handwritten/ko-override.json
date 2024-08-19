@@ -1,0 +1,27 @@
+{
+    "StringTable_Objects": {
+        "bed_comfort_2": "쾌적한"
+    },
+    "StringTable_Interactions": {
+        "interact_sleep_dreamjump": "꿈속에서 점프",
+        "interact_removeplant": "식물 제거"
+    },
+    "StringTable_Inventory": {
+        "equipslot_arms": "팔 갑옷"
+    },
+    "StringTable_Skills": {
+        "skill_fishing": "낚시",
+        "skill_category_survival": "생존",
+        "skill_tooltip_fishing": "레벨이 올라갈수록 낚싯줄을 끊지 않으면서 물고기를 잡아당기는 능력이 향상됩니다. 주로 물고기와 기타 쓰레기를 낚아서 XP를 얻습니다."
+    },
+    "ItemTable_Weapons": {
+        "crowbar_ItemName": "빠루",
+        "crowbar20_ItemName": "빠루 2.0"
+    },
+    "ItemTable_Pickups": {
+        "canteen_ItemName": "수통"
+    },
+    "ItemTable_FoodAndGibs": {
+        "food_eggplant_raw_ItemName": "\"알\""
+    }
+}

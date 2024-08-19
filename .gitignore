@@ -1,0 +1,7 @@
+.idea/
+out/
+
+archive/pack/vanilla
+archive/pack/vanilla_extracted
+archive/pack/vanilla_extracted_parsed
+archive/offset_annotated

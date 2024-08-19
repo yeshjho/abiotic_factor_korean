@@ -1,0 +1,300 @@
+...
+
+...
+
+...
+
+Euh..tu vas pas passer par le portail là?
+
+I wouldn't blame you for trying your luck, but don't expect me to follow.
+
+If I could only get to Reactors, there's equipment that could help. [5.8]But it may as well be on the moon right now.
+
+If it's a choice between random portals [2.7]and risking my skin with whatever's lurking in Security Sector, [7.3]well, that's no choice at all. [9.8]I'm staying here.
+
+Isaiah ... didn't make it.
+
+Je fais partie de l'équipe scientifique!
+
+Je peux pas revenir en arrière,[2.0]qu’est-ce que je suis censé faire?
+
+Mince!
+
+Ne tirez pas!
+
+Peut-être que je pourrais traverser l'eau à la nage?
+
+That portal ... just appeared. [3.2]I've no idea how, but I am not going through! [7.9]Without the Dark Lens, it could land in the middle of a supernova for all we know!
+
+You think Security Sector is any safer than this? [3.6]It's not just a rumor, staff have disappeared! [7.7]The Defense Team says there's nothing to worry about, [10.6]but that's when you know there's a problem.
+
+You're not seriously thinking of going through ... [4.2]are you?
+
+Disabling this will entirely remove flashlight and lantern flickering during certain events.
+
+Flashlight Flickering
+
+Allows the wearer to see clearly underwater.
+
+Brain Freeze
+
+Communion with the ink of Night.
+
+Experience gain increased.
+
+Fish Out of Water
+
+Fish are easier to catch, tiring quicker than you do.
+
+Fisherman's Snack
+
+Fog Caller
+
+Grainy Vision
+
+Grants underwater vision for a period of time.
+
+Increases Fishing XP gain for a time.
+
+Increases your aquatic abilities.
+
+Kylie Muir
+
+Mountaineer
+
+Nightlord
+
+Shrunk!
+
+Stand tall.
+
+Tacklebox
+
+The wearer gains more Fishing XP per catch and has an increased chance to catch rare fish.
+
+Toasty Tummy
+
+Triggers a foggy weather event, eventually, if the conditions are right.
+
+Two consciousnesses are better than one.
+
+You can better tolerate cold temperatures for a while.
+
+You can better tolerate warm temperatures for a while.
+
+You can no longer be knocked around by most physics interactions. Jump pads excluded.
+
+You can see clearly underwater.
+
+You've been minimized!
+
+You've called in the fog. It may arrive, if the conditions are right...
+
+Your Fishing XP is increased for awhile.
+
+Your swimming feels more competent.
+
+D    no    m    H  r
+
+IS-0023 + 0121
+
+WWF
+
+X-ers?
+
+re: A39
+
+IS-0098
+
+IS-0031
+
+ECP
+
+Inventory Modifier Key
+
+Dr. Newman
+
+Shade
+
+Shade
+
+Shade
+
+Shade
+
+Hydroplant Zombie
+
+A drawn portrait of a man.
+
+A drawn portrait of a man.
+
+A picture of a comfy cat.
+
+A picture of a happy dog.
+
+A picture of a happy dog.
+
+A picture of two huskies.
+
+Dog Photo Frame
+
+Dog Photo Frame
+
+Grey Cat Photo Frame
+
+Huskies Photo Frame
+
+It says "Bean" in the corner.
+
+It says "Zig" on the back.
+
+It says "Zig" on the back.
+
+Kingsley Photoframe
+
+Rowan Photoframe
+
+The Legendary Kain & Mavi
+
+The portrait has V+*!+ scribbled in the corner.
+
+The portrait has V+*!+ scribbled in the corner.
+
+Pull the opposite direction of the catch to tire it out, then reel it in!
+
+You can use the waterways to travel the Facility. Jump on in!
+
+Inventory Ctrl Modifier
+
+120
+
+144
+
+30
+
+60
+
+Fast Approximate Anti-Aliasing (FXAA)
+
+Multisample Anti-Aliasing (MSAA)
+
+Temporal Anti-Aliasing (TAA)
+
+Temporal Super-Resolution (TSR)
+
+{playername}
+
+{playername}
+
+Explosive Cartridge
+
+Highly explosive ammo built for impact detonation.
+
+If there was anything more 'jugaad' than this field-fabricated, high-security instrusion device constructed on successive layers of equally improvised hackery, you'd like to see it.
+
+Not much can stand up to this pocket-sized pan-system hole puncher. Admit it, you've impressed yourself.
+
+IS-0059 Sigil
+
+There's something not quite right with the hewn stone and aged metal the sigil is carved from, if it is indeed carved at all.
+
+IS-0098
+
+IS-0171
+
+IS-0173
+
+Saltz
+
+The arm of an armor-clad Exor.
+
+Vibrant Exor Arm
+
+A facial apparatus for seeing clearly underwater, but not useful for much else.
+
+A helmet bearing the Sigil of the Night.
+
+A pair of waterproof waders.
+
+Angling Waders
+
+Night Helmet
+
+One of them was said to have placed the sigil across their eyes. A curse against the enemy? A boon against the dark of Night? Regrettably, it was neither.
+
+Swim Goggles
+
+A large lump of salt, perhaps salvageable into a useable product.
+
+An extremely dense storage device with a built-in neural bridge. Almost anything could fit inside here.
+
+Hyper-Dense Neural Chip
+
+Salt Rock
+
+Any Pipe
+
+Any sort of small or medium pipe.
+
+An iconic close-quarters heavy weapon that drags enemies towards you.
+
+Behold! Science!
+
+If you can't beat them, repurpose them.
+
+Insufficient Laser Battery. Recharge at Laser Collector.
+
+PUNCH CARD TERMINAL
+
+CAN BE BUTCHERED\r\nAT CHEF'S COUNTER
+
+DoNotUse
+
+IS-0031
+
+IS-0083
+
+ID
+
+LAN
+
+PING
+
+Ping
+
+[ DATA REDACTED ]
+
+Fish
+
+Heavy Weapon
+
+Neural Transference Terminal
+
+Rare Fish
+
+Tool
+
+0%
+
+10%
+
+100%
+
+200%
+
+25%
+
+300%
+
+50%
+
+75%
+
+UI
+
+Engineering-DONOTUSE
+
+Repair-DONOTUSE
+
+Resilience-DONOTUSE
+
