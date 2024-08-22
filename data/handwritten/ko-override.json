@@ -21,13 +21,32 @@
     },
     "ItemTable_Weapons": {
         "crowbar_ItemName": "빠루",
-        "crowbar20_ItemName": "빠루 2.0"
+        "crowbar20_ItemName": "빠루 2.0",
+        "electrothrower_ItemName": "전류 방사기",
+        "explosive_sledgehammer_ItemName": "폭발 슬레지 해머",
+        "baton_ItemName": "경찰봉",
+        "cafeteriatray_ItemName": "식판"
     },
     "ItemTable_Pickups": {
         "canteen_ItemName": "수통",
         "seed_eggplant_ItemName": "\"알\"밤나무 씨앗",
         "seed_eggplant_ItemDescription": "정원에 심으면 흥미로운 식용 \"알\"밤나무를 키울 수 있다.",
-        "seed_antelight_ItemDescription": "정원에 심으면 빛나는 안티라이트를 키울 수 있다."
+        "seed_antelight_ItemDescription": "정원에 심으면 빛나는 안티라이트를 키울 수 있다.",
+        "fishbones_ItemName": "생선 뼈",
+        "oil_fish_ItemName": "생선 기름",
+        "anvil_ItemName": "모루"
+    },
+    "ItemTable_Craftables": {
+        "PersonalTeleporter_ItemName": "개인용 텔레포터",
+        "Tripmine_ItemName": "인계철선 지뢰",
+        "wall_light_ItemName": "벽 전등",
+        "tramkey_ItemName": "전차역 열쇠",
+        "walkietalkie_ItemName": "무전기",
+        "ClothRope_ItemName": "천 밧줄",
+        "moisture_teleporter_ItemName": "수분 텔레포터",
+        "ItemStand_ItemName": "아이템 전시대",
+        "armor_stand_ItemName": "갑옷 거치대",
+        "storage_hazardcrate_ItemName": "위험 물질 보관함"
     },
     "ItemTable_FoodAndGibs": {
         "food_pestpie_slice_ItemFlavorText": "불안함은 페이스트리에 넣어두세요."
