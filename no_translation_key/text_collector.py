@@ -2,14 +2,14 @@ import os
 import shutil
 import struct
 import csv
-
+import subprocess
 
 VERSION = '0.9.0.11307'
 
 
 def collect_compendium():
     """
-    0E 00 00 00 44 54 5F 43 6F 6D 70 65 6E 64 69 75 6D 00 12 00 00 00 53 65 63 75 00 09 00 00 00 47 2E 41 2E 2E 00
+    0E 00 00 00 44 54 5F 43 6F 6D 70 65 6E 64 69 75 6D 00 12 00 00 00 .. .. .. .. 00 09 00 00 00 .. .. .. .. .. 00
          14     D  T  _  C  o  m  p  e  n  d  i  u  m  00 key_length   key_text   00 value_length  value_text   00
     """
 
@@ -97,17 +97,20 @@ def build_compendium():
         f.write(data)
 
     cwd = os.getcwd().replace('\\', '/')
-    if not os.path.exists(f'tools/UEcastoc-1.0.1/{VERSION}.manifest'):
-        os.system(f'"{cwd}/tools/UEcastoc-1.0.1/UEcastoc-1.0.1/cpp/main.exe" manifest '
-                  f'{cwd}/archive/pack/vanilla/pakchunk0-Windows-{VERSION}.utoc '
-                  f'{cwd}/archive/pack/vanilla/pakchunk0-Windows-{VERSION}.ucas '
-                  f'{cwd}/tools/UEcastoc-1.0.1/{VERSION}.manifest')
+    if not os.path.exists(f'archive/manifest/{VERSION}.manifest'):
+        subprocess.run([f'{cwd}/tools/UEcastoc-1.0.1/cpp/main.exe',
+                        f'manifest',
+                        f'{cwd}/archive/pack/vanilla/pakchunk0-Windows-{VERSION}.utoc',
+                        f'{cwd}/archive/pack/vanilla/pakchunk0-Windows-{VERSION}.ucas',
+                        f'{cwd}/archive/manifest/{VERSION}.manifest'])
 
-    os.system(f'"{cwd}/tools/UEcastoc-1.0.1/UEcastoc-1.0.1/cpp/main.exe" pack '
-              f'{cwd}/out/pakchunk0-Windows_P '
-              f'{cwd}/tools/UEcastoc-1.0.1/{VERSION}.manifest '
-              f'{cwd}/out/pakchunk0-Windows_P '
-              f'None')
+    subprocess.run([f'{cwd}/tools/UEcastoc-1.0.1/cpp/main.exe',
+                    f'pack',
+                    f'{cwd}/out/pakchunk0-Windows_P',
+                    f'{cwd}/archive/manifest/{VERSION}.manifest',
+                    f'{cwd}/out/pakchunk0-Windows_P',
+                    f'None'])
+    os.remove('out/pakchunk0-Windows_P.pak')
 
 
 if __name__ == '__main__':

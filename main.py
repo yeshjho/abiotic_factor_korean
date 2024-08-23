@@ -2,6 +2,7 @@ import json
 import os
 import re
 import shutil
+import subprocess
 from glob import glob
 from pprint import pprint
 
@@ -252,12 +253,13 @@ if __name__ == "__main__":
             json.dump(meta, f, indent=2)
             f.truncate()
 
-        os.system(f'"{cwd}/tools/LocRes-Builder-v0.1.2/convert.bat" '
-                  f'{cwd}/tools/LocRes-Builder-v0.1.2/out/Game/locmeta.json')
+        subprocess.run([f'{cwd}/tools/LocRes-Builder-v0.1.2/convert.bat',
+                        f'{cwd}/tools/LocRes-Builder-v0.1.2/out/Game/locmeta.json'])
 
         shutil.copy2('tools/LocRes-Builder-v0.1.2/out/Game/ja/Game.locres',
                      'out/pakchunk0-Windows_P/AbioticFactor/Content/Localization/Game/ja/Game.locres')
 
         # 모든 작업 완료. 패킹
-        os.system(f'"{cwd}/tools/repak_cli-x86_64-pc-windows-msvc/repak.exe" '
-                  f'pack {cwd}/out/pakchunk0-Windows_P')
+        subprocess.run([f'{cwd}/tools/repak_cli-x86_64-pc-windows-msvc/repak.exe',
+                        f'pack',
+                        f'{cwd}/out/pakchunk0-Windows_P'])
