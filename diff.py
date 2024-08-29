@@ -2,7 +2,7 @@ import json
 import csv
 
 
-OLD_VERSION = "0.8.2"
+OLD_VERSION = "0.8.2.10487"
 NEW_VERSION = "0.9.0"
 
 en_old = json.load(open(f'data/en-{OLD_VERSION}.json'))
