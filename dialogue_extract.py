@@ -2,8 +2,10 @@ import glob
 import json
 import csv
 
+VERSION = "0.9.0.11307"
 
-files = glob.glob('archive/pack/vanilla_extracted_parsed/0.9.0.11307/AbioticFactor/Content/Audio/**/*.*', recursive=True)
+
+files = glob.glob(f'archive/pack/vanilla_extracted_parsed/{VERSION}/AbioticFactor/Content/Audio/**/*.*', recursive=True)
 
 csv_file = open('out/dialogue_extra.csv', 'w', newline='')
 writer = csv.writer(csv_file)

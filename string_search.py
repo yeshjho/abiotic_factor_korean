@@ -1,10 +1,11 @@
 import glob
 
+VERSION = "0.9.0.11307"
 
 # TARGET_STRING = b'\xb1\x02\x47\xaf'
-TARGET_STRING = "You're part of the Research Team ...[4.1]I'm sorry"
+TARGET_STRING = "Sign_ModularFacility"
 
-files = glob.glob('archive/pack/vanilla_extracted/0.9.0.11307/AbioticFactor/Content/Audio/**/*.*', recursive=True)
+files = glob.glob(f'archive/pack/vanilla_extracted/{VERSION}/AbioticFactor/Content/Maps/**/*.*', recursive=True)
 
 
 if True:

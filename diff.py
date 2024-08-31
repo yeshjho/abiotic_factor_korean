@@ -10,7 +10,7 @@ en_new = json.load(open(f'data/en-{NEW_VERSION}.json'))
 
 
 csv_file = open(f'out/diff-{OLD_VERSION}-{NEW_VERSION}.csv', 'w', newline='')
-writer = csv.writer(csv_file)
+writer = csv.writer(csv_file, delimiter='\t')
 
 for data_table, entries in en_new.items():
     if data_table not in en_old:
