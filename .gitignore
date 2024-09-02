@@ -1,6 +1,8 @@
 .idea/
 out/
 
+tools/UE4-DDS-Tools-v0.6.1-Batch/exported/
+
 archive/pack/vanilla
 archive/pack/vanilla_extracted
 archive/pack/vanilla_extracted_parsed

@@ -8,6 +8,4 @@ python\python.exe -E src\main.py "%~1" --save_folder=exported --mode=export --ex
 echo %~1> src\_file_path_.txt
 @popd
 
-pause
-
 :skip
