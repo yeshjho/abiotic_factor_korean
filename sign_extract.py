@@ -6,7 +6,7 @@ import struct
 VERSION = "0.9.0.11307"
 
 
-files = glob.glob(f'archive/pack/vanilla_extracted_parsed/{VERSION}/AbioticFactor/Content/Maps/**/*.*', recursive=True)
+files = glob.glob(f'archive/maps_offset_annotated/*.*', recursive=True)
 
 csv_file = open('out/signs.csv', 'w', newline='')
 writer = csv.writer(csv_file)
@@ -22,27 +22,19 @@ for file in files:
             break
 
         object_type = data.get('Type', '')
-        if object_type == 'Sign_ModularFacility_C':
-            properties = data['Properties']
-            text = properties['DisplayText']
-            if text == '':
-                continue
+        if object_type != 'Sign_ModularFacility_C':
+            continue
 
-            text_start = int(data['StartPosition']) + 25
-            with open(f'archive/pack/vanilla_extracted/{VERSION}/AbioticFactor/Content/Maps/{map_name}.umap', 'rb') as f:
-                content = f.read()
+        properties = data['Properties']
+        text = properties['DisplayText']
 
-            print(data['Name'], text_start)
+        text, text_start = text.split('!@#')
+        if text == '':
+            continue
 
-            text_length = struct.unpack_from('<i', content, text_start)[0] - 1
-            bin_text = struct.unpack_from(f'<{text_length}s', content, text_start)[0]
-
-            writer.writerow([
-                map_name,
-                text_start,
-                data['Name'],
-                text,
-                bin_text,
-            ])
-        elif object_type == '':
-            pass
+        writer.writerow([
+            f'AbioticFactor/Content/Maps/{map_name}.umap',
+            int(text_start) + 4,  # 텍스트 사이즈부터 시작하는데 메인 스크립트가 실제 텍스트 오프셋을 기대해서 4만큼 더하기
+            data['Name'],
+            text,
+        ])
