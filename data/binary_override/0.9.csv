@@ -339,3 +339,353 @@ AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	88423	GISP_Titl
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	88481	GISP_Subtitle	Gate Immurement Security Protocols	Gate 수용 보안 절차(Gate Immurement Security Protocols)
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	88605	GISP_Sections_Index0_SectionText	Staff in the Security Sector are responsible for producing and promulgating immurement protocols for all GATE Facilities.\r\n\r\nThe Gate Immurement and Security Protocols, now in its third edition, second revision, are a cornerstone of this authority.\r\n\r\nUpdated regularly to reflect latest discoveries and best practices, the GISP provisions offer, amongst other things, guidance for all designations of immurement, field work, protective operations and communications.	보안 구역 섹터의 직원들은 수용 절차를 제작하여 전 GATE 시설에 전파하는 일을 담당한다.\r\n\r\n Gate 수용 보안 절차는 이제 3판 2차 개정본이며, 위 권한들의 초석이다.\r\n\r\n최신 발견 및 모범 사례를 정기적으로 업데이트하는 GISP는 특히, 모든 종류의 격리, 현장 작업, 보호 작전 및 통신을 제공한다.
 AbioticFactor/Content/Blueprints/Widgets/Inventory/W_Inventory_CraftingArea.uasset	195894		BACK TO CRAFTING	제작으로 돌아가기
+AbioticFactor/Content/Maps/Facility.umap	10078326	SignText	RECEPTION	가나
+AbioticFactor/Content/Maps/Facility.umap	10078454	SignText	SECURITY	가나
+AbioticFactor/Content/Maps/Facility.umap	10078581	SignText	HYDROPLANT	가나
+AbioticFactor/Content/Maps/Facility.umap	10078710	SignText	DATA FARM	가나
+AbioticFactor/Content/Maps/Facility.umap	10078838	SignText	WILDLIFE PENS	가나
+AbioticFactor/Content/Maps/Facility.umap	10079540	SignText	OFFICE SECTOR	가나
+AbioticFactor/Content/Maps/Facility.umap	10079672	SignText	CONTAINMENT	가나
+AbioticFactor/Content/Maps/Facility.umap	10079802	SignText	GYM & POOL	가나
+AbioticFactor/Content/Maps/Facility.umap	10079931	SignText	DEFENSE SECTOR	가나
+AbioticFactor/Content/Maps/Facility.umap	10080064	SignText	DEFENSE SECTOR	가나
+AbioticFactor/Content/Maps/Facility.umap	10080197	SignText	SYNAPTIC LABS	가나
+AbioticFactor/Content/Maps/Facility.umap	10080329	SignText	DEFENSE SECTOR	가나
+AbioticFactor/Content/Maps/Facility.umap	10080462	SignText	DATA FARM	가나
+AbioticFactor/Content/Maps/Facility.umap	10080590	SignText	L1 TRAM PLAZA	가나
+AbioticFactor/Content/Maps/Facility.umap	10080722	SignText	C. BLOCKS	가나
+AbioticFactor/Content/Maps/Facility.umap	10080850	SignText	ADJUSTMENT	가나
+AbioticFactor/Content/Maps/Facility.umap	10080979	SignText	VAC CHAMBER	가나
+AbioticFactor/Content/Maps/Facility.umap	10081109	SignText	OFFICE SECTOR	가나
+AbioticFactor/Content/Maps/Facility_Containment.umap	6683764	SignText	CONTROL CENTER	가나
+AbioticFactor/Content/Maps/Facility_Containment.umap	6683897	SignText	TRAM STATION	가나
+AbioticFactor/Content/Maps/Facility_Containment.umap	6684028	SignText	CURIE BLOCK	가나
+AbioticFactor/Content/Maps/Facility_Containment.umap	6684158	SignText	INNER WING	가나
+AbioticFactor/Content/Maps/Facility_Containment.umap	6684287	SignText	HEAT EXCHANGE	가나
+AbioticFactor/Content/Maps/Facility_Containment.umap	6684419	SignText	REACTOR FLOW	가나
+AbioticFactor/Content/Maps/Facility_Containment.umap	6684550	SignText	SYNAPTIC LABS	가나
+AbioticFactor/Content/Maps/Facility_Containment.umap	6684682	SignText	COOLING	가나
+AbioticFactor/Content/Maps/Facility_Containment.umap	6684808	SignText	EXCESS RUNOFF	가나
+AbioticFactor/Content/Maps/Facility_Containment.umap	6684940	SignText	FLOW TRANSIT	가나
+AbioticFactor/Content/Maps/Facility_Containment.umap	6685071	SignText	ASSESSMENT	가나
+AbioticFactor/Content/Maps/Facility_Containment.umap	6685200	SignText	ASSESSMENT	가나
+AbioticFactor/Content/Maps/Facility_Containment.umap	6685329	SignText	HOLDING	가나
+AbioticFactor/Content/Maps/Facility_Containment.umap	6685455	SignText	HOLDING	가나
+AbioticFactor/Content/Maps/Facility_Containment.umap	6685581	SignText	HYDROPLANT	가나
+AbioticFactor/Content/Maps/Facility_Containment.umap	6685710	SignText	OBSERVATION	가나
+AbioticFactor/Content/Maps/Facility_Containment.umap	6685840	SignText	OBSERVATION	가나
+AbioticFactor/Content/Maps/Facility_Dam.umap	7678236	SignText	LOWER ACCESS	가나
+AbioticFactor/Content/Maps/Facility_Dam.umap	7678367	SignText	ELECTRICAL GRID	가나
+AbioticFactor/Content/Maps/Facility_Dam.umap	7678501	SignText	RELEASE DRAIN	가나
+AbioticFactor/Content/Maps/Facility_Dam.umap	7678633	SignText	DOCKS	가나
+AbioticFactor/Content/Maps/Facility_Dam.umap	7678757	SignText	ROBOTICS	가나
+AbioticFactor/Content/Maps/Facility_Dam.umap	7678884	SignText	MONITORING	가나
+AbioticFactor/Content/Maps/Facility_Dam.umap	7679013	SignText	TRAM STATION	가나
+AbioticFactor/Content/Maps/Facility_Dam.umap	7679144	SignText	TRAM STATION	가나
+AbioticFactor/Content/Maps/Facility_Dam.umap	7679275	SignText	TRAM STATION	가나
+AbioticFactor/Content/Maps/Facility_Dam.umap	7679406	SignText	RESIDENCES	가나
+AbioticFactor/Content/Maps/Facility_Dam.umap	7679535	SignText	ELECTRICAL GRID	가나
+AbioticFactor/Content/Maps/Facility_Dam.umap	7679669	SignText	ELECTRICAL GRID	가나
+AbioticFactor/Content/Maps/Facility_Dam.umap	7679803	SignText	TRANSFORMERS	가나
+AbioticFactor/Content/Maps/Facility_Dam.umap	7679934	SignText	TRAM STATION	가나
+AbioticFactor/Content/Maps/Facility_Dam_Central.umap	2420732	SignText	SPILLWAY C	가나
+AbioticFactor/Content/Maps/Facility_Dam_Central.umap	2420861	SignText	SPILLWAY B	가나
+AbioticFactor/Content/Maps/Facility_Dam_Central.umap	2420990	SignText	STORAGE DECK	가나
+AbioticFactor/Content/Maps/Facility_Dam_Central.umap	2421121	SignText	STORAGE DECK	가나
+AbioticFactor/Content/Maps/Facility_Dam_Hydroplant.umap	1875559	SignText	ELECTRICAL	가나
+AbioticFactor/Content/Maps/Facility_Dam_Hydroplant.umap	1875689	SignText	SYSTEMS	가나
+AbioticFactor/Content/Maps/Facility_Dam_Hydroplant.umap	1875815	SignText	LOCKERS	가나
+AbioticFactor/Content/Maps/Facility_Dam_Hydroplant.umap	1875943	SignText	MAINFRAME	가나
+AbioticFactor/Content/Maps/Facility_Dam_Hydroplant.umap	1876074	SignText	FLOW VALVES	가나
+AbioticFactor/Content/Maps/Facility_Dam_Hydroplant.umap	1876207	SignText	TRANSMITTER	가나
+AbioticFactor/Content/Maps/Facility_Dam_Hydroplant.umap	1876338	SignText	SYSTEMS CHIEF	가나
+AbioticFactor/Content/Maps/Facility_Dam_Lower.umap	1289982	SignText	ROBOTICS	가나
+AbioticFactor/Content/Maps/Facility_Dam_Waterfall.umap	1399590	SignText	EXERCISE	가나
+AbioticFactor/Content/Maps/Facility_Dam_Waterfall.umap	1399717	SignText	MAINFRAME	가나
+AbioticFactor/Content/Maps/Facility_Dam_Waterfall.umap	1399845	SignText	MAINFRAME	가나
+AbioticFactor/Content/Maps/Facility_Labs.umap	7158850	SignText	HOLDING	가나
+AbioticFactor/Content/Maps/Facility_Labs.umap	7159000	SignText	LENS EPICENTRE	가나
+AbioticFactor/Content/Maps/Facility_Labs.umap	7159133	SignText	ADJUSTMENT	가나
+AbioticFactor/Content/Maps/Facility_Labs.umap	7159262	SignText	LENS EPICENTRE	가나
+AbioticFactor/Content/Maps/Facility_Labs.umap	7159395	SignText	LENS EPICENTRE	가나
+AbioticFactor/Content/Maps/Facility_Labs.umap	7159530	SignText	VACUUM CHAMBER	가나
+AbioticFactor/Content/Maps/Facility_Labs.umap	7159687	SignText	PORTAL LAB 04	가나
+AbioticFactor/Content/Maps/Facility_Labs.umap	7159819	SignText	INNER WING	가나
+AbioticFactor/Content/Maps/Facility_Labs.umap	7159948	SignText	INNER WING	가나
+AbioticFactor/Content/Maps/Facility_Labs.umap	7160077	SignText	INNER WING	가나
+AbioticFactor/Content/Maps/Facility_Labs.umap	7160206	SignText	WILDLIFE PENS	가나
+AbioticFactor/Content/Maps/Facility_Labs.umap	7160338	SignText	ADJUSTMENT	가나
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5377421	SignText	LASER LAB	가나
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5377549	SignText	LASER LAB	가나
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5377677	SignText	CELLULAR LAB	가나
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5377808	SignText	VIEWING ROOM	가나
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5377939	SignText	VIEWING ROOM	가나
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5378070	SignText	HOLDING	가나
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5378196	SignText	COLD STORAGE	가나
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5378327	SignText	COLD STORAGE	가나
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5378458	SignText	LASER LAB	가나
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5378586	SignText	CELLULAR LAB	가나
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5378717	SignText	LASER LAB	가나
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5378845	SignText	COLD STORAGE	가나
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5378976	SignText	CELLULAR LAB	가나
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5379107	SignText	SCANNING	가나
+AbioticFactor/Content/Maps/Facility_Labs_Control.umap	2329582	SignText	HELMHOLTZ LIFT	가나
+AbioticFactor/Content/Maps/Facility_Labs_Control.umap	2329717	SignText	CONTROL CENTER	가나
+AbioticFactor/Content/Maps/Facility_Labs_Control.umap	2329874	SignText	CONTROL LIFT	가나
+AbioticFactor/Content/Maps/Facility_Labs_Control.umap	2330005	SignText	CONTROL LIFT	가나
+AbioticFactor/Content/Maps/Facility_Labs_Control.umap	2330136	SignText	OBSERVATION	가나
+AbioticFactor/Content/Maps/Facility_Labs_Control.umap	2330266	SignText	CONTROL LIFT	가나
+AbioticFactor/Content/Maps/Facility_Labs_Control.umap	2330397	SignText	OBSERVATION	가나
+AbioticFactor/Content/Maps/Facility_MFFoundry.umap	830236	SignText	MANUFACTURING EAST	가나
+AbioticFactor/Content/Maps/Facility_MFFoundry.umap	830397	SignText	MANUFACTURING	가나
+AbioticFactor/Content/Maps/Facility_MFFoundry.umap	830531	SignText	MANUFACTURING EAST	가나
+AbioticFactor/Content/Maps/Facility_MFFoundry.umap	830692	SignText	SYNCHROTRON	가나
+AbioticFactor/Content/Maps/Facility_MFMines.umap	5556235	SignText	SITE OFFICE	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7544909	SignText	TRAM STATION	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7545040	SignText	OFFICE SECTOR	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7545172	SignText	FLOW CONTROL	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7545303	SignText	GARAGE	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7545428	SignText	OFFICE SECTOR	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7545560	SignText	SECURITY	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7545687	SignText	CARGO DISTRICT	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7545820	SignText	TOOL DEPOT	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7545949	SignText	TOOL DEPOT	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7546078	SignText	TOOL DEPOT	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7546207	SignText	MAINT. OFFICE	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7546339	SignText	TOILETS	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7546465	SignText	ROADWAY LIMA	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7546596	SignText	TRAM STATION	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7546727	SignText	CONTROL TOWER	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7546859	SignText	MAINT. OFFICE	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7546991	SignText	CONTROL TOWER	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7547123	SignText	TRAM STATION	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7547254	SignText	LOT OVERSIGHT	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7547386	SignText	CONTAINER LOT	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7547518	SignText	SHIP. LOGISTICS	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7547652	SignText	GARAGE	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7547777	SignText	ALLOY HANDLING	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7547910	SignText	SYNCHROTRON	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7548040	SignText	GARAGE	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7548165	SignText	ALLOY HANDLING	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7548298	SignText	KITCHEN	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7548424	SignText	ROADWAY	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7548550	SignText	TRAM STATION	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7548681	SignText	GARAGE	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7548806	SignText	CONTROL TOWER	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7548938	SignText	SHIP. LOGISTICS	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7549072	SignText	OFFICE SECTOR	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7549204	SignText	KITCHEN	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7549330	SignText	SYNCHROTRON	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7549460	SignText	INSPECTION	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7549589	SignText	INSPECTION	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7549718	SignText	SHIP. LOGISTICS	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7549852	SignText	RAILWAY	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7549978	SignText	CONTAINER LOT	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7550110	SignText	OVERFLOW 	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7550238	SignText	ALLOY HANDLING	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7550371	SignText	INSPECTION	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7550500	SignText	LOT OVERSIGHT	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7550632	SignText	ROADWAY	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7550758	SignText	TRAM ACCESS	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7550888	SignText	ROADWAY	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7551014	SignText	CONTROL TOWER	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7551146	SignText	FLOW CONTROL	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7551277	SignText	ROADWAY	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7551403	SignText	CONTROL TOWER	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7551535	SignText	TRAM STATION	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7551666	SignText	LOT OVERSIGHT	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7551798	SignText	FLOW CONTROL	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7551931	SignText	SHIPPING	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7552082	SignText	UPPER SHIPPING	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7552215	SignText	MINE ENTRANCE B	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7552349	SignText	MAPPING CENTER	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7552482	SignText	MAPPING CENTER	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7552615	SignText	OFFICE SECTOR	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7552747	SignText	OFFICE SECTOR	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7552879	SignText	MINE ENTRANCE B	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7553013	SignText	SHIPPING	가나
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7553140	SignText	GARAGE	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4773823	SignText	SERVER ROOM O1	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4773956	SignText	FLOW TRANSIT	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4774087	SignText	SECURITY OFFICE	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4774221	SignText	GYM & POOL	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4774350	SignText	LEVEL 2	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4774476	SignText	RECEPTION	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4774604	SignText	TRAM STATION	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4774735	SignText	STORAGE	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4774861	SignText	OFFICE SECTOR	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4774993	SignText	DATA FARM	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4775121	SignText	KITCHEN	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4775247	SignText	SECURITY SEC.	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4775379	SignText	DATA FARM	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4775507	SignText	WILDLIFE PENS	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4775639	SignText	SERVER ROOM 01	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4775772	SignText	OFFICE SECTOR	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4775904	SignText	CAFETERIA	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4776032	SignText	MANUFACTURING	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4776164	SignText	LOWER ACCESS	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4776295	SignText	MANUFACTURING	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4776427	SignText	LIFT ACCESS	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4776557	SignText	TRAM PLAZA	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4776686	SignText	PUBLIC TERMINAL	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4776820	SignText	LEVEL 2	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4776946	SignText	TRAM - B SIDE	가나
+AbioticFactor/Content/Maps/Facility_Office1.umap	4777078	SignText	RECEPTION	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5537806	SignText	L1 TRAM PLAZA	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5537938	SignText	SECURITY OFFICE	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5538072	SignText	RESIDENCE TRAM	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5538205	SignText	LEVEL 3 LIFT	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5538336	SignText	LOCKER ROOM	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5538466	SignText	SECTOR MAP	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5538595	SignText	LOCKER ROOM	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5538725	SignText	KITCHEN	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5538851	SignText	BIO LAB D	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5538979	SignText	DATA FARM	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5539107	SignText	RECEPTION	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5539235	SignText	MANUFACTURING	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5539367	SignText	DATA FARM	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5539495	SignText	RESIDENCE TRAM	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5539628	SignText	BIO LAB D	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5539756	SignText	DATA FARM	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5539884	SignText	BIO LAB D	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5540012	SignText	RECEPTION	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5540140	SignText	RESIDENCES	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5540269	SignText	RECEPTION	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5540397	SignText	BIO LAB D	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5540525	SignText	DATA FARM	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5540653	SignText	GYM & POOL	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5540782	SignText	DATA FARM	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5540910	SignText	EXEC. OFFICES	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5541042	SignText	LEVEL 3 STAIRS	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5541175	SignText	SILO 3 ACCESS	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5541307	SignText	EXEC. OFFICES	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5541439	SignText	STORAGE	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5541565	SignText	TRAM STATION	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5541696	SignText	SILO 3 ACCESS	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5541828	SignText	TRAM STATION	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5541959	SignText	KITCHEN	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5542085	SignText	L1 TRAM PLAZA	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5542217	SignText	BIO LAB D	가나
+AbioticFactor/Content/Maps/Facility_Office2.umap	5542345	SignText	RECEPTION	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6268128	SignText	LIFT ACCESS	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6268258	SignText	LEVEL 2	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6268384	SignText	SILO 2 ACCESS	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6268516	SignText	LEVEL 2 LIFT	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6268647	SignText	ANALYSIS OFFICE	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6268781	SignText	BREAK ROOM	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6268910	SignText	SILO 3 VIEWING	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6269043	SignText	SILO 3	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6269168	SignText	PHYSICS LAB D	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6269300	SignText	PHYSICS LAB D	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6269432	SignText	SILO 3 VIEWING	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6269565	SignText	EXEC. OFFICES	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6269697	SignText	SILO 3	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6269822	SignText	SILO 2 LOUNGE	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6269954	SignText	EXEC. OFFICES	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6270086	SignText	L2 / L3 JUNCTION	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6270221	SignText	SILO 2	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6270346	SignText	LEVEL 3 ACCESS	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6270479	SignText	LEVEL 2	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6270605	SignText	TRUCK TUNNEL D	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6270738	SignText	LIFT ACCESS	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6270868	SignText	EXEC. RESTROOM	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6271001	SignText	EXEC. RESTROOM	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6271134	SignText	BOARDROOM	가나
+AbioticFactor/Content/Maps/Facility_Office3.umap	6271262	SignText	PHYSICS LAB D	가나
+AbioticFactor/Content/Maps/Facility_Office4.umap	1813668	SignText	MANUFACTURING	가나
+AbioticFactor/Content/Maps/Facility_Office4.umap	1813800	SignText	SILO 2 ACCESS	가나
+AbioticFactor/Content/Maps/Facility_Office4.umap	1813932	SignText	LIFT ACCESS	가나
+AbioticFactor/Content/Maps/Facility_Office4.umap	1814062	SignText	SILO 2 ACCESS	가나
+AbioticFactor/Content/Maps/Facility_Office4.umap	1814194	SignText	RECEPTION	가나
+AbioticFactor/Content/Maps/Facility_Office4.umap	1814322	SignText	SECURITY	가나
+AbioticFactor/Content/Maps/Facility_Office4.umap	1814449	SignText	LIFT ACCESS	가나
+AbioticFactor/Content/Maps/Facility_Office4.umap	1814579	SignText	L1 TRAM PLAZA	가나
+AbioticFactor/Content/Maps/Facility_Office4.umap	1814711	SignText	RECEPTION	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6410932	SignText	XR CONTAINMENT	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6411065	SignText	EASTERN TUNNEL	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6411198	SignText	VEHICLE LOT 7	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6411330	SignText	C. STATION	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6411459	SignText	TOILETS	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6411585	SignText	ROADWAY	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6411711	SignText	C. BLOCKS	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6411839	SignText	WILDLIFE PENS	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6411971	SignText	PARTICLE LAB	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6412102	SignText	TOILETS	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6412228	SignText	PARTICLE LAB	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6412359	SignText	C. STATION	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6412488	SignText	HEAVY DEPOT	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6412618	SignText	OFFICE SECTOR	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6412750	SignText	WILDLIFE PENS	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6412882	SignText	TOILETS	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6413008	SignText	PARTICLE LAB	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6413139	SignText	XR TRANSFER	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6413269	SignText	HOLDING	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6413395	SignText	WILDLIFE PENS	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6413527	SignText	VEHICLE LOT 7	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6413659	SignText	XR CONTAINMENT	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6413792	SignText	TOILETS	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6413918	SignText	WILDLIFE PENS	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6414050	SignText	TOILETS	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6414176	SignText	WILDLIFE PENS	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6414308	SignText	C. STATION	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6414437	SignText	WILDLIFE PENS	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6414569	SignText	TOILETS	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6414695	SignText	PARTICLE LAB	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6414826	SignText	TOILETS	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6414952	SignText	C. BLOCKS	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6415080	SignText	VEHICLE LOT 7	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6415212	SignText	XR CONTAINMENT	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6415345	SignText	WILDLIFE PENS	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6415477	SignText	C. STATION	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6415606	SignText	PARTICLE LAB	가나
+AbioticFactor/Content/Maps/Facility_Pens.umap	6415737	SignText	PARTICLE LAB	가나
+AbioticFactor/Content/Maps/Facility_Reservoir.umap	3009491	SignText	DETECTOR	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4521129	SignText	FIREARMS RANGE 	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4521263	SignText	FITNESS COURSE 	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4521397	SignText	FIREARMS RANGE	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4521530	SignText	FIREARMS RANGE	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4521663	SignText	VEHICLE DEPOT	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4521795	SignText	SURFACE LIFT	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4521926	SignText	REPAIR BAY	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4522055	SignText	FITNESS COURSE	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4522188	SignText	VEHICLE DEPOT	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4522320	SignText	DEPOT ACCESS	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4522451	SignText	SURFACE ACCESS	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4522584	SignText	OFFICE SECTOR	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4522716	SignText	OFFICE SECTOR	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4522848	SignText	SURFACE ACCESS	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4522981	SignText	OFFICE SECTOR	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4523113	SignText	HYDROPLANT	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4523242	SignText	SURFACE ACCESS	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4523375	SignText	OFFICES	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4523501	SignText	HYDROPLANT	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4523630	SignText	HYDROPLANT	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4523759	SignText	REPAIR BAY	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4523888	SignText	HYDROPLANT	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4524017	SignText	REPAIR BAY	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4524146	SignText	TOWER	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4524270	SignText	STORAGE UNIT C	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4524403	SignText	SURFACE ACCESS	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4524536	SignText	LABORATORIES	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4524667	SignText	REPAIR BAY	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4524796	SignText	FIREARMS RANGE	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4524929	SignText	VEHICLE DEPOT	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4525061	SignText	REPAIR BAY	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4525190	SignText	REPAIR BAY	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4525319	SignText	SURFACE ACCESS	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4525452	SignText	OFFICE SECTOR	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4525584	SignText	REPAIR BAY	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4525713	SignText	HYDROPLANT	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4525842	SignText	STORAGE UNIT C	가나
+AbioticFactor/Content/Maps/Facility_Security.umap	4525975	SignText	REPAIR BAY	가나
+AbioticFactor/Content/Maps/V_Alps.umap	5185228	SignText	OBSERVATOIRE	가나
+AbioticFactor/Content/Maps/V_Intro.umap	9611015	SignText	PACKAGE	가나
+AbioticFactor/Content/Maps/V_Intro.umap	9611141	SignText	KITCHEN	가나
+AbioticFactor/Content/Maps/V_Intro.umap	9611267	SignText	CRUCIS STUDY	가나
+AbioticFactor/Content/Maps/V_Intro.umap	9611398	SignText	POWER SOURCE	가나
+AbioticFactor/Content/Maps/V_Intro.umap	9611529	SignText	RESIDENCES	가나
+AbioticFactor/Content/Maps/V_Intro.umap	9611658	SignText	SYNAPTIC LABS	가나
+AbioticFactor/Content/Maps/V_Intro.umap	9611790	SignText	ORDO ACCESS	가나
+AbioticFactor/Content/Maps/V_Intro.umap	9611920	SignText	RESIDENCES	가나
+AbioticFactor/Content/Maps/V_Intro.umap	9612049	SignText	ORDO STORAGE	가나
+AbioticFactor/Content/Maps/V_Intro.umap	9612180	SignText	SYNAPTIC LABS	가나

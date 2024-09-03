@@ -6,6 +6,7 @@ import subprocess
 import struct
 import glob
 import pprint
+import bisect
 
 
 """
@@ -70,7 +71,7 @@ def build_pak():
             if translated:
                 if namespace not in translated_file:
                     translated_file[namespace] = {}
-                translated_file[namespace][key] = translated
+                translated_file[namespace][key] = inline_whitespace(translated)
             else:
                 keys_not_translated.append(namespace_n_key)
 
@@ -116,7 +117,7 @@ def build_pak():
 
             if namespace not in translated_file:
                 translated_file[namespace] = {}
-            translated_file[namespace][key] = translated if translated else original
+            translated_file[namespace][key] = inline_whitespace(translated) if translated else original
 
             if namespace not in en_file:
                 en_file[namespace] = {}
@@ -172,14 +173,16 @@ def build_pak():
     ]
 
 
-def build_io_store():
+def build_io_store(skip_binary_overrides: bool, skip_images: bool):
     shutil.rmtree('out/pakchunk0-Windows_P/', ignore_errors=True)
     shutil.copytree('ucas_template', 'out/pakchunk0-Windows_P')
 
 
     output = []
-    output += build_binary_overrides()
-    output += build_image_overrides()
+    if not skip_binary_overrides:
+        output += build_binary_overrides()
+    if not skip_images:
+        output += build_image_overrides()
 
 
     if not os.path.exists(f'archive/manifest/{GAME_VERSION}.manifest'):
@@ -201,10 +204,103 @@ def build_io_store():
     return output
 
 
-def build_binary_overrides():
-    SIZE_OFFSET_MAP = {
+def overwrite_fstring(data, offset, new_text, does_offset_points_size):
+    size_offset = offset - (0 if does_offset_points_size else 4)
+    original_length = struct.unpack_from('<i', data, size_offset)[0]
+    original_length_bytes = original_length if original_length > 0 else -original_length * 2
+
+    is_translated_ascii = new_text.isascii()
+    new_length = (len(new_text) + 1) * (1 if is_translated_ascii else -1)
+    new_length_bytes = (len(new_text) + 1) * (1 if is_translated_ascii else 2)
+    new_text = (new_text.encode('ascii') + b'\x00') if is_translated_ascii \
+        else new_text.encode('utf-16')[2:] + b'\x00\x00'
+
+    data[size_offset:size_offset + 4] = bytearray(struct.pack('<i', new_length))
+    data[size_offset + 4:size_offset + 4 + original_length_bytes] = bytearray(new_text)
+
+    return data, original_length_bytes, new_length_bytes
+
+
+def datatable_override(file, data, pairs):
+    size_offset_map = {
         'AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset': 0x2753
     }
+
+    byte_difference = 0
+    for byte_offset, translated in pairs:
+        data, original_length_bytes, new_length_bytes = overwrite_fstring(data, byte_offset + byte_difference, translated, False)
+        byte_difference += new_length_bytes - original_length_bytes
+
+    if file in size_offset_map:
+        size_offset = size_offset_map[file]
+        expected_read_size = struct.unpack_from('<i', data, size_offset)[0]
+        data[size_offset:size_offset + 4] = bytearray(struct.pack('<i', expected_read_size + byte_difference))
+        return True, data
+    else:
+        return False, data
+
+
+def default_uobject_override(file, data, pairs):
+    map_entry_size = 72
+
+    header_size, map_offset, entries_offset = struct.unpack_from('<xxxxIxxxxxxxxxxxxxxxxxxxxxxxxii', data)
+    map_entry_count = (entries_offset - map_offset) // map_entry_size
+
+    class MapEntry:
+        def __init__(self, index, offset, size):
+            self.index = index
+            self.offset = offset
+            self.size = size
+
+            self.new_offset = offset
+            self.new_size = size
+
+    map_entries = []
+    for i in range(map_entry_count - 1):
+        entry_offset, entry_size = struct.unpack_from('<QQ', data, map_offset + i * map_entry_size)
+        map_entries.append(MapEntry(i, header_size + entry_offset, entry_size))
+
+    entry_offset, entry_size = struct.unpack_from('<QQ', data, map_offset + (map_entry_count - 1) * map_entry_size)
+    map_entries.append(MapEntry(map_entry_count - 1, header_size + entry_offset, entry_size))
+    last_entry_address = header_size + entry_offset + entry_size - 1
+
+    map_entries.sort(key=lambda x: x.offset)
+
+    total_byte_difference = 0
+    total_byte_difference_outside = 0
+    prev_entry_index = 0
+    for byte_offset, translated in pairs:
+        if byte_offset > last_entry_address:
+            data, original_length_bytes, new_length_bytes = overwrite_fstring(data, byte_offset + total_byte_difference + total_byte_difference_outside, translated, False)
+            total_byte_difference_outside += new_length_bytes - original_length_bytes
+            continue
+
+        entry_index = bisect.bisect_left(map_entries, byte_offset, key=lambda x: x.offset)
+        for i in range(prev_entry_index, entry_index):
+            map_entries[i].new_offset += total_byte_difference
+        prev_entry_index = entry_index
+
+        data, original_length_bytes, new_length_bytes = overwrite_fstring(data, byte_offset + total_byte_difference, translated, False)
+        size_difference = new_length_bytes - original_length_bytes
+        total_byte_difference += size_difference
+        map_entries[entry_index - 1].new_size += size_difference
+
+    for i in range(prev_entry_index, map_entry_count):
+        map_entries[i].new_offset += total_byte_difference
+
+    for map_entry in map_entries:
+        offset = map_offset + map_entry.index * map_entry_size
+        data[offset:offset + 16] = bytearray(struct.pack('<QQ', map_entry.new_offset - header_size, map_entry.new_size))
+
+    return True, data
+
+
+
+def build_binary_overrides():
+    file_overriders = [
+        (lambda x: any([e in x for e in ('DT_Compendium',)]), datatable_override),
+        (lambda x: True, default_uobject_override),
+    ]
 
     pairs_per_file = {}
     with open(f'data/binary_override/{PATCH_VERSION}.csv', newline='') as f:
@@ -214,49 +310,34 @@ def build_binary_overrides():
                 pairs_per_file[file] = []
             pairs_per_file[file].append((byte_offset, translated))
 
-    no_size_offset_files = []
+    files_no_fixes = []
 
     for file, pairs in pairs_per_file.items():
+        pairs = [(int(byte_offset), inline_whitespace(translated)) for byte_offset, translated in pairs]
+        pairs.sort(key=lambda x: x[0])  # 오프셋 순으로 정렬
+
         with open(f'archive/pack/vanilla_extracted/{GAME_VERSION}/{file}', 'rb') as f:
-            data = f.read()
-        total_offset = 0
+            data = bytearray(f.read())
 
-        for byte_offset, translated in sorted(pairs, key=lambda x: x[0]):  # 오프셋 순으로 정렬
-            byte_offset = int(byte_offset)
-            translated = inline_whitespace(translated)
-            original_length = struct.unpack_from('<i', data, total_offset + byte_offset - 4)[0]
-            original_length_bytes = original_length if original_length > 0 else -original_length * 2
-
-            is_translated_ascii = translated.isascii()
-            new_length = (len(translated) + 1) * (1 if is_translated_ascii else -1)
-            new_length_bytes = (len(translated) + 1) * (1 if is_translated_ascii else 2)
-
-            data = (data[:total_offset + byte_offset - 4] + struct.pack('<i', new_length) +
-                    ((translated.encode('ascii') + b'\x00') if is_translated_ascii else
-                     translated.encode('utf-16')[2:] + b'\x00\x00') +
-                    data[total_offset + byte_offset + original_length_bytes:])
-
-            total_offset += new_length_bytes - original_length_bytes
-
-        if file in SIZE_OFFSET_MAP:
-            size_offset = SIZE_OFFSET_MAP[file]
-            expected_read_size = struct.unpack_from('<i', data, size_offset)[0]
-            data = data[:size_offset] + struct.pack('<i', expected_read_size + total_offset) + data[size_offset + 4:]
-        else:
-            no_size_offset_files.append(file)
+        for pred, overrider in file_overriders:
+            if pred(file):
+                did_success, data = overrider(file, data, pairs)
+                if not did_success:
+                    files_no_fixes.append(file)
+                break
 
         os.makedirs('/'.join(f'out/pakchunk0-Windows_P/{file}'.split('/')[:-1]), exist_ok=True)
         with open(f'out/pakchunk0-Windows_P/{file}', 'wb') as f:
-            f.write(data)
+            f.write(bytes(data))
 
-    if no_size_offset_files:
-        print('[경고] 다음 파일들의 사이즈 오프셋 데이터가 없어 파일 사이즈를 수정하지 못했습니다.')
-        print(no_size_offset_files)
+    if files_no_fixes:
+        print('[경고] 다음 파일들의 후처리에 실패했습니다. 게임 실행 시 에러가 날 수 있습니다.')
+        print(files_no_fixes)
 
 
     return [
-        '# 사이즈 오프셋 데이터가 없는 파일',
-        pprint.pformat(no_size_offset_files, indent=4),
+        '# 후처리에 실패한 파일',
+        pprint.pformat(files_no_fixes, indent=4),
         ''
     ]
 
@@ -287,10 +368,22 @@ def build_image_overrides():
 
 
 def main():
+    SKIP_PAK = True
+    SKIP_BINARY_OVERRIDES = False
+    SKIP_IMAGES = True
+
+    if os.path.exists(f'out/pakchunk0-Windows_P.pak'):
+        os.remove('out/pakchunk0-Windows_P.pak')
+    if os.path.exists(f'out/pakchunk0-Windows_P.utoc'):
+        os.remove('out/pakchunk0-Windows_P.utoc')
+    if os.path.exists(f'out/pakchunk0-Windows_P.ucas'):
+        os.remove('out/pakchunk0-Windows_P.ucas')
+
     output = []
 
-    output += build_io_store()  # 필요없는 pak 파일을 생성하기 때문에 먼저 호출한 후 뒤에 pak 파일을 덮어쓴다
-    output += build_pak()
+    output += build_io_store(SKIP_BINARY_OVERRIDES, SKIP_IMAGES)  # 필요없는 pak 파일을 생성하기 때문에 먼저 호출한 후 뒤에 pak 파일을 덮어쓴다
+    if not SKIP_PAK:
+        output += build_pak()
 
     with open(f'out/report-{PATCH_VERSION}.txt', 'w') as f:
         f.write('\n'.join(output))
