@@ -33,8 +33,8 @@ data/image/[버전]/이미지+까지+경로
 """
 
 
-GAME_VERSION = "0.9.0.11307"
-PATCH_VERSION = "0.9"
+GAME_VERSION = "0.9.1.11736"
+PATCH_VERSION = "0.9.1"
 
 
 def visualize_whitespace(text: str):
@@ -63,7 +63,7 @@ def build_pak():
                 keys_nonexistent_in_en.append(namespace_n_key)
                 continue
 
-            if original != en_file[namespace][key]:
+            if original.strip() != en_file[namespace][key].strip():
                 original_not_matching.append(
                     (namespace_n_key, visualize_whitespace(en_file[namespace][key]), visualize_whitespace(original))
                 )
@@ -107,7 +107,11 @@ def build_pak():
 
     with (open(f'data/ko-{PATCH_VERSION}-extra.csv', newline='') as f):
         reader = csv.reader(f, delimiter='\t')
-        for namespace_n_key, original, translated in reader:
+        for row in reader:
+            if len(row) != 3:
+                continue
+
+            namespace_n_key, original, translated = row
             split = namespace_n_key.split('/')
             namespace = ''
             if len(split) == 2:
@@ -168,12 +172,15 @@ def build_pak():
         pprint.pformat(keys_not_translated, indent=4),
         '',
         '# 영문 파일의 값과 번역본의 원문이 동일하지 않은 키 (키, 영문 파일 값, 번역본 원문)',
-        pprint.pformat(original_not_matching, indent=4),
+        '[\n' + '\n'.join([f'  (\n    {repr(k)},\n    {repr(org)},\n    {repr(mis)}\n  ),' for k, org, mis in original_not_matching]) + '\n]'
         ''
     ]
 
 
 def build_io_store(skip_binary_overrides: bool, skip_images: bool):
+    if skip_binary_overrides and skip_images:
+        return []
+
     shutil.rmtree('out/pakchunk0-Windows_P/', ignore_errors=True)
     shutil.copytree('ucas_template', 'out/pakchunk0-Windows_P')
 
@@ -184,22 +191,16 @@ def build_io_store(skip_binary_overrides: bool, skip_images: bool):
     if not skip_images:
         output += build_image_overrides()
 
-
-    if not os.path.exists(f'archive/manifest/{GAME_VERSION}.manifest'):
-        print('manifest 파일을 찾지 못하여 생성합니다. 시간이 오래 걸릴 수 있습니다...')
-        subprocess.run([f'{cwd}/tools/UEcastoc-1.0.1/cpp/main.exe',
-                        f'manifest',
-                        f'{cwd}/archive/pack/vanilla/pakchunk0-Windows-{GAME_VERSION}.utoc',
-                        f'{cwd}/archive/pack/vanilla/pakchunk0-Windows-{GAME_VERSION}.ucas',
-                        f'{cwd}/archive/manifest/{GAME_VERSION}.manifest'])
-
     print('IOStore 파일 생성 중...')
-    subprocess.run([f'{cwd}/tools/UEcastoc-1.0.1/cpp/main.exe',
-                    f'pack',
+    subprocess.run([f'{cwd}/tools/UnrealReZen_V01/UnrealReZen.exe',
+                    f'--content-path',
                     f'{cwd}/out/pakchunk0-Windows_P',
-                    f'{cwd}/archive/manifest/{GAME_VERSION}.manifest',
-                    f'{cwd}/out/pakchunk0-Windows_P',
-                    f'None'])
+                    f'--engine-version',
+                    f'GAME_UE5_4',
+                    f'--game-dir',
+                    f'{cwd}/archive/pack/vanilla/{GAME_VERSION}',
+                    f'--output-path',
+                    f'{cwd}/out/pakchunk0-Windows_P.utoc'])
 
     return output
 
@@ -223,7 +224,7 @@ def overwrite_fstring(data, offset, new_text, does_offset_points_size):
 
 def datatable_override(file, data, pairs):
     size_offset_map = {
-        'AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset': 0x2753
+        'AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset': 0x2868
     }
 
     byte_difference = 0
@@ -264,14 +265,15 @@ def default_uobject_override(file, data, pairs):
     map_entries.append(MapEntry(map_entry_count - 1, header_size + entry_offset, entry_size))
     last_entry_address = header_size + entry_offset + entry_size - 1
 
-    map_entries.sort(key=lambda x: x.offset)
+    map_entries.sort(key=lambda x: x.offset)  # 이미 오프셋 기준으로 정렬돼 있지만 혹시 모르니
 
     total_byte_difference = 0
     total_byte_difference_outside = 0
     prev_entry_index = 0
     for byte_offset, translated in pairs:
         if byte_offset > last_entry_address:
-            data, original_length_bytes, new_length_bytes = overwrite_fstring(data, byte_offset + total_byte_difference + total_byte_difference_outside, translated, False)
+            offset_to_use = byte_offset + total_byte_difference + total_byte_difference_outside
+            data, original_length_bytes, new_length_bytes = overwrite_fstring(data, offset_to_use, translated, False)
             total_byte_difference_outside += new_length_bytes - original_length_bytes
             continue
 
@@ -368,9 +370,9 @@ def build_image_overrides():
 
 
 def main():
-    SKIP_PAK = True
+    SKIP_PAK = False
     SKIP_BINARY_OVERRIDES = False
-    SKIP_IMAGES = True
+    SKIP_IMAGES = False
 
     if os.path.exists(f'out/pakchunk0-Windows_P.pak'):
         os.remove('out/pakchunk0-Windows_P.pak')

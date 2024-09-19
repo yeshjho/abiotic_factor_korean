@@ -4,7 +4,7 @@ import struct
 import csv
 import subprocess
 
-VERSION = '0.9.0.11307'
+VERSION = '0.9.1.11736'
 
 
 def collect_compendium():
@@ -18,7 +18,7 @@ def collect_compendium():
               f'/AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset', 'rb') as f:
         content = f.read()
 
-        csv_file = open('out/DT_Compendium.csv', 'w', newline='')
+        csv_file = open(f'out/DT_Compendium-{VERSION}.csv', 'w', newline='')
         writer = csv.writer(csv_file)
 
         index = 0
@@ -114,4 +114,4 @@ def build_compendium():
 
 
 if __name__ == '__main__':
-    build_compendium()
+    collect_compendium()
