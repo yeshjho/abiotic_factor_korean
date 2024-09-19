@@ -1,8 +1,6 @@
 .idea/
 out/
 
-tools/UE4-DDS-Tools-v0.6.1-Batch/exported/
-
 archive/pack/vanilla
 archive/pack/vanilla_extracted
 archive/pack/vanilla_extracted_parsed
@@ -11,3 +9,7 @@ archive/offset_annotated
 tools/UE4-DDS-Tools-v0.6.1-Batch/injected/
 
 tools/UE4-DDS-Tools-v0.6.1-Batch/src/_file_path_.txt
+
+tools/UE4-DDS-Tools-v0.6.1-Batch/exported/
+
+oo2core_9_win64.dll
