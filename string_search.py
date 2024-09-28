@@ -1,11 +1,11 @@
 import glob
 
-VERSION = "0.9.0.11307"
+VERSION = "0.9.1.11753"
 
 # TARGET_STRING = b'\xb1\x02\x47\xaf'
-TARGET_STRING = "Sign_ModularFacility"
+TARGET_STRING = "Your previous corpse loot bag"
 
-files = glob.glob(f'archive/pack/vanilla_extracted/{VERSION}/AbioticFactor/Content/Maps/**/*.*', recursive=True)
+files = glob.glob(f'archive/pack/vanilla_extracted/{VERSION}/AbioticFactor/Content/**/*.*', recursive=True)
 
 
 if True:

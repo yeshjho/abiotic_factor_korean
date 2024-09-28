@@ -24,7 +24,7 @@ for file in files:
         properties = data['Properties']
 
         if object_type == 'Sign_ModularFacility_C':
-            text = properties['DisplayText']
+            text = properties['DisplayText[5]']
             continue  # 아래 것만 바꾸면 됨
         elif object_type == 'TextRenderComponent':
             if 'Text' not in properties or 'CultureInvariantString' not in properties['Text']:
