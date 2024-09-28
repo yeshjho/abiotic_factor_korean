@@ -201,6 +201,8 @@ def build_io_store(skip_binary_overrides: bool, skip_images: bool):
                     f'{cwd}/archive/pack/vanilla/{GAME_VERSION}',
                     f'--output-path',
                     f'{cwd}/out/pakchunk0-Windows_P.utoc'])
+    if os.path.exists(f'oo2core_9_win64.dll'):
+        os.remove('oo2core_9_win64.dll')
 
     return output
 
