@@ -36,7 +36,7 @@ data/image/[버전]/이미지+까지+경로
 
 
 GAME_VERSION = "0.9.1.11753"
-PATCH_VERSION = "0.9.2"
+PATCH_VERSION = "0.9.3"
 
 
 def visualize_whitespace(text: str):
@@ -394,9 +394,9 @@ def build_image_overrides():
 
 
 def main():
-    SKIP_PAK = True
+    SKIP_PAK = False
     SKIP_BINARY_OVERRIDES = False
-    SKIP_IMAGES = True
+    SKIP_IMAGES = False
 
     if os.path.exists(f'out/pakchunk0-Windows_P.pak'):
         os.remove('out/pakchunk0-Windows_P.pak')
