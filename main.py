@@ -24,7 +24,9 @@ data/ko-[버전]-extra.csv
 
 # 바이너리 덮어쓰는 파일
 data/binary_override/[버전].csv
-헤더: 파일 경로\t바이트 오프셋\t(무시)\t원문\t번역본
+헤더: 파일 경로\t바이트 오프셋\t엑스트라\t원문\t번역본
+엑스트라가 NO_FSTRING이면 fstring 치환이 아닌, 일반 바이너리 덮어쓰기를 수행.
+원문은 엑스트라가 NO_FSTRING일 때만 필요.
 주의: \r, \n 일부러 \\r, \\n으로 바꿔둠. 되돌려서 넣어야 함.
 주의: 바이트 오프셋은 실제 텍스트의 시작 오프셋임. 사이즈는 앞에서 찾아야 함.
 
@@ -230,8 +232,15 @@ def datatable_override(file, data, pairs):
     }
 
     byte_difference = 0
-    for byte_offset, translated in pairs:
-        data, original_length_bytes, new_length_bytes = overwrite_fstring(data, byte_offset + byte_difference, translated, False)
+    for byte_offset, extra, original, translated in pairs:
+        offset_to_use = byte_offset + byte_difference
+        if extra == "NO_FSTRING":
+            overwrite_data = bytearray.fromhex(translated)
+            original_length_bytes = len(bytearray.fromhex(original))
+            data[offset_to_use:offset_to_use + original_length_bytes] = overwrite_data
+            new_length_bytes = len(overwrite_data)
+        else:
+            data, original_length_bytes, new_length_bytes = overwrite_fstring(data, offset_to_use, translated, False)
         byte_difference += new_length_bytes - original_length_bytes
 
     if file in size_offset_map:
@@ -272,10 +281,16 @@ def default_uobject_override(file, data, pairs):
     total_byte_difference = 0
     total_byte_difference_outside = 0
     prev_entry_index = 0
-    for byte_offset, translated in pairs:
+    for byte_offset, extra, original, translated in pairs:
         if byte_offset > last_entry_address:
             offset_to_use = byte_offset + total_byte_difference + total_byte_difference_outside
-            data, original_length_bytes, new_length_bytes = overwrite_fstring(data, offset_to_use, translated, False)
+            if extra == "NO_FSTRING":
+                overwrite_data = bytearray.fromhex(translated)
+                original_length_bytes = len(bytearray.fromhex(original))
+                data[offset_to_use:offset_to_use + original_length_bytes] = overwrite_data
+                new_length_bytes = len(overwrite_data)
+            else:
+                data, original_length_bytes, new_length_bytes = overwrite_fstring(data, offset_to_use, translated, False)
             total_byte_difference_outside += new_length_bytes - original_length_bytes
             continue
 
@@ -284,7 +299,14 @@ def default_uobject_override(file, data, pairs):
             map_entries[i].new_offset += total_byte_difference
         prev_entry_index = entry_index
 
-        data, original_length_bytes, new_length_bytes = overwrite_fstring(data, byte_offset + total_byte_difference, translated, False)
+        offset_to_use = byte_offset + total_byte_difference
+        if extra == "NO_FSTRING":
+            overwrite_data = bytearray.fromhex(translated)
+            original_length_bytes = len(bytearray.fromhex(original))
+            data[offset_to_use:offset_to_use + original_length_bytes] = overwrite_data
+            new_length_bytes = len(overwrite_data)
+        else:
+            data, original_length_bytes, new_length_bytes = overwrite_fstring(data, offset_to_use, translated, False)
         size_difference = new_length_bytes - original_length_bytes
         total_byte_difference += size_difference
         map_entries[entry_index - 1].new_size += size_difference
@@ -309,15 +331,15 @@ def build_binary_overrides():
     pairs_per_file = {}
     with open(f'data/binary_override/{PATCH_VERSION}.csv', newline='') as f:
         reader = csv.reader(f, delimiter='\t')
-        for file, byte_offset, *_, translated in reader:
+        for file, byte_offset, extra, original, translated in reader:
             if file not in pairs_per_file:
                 pairs_per_file[file] = []
-            pairs_per_file[file].append((byte_offset, translated))
+            pairs_per_file[file].append((byte_offset, extra, original, translated))
 
     files_no_fixes = []
 
     for file, pairs in pairs_per_file.items():
-        pairs = [(int(byte_offset), inline_whitespace(translated)) for byte_offset, translated in pairs]
+        pairs = [(int(byte_offset), extra, original, inline_whitespace(translated)) for byte_offset, extra, original, translated in pairs]
         pairs.sort(key=lambda x: x[0])  # 오프셋 순으로 정렬
 
         with open(f'archive/pack/vanilla_extracted/{GAME_VERSION}/{file}', 'rb') as f:
@@ -372,9 +394,9 @@ def build_image_overrides():
 
 
 def main():
-    SKIP_PAK = False
+    SKIP_PAK = True
     SKIP_BINARY_OVERRIDES = False
-    SKIP_IMAGES = False
+    SKIP_IMAGES = True
 
     if os.path.exists(f'out/pakchunk0-Windows_P.pak'):
         os.remove('out/pakchunk0-Windows_P.pak')

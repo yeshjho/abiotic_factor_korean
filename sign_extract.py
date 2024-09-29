@@ -6,7 +6,7 @@ import struct
 VERSION = "0.9.0.11307"
 
 
-files = glob.glob(f'archive/maps_offset_annotated/**/*.*', recursive=True)
+files = glob.glob(f'archive/offset_annotated/**/*.*', recursive=True)
 
 csv_file = open('out/signs.csv', 'w', newline='')
 writer = csv.writer(csv_file, delimiter='\t')
