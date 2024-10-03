@@ -3,12 +3,13 @@ import glob
 VERSION = "0.9.1.11753"
 
 # TARGET_STRING = b'\xb1\x02\x47\xaf'
-TARGET_STRING = "Nothing Urgent"
+TARGET_STRING = "threads"
 
-files = glob.glob(f'archive/pack/vanilla_extracted/{VERSION}/AbioticFactor/Content/Blueprints/Widgets/W_Inventory_HealthPanel.*', recursive=True)
+files = glob.glob(f'archive/pack/vanilla_extracted/{VERSION}/AbioticFactor/Content/**/*.*', recursive=True)
+files = [f.replace('\\', '/') for f in files]
 
 
-MODE = ('NORMAL', 'SPECIFIC', 'HEX')[1]
+MODE = ('NORMAL', 'SPECIFIC', 'HEX')[0]
 
 if MODE == 'NORMAL':
     for file in files:
@@ -19,7 +20,7 @@ if MODE == 'NORMAL':
     for file in files:
         with open(file, 'rb') as f:
             text = f.read().decode('ascii', errors='ignore')
-            if TARGET_STRING in text:
+            if TARGET_STRING.lower() in text.lower():
                 print(file)
 elif MODE == 'SPECIFIC':
     for file in files:
