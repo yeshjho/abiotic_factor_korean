@@ -174,7 +174,8 @@ def build_pak():
         pprint.pformat(keys_not_translated, indent=4),
         '',
         '# 영문 파일의 값과 번역본의 원문이 동일하지 않은 키 (키, 영문 파일 값, 번역본 원문)',
-        '[\n' + '\n'.join([f'  (\n    {repr(k)},\n    {repr(org)},\n    {repr(mis)}\n  ),' for k, org, mis in original_not_matching]) + '\n]'
+        '[\n' + '\n'.join([f'  (\n    {repr(k)},\n    {repr(org)},\n    {repr(mis)}\n  ),'
+                           for k, org, mis in original_not_matching]) + '\n]'
         ''
     ]
 
@@ -290,7 +291,8 @@ def default_uobject_override(file, data, pairs):
                 data[offset_to_use:offset_to_use + original_length_bytes] = overwrite_data
                 new_length_bytes = len(overwrite_data)
             else:
-                data, original_length_bytes, new_length_bytes = overwrite_fstring(data, offset_to_use, translated, False)
+                data, original_length_bytes, new_length_bytes = \
+                    overwrite_fstring(data, offset_to_use, translated, False)
             total_byte_difference_outside += new_length_bytes - original_length_bytes
             continue
 
@@ -339,7 +341,8 @@ def build_binary_overrides():
     files_no_fixes = []
 
     for file, pairs in pairs_per_file.items():
-        pairs = [(int(byte_offset), extra, original, inline_whitespace(translated)) for byte_offset, extra, original, translated in pairs]
+        pairs = [(int(byte_offset), extra, original, inline_whitespace(translated))
+                 for byte_offset, extra, original, translated in pairs]
         pairs.sort(key=lambda x: x[0])  # 오프셋 순으로 정렬
 
         with open(f'archive/pack/vanilla_extracted/{GAME_VERSION}/{file}', 'rb') as f:
@@ -398,11 +401,11 @@ def main():
     SKIP_BINARY_OVERRIDES = False
     SKIP_IMAGES = False
 
-    if os.path.exists(f'out/pakchunk0-Windows_P.pak'):
+    if os.path.exists('out/pakchunk0-Windows_P.pak'):
         os.remove('out/pakchunk0-Windows_P.pak')
-    if os.path.exists(f'out/pakchunk0-Windows_P.utoc'):
+    if os.path.exists('out/pakchunk0-Windows_P.utoc'):
         os.remove('out/pakchunk0-Windows_P.utoc')
-    if os.path.exists(f'out/pakchunk0-Windows_P.ucas'):
+    if os.path.exists('out/pakchunk0-Windows_P.ucas'):
         os.remove('out/pakchunk0-Windows_P.ucas')
 
     output = []
@@ -410,6 +413,19 @@ def main():
     output += build_io_store(SKIP_BINARY_OVERRIDES, SKIP_IMAGES)  # 필요없는 pak 파일을 생성하기 때문에 먼저 호출한 후 뒤에 pak 파일을 덮어쓴다
     if not SKIP_PAK:
         output += build_pak()
+
+    pak_out_dir = f'out/abiotic_korean_{GAME_VERSION}_{PATCH_VERSION}/AbioticFactor/Content/Paks'
+    shutil.rmtree(f'out/abiotic_korean_{GAME_VERSION}_{PATCH_VERSION}/', ignore_errors=True)
+    shutil.copytree('patch_template', f'out/abiotic_korean_{GAME_VERSION}_{PATCH_VERSION}')
+    if os.path.exists('out/pakchunk0-Windows_P.pak'):
+        shutil.move('out/pakchunk0-Windows_P.pak', f'{pak_out_dir}/pakchunk0-Windows_P.pak')
+    if os.path.exists('out/pakchunk0-Windows_P.utoc'):
+        shutil.move('out/pakchunk0-Windows_P.utoc', f'{pak_out_dir}/pakchunk0-Windows_P.utoc')
+    if os.path.exists('out/pakchunk0-Windows_P.ucas'):
+        shutil.move('out/pakchunk0-Windows_P.ucas', f'{pak_out_dir}/pakchunk0-Windows_P.ucas')
+    shutil.make_archive(f'out/abiotic_korean_{GAME_VERSION}_{PATCH_VERSION}',
+                        'zip',
+                        f'out/abiotic_korean_{GAME_VERSION}_{PATCH_VERSION}')
 
     with open(f'out/report-{PATCH_VERSION}.txt', 'w') as f:
         f.write('\n'.join(output))
