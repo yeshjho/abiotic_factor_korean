@@ -3,7 +3,7 @@ import glob
 VERSION = "0.9.1.11753"
 
 # TARGET_STRING = b'\xb1\x02\x47\xaf'
-TARGET_STRING = "threads"
+TARGET_STRING = "WORK IN PROGRESS"
 
 files = glob.glob(f'archive/pack/vanilla_extracted/{VERSION}/AbioticFactor/Content/**/*.*', recursive=True)
 files = [f.replace('\\', '/') for f in files]

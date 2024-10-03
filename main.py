@@ -107,27 +107,33 @@ def build_pak():
         print()
 
 
+    extra = []
     with (open(f'data/ko-{PATCH_VERSION}-extra.csv', newline='') as f):
         reader = csv.reader(f, delimiter='\t')
         for row in reader:
-            if len(row) != 3:
-                continue
+            extra.append(row)
+    extra.append(['6752A04747EF09B5E7C078AD8860A0EC', '{originaltext} | EARLY ACCESS',
+                  f'{{originaltext}} | EARLY ACCESS | 한글패치 v{PATCH_VERSION}'])
 
-            namespace_n_key, original, translated = row
-            split = namespace_n_key.split('/')
-            namespace = ''
-            if len(split) == 2:
-                namespace, key = split
-            else:
-                key = namespace_n_key
+    for row in extra:
+        if len(row) != 3:
+            continue
 
-            if namespace not in translated_file:
-                translated_file[namespace] = {}
-            translated_file[namespace][key] = inline_whitespace(translated) if translated else original
+        namespace_n_key, original, translated = row
+        split = namespace_n_key.split('/')
+        namespace = ''
+        if len(split) == 2:
+            namespace, key = split
+        else:
+            key = namespace_n_key
 
-            if namespace not in en_file:
-                en_file[namespace] = {}
-            en_file[namespace][key] = original
+        if namespace not in translated_file:
+            translated_file[namespace] = {}
+        translated_file[namespace][key] = inline_whitespace(translated) if translated else original
+
+        if namespace not in en_file:
+            en_file[namespace] = {}
+        en_file[namespace][key] = original
 
 
     with open(f'out/en-{PATCH_VERSION}.json', 'w') as f:
