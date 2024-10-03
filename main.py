@@ -36,7 +36,7 @@ data/image/[버전]/이미지+까지+경로
 
 
 GAME_VERSION = "0.9.1.11753"
-PATCH_VERSION = "1.0.0"
+PATCH_VERSION = "1.0.1"
 
 
 def visualize_whitespace(text: str):
