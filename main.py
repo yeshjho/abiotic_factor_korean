@@ -35,8 +35,8 @@ data/image/[버전]/이미지+까지+경로
 """
 
 
-GAME_VERSION = "0.9.1.11753"
-PATCH_VERSION = "1.0.1"
+GAME_VERSION = "0.9.2"
+PATCH_VERSION = "1.1.0"
 
 
 def visualize_whitespace(text: str):
@@ -113,7 +113,7 @@ def build_pak():
         for row in reader:
             extra.append(row)
     extra.append(['6752A04747EF09B5E7C078AD8860A0EC', '{originaltext} | EARLY ACCESS',
-                  f'{{originaltext}} | EARLY ACCESS | 한글패치 v{PATCH_VERSION}'])
+                  f'{{originaltext}} | EARLY ACCESS | 한국어 패치 v{PATCH_VERSION}'])
 
     for row in extra:
         if len(row) != 3:
@@ -235,7 +235,7 @@ def overwrite_fstring(data, offset, new_text, does_offset_points_size):
 
 def datatable_override(file, data, pairs):
     size_offset_map = {
-        'AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset': 0x2868
+        'AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset': 0x2C70
     }
 
     byte_difference = 0

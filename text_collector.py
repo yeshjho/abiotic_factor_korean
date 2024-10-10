@@ -4,7 +4,7 @@ import struct
 import csv
 import subprocess
 
-VERSION = '0.9.1.11753'
+VERSION = '0.9.2'
 
 
 def collect_compendium():
@@ -20,6 +20,9 @@ def collect_compendium():
 
         csv_file = open(f'out/DT_Compendium-{VERSION}.csv', 'w', newline='')
         writer = csv.writer(csv_file)
+
+        csv_file2 = open(f'out/DT_Compendium-{VERSION}_no_pos.csv', 'w', newline='')
+        writer2 = csv.writer(csv_file2)
 
         index = 0
         while True:
@@ -46,6 +49,7 @@ def collect_compendium():
             value = value_raw.decode('ascii' if is_value_ascii else 'utf-16')
 
             writer.writerow([value_pos, key, value.replace('\r', '\\r').replace('\n', '\\n')])
+            writer2.writerow([key, value.replace('\r', '\\r').replace('\n', '\\n')])
 
             index = value_pos + value_length_bytes
 
