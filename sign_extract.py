@@ -3,10 +3,10 @@ import json
 import csv
 import struct
 
-VERSION = "0.9.2"
+VERSION = "0.9.2.12106"
 
 
-files = glob.glob(f'archive/offset_annotated/**/*.*', recursive=True)
+files = glob.glob(f'archive/offset_annotated/AbioticFactor/Content/Maps/**/*.*', recursive=True)
 
 csv_file = open(f'out/signs_{VERSION}.csv', 'w', newline='')
 writer = csv.writer(csv_file, delimiter='\t')

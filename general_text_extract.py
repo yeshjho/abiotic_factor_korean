@@ -2,7 +2,7 @@ import re
 import glob
 import csv
 
-files = glob.glob(f'archive/offset_annotated/**/*.*', recursive=True)
+files = glob.glob(f'archive/offset_annotated/AbioticFactor/Content/Blueprints/**/*.*', recursive=True)
 
 csv_file = open('out/general_text_extracted.csv', 'w', newline='')
 writer = csv.writer(csv_file, delimiter='\t')
