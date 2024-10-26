@@ -13,3 +13,5 @@ tools/UE4-DDS-Tools-v0.6.1-Batch/src/_file_path_.txt
 tools/UE4-DDS-Tools-v0.6.1-Batch/exported/
 
 oo2core_9_win64.dll
+
+__pycache__/
