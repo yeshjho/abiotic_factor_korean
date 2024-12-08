@@ -35,8 +35,8 @@ data/image/[버전]/이미지+까지+경로
 """
 
 
-GAME_VERSION = "0.9.2.12333"
-PATCH_VERSION = "1.1.3"
+GAME_VERSION = "0.9.3.13049"
+PATCH_VERSION = "1.2.0"
 
 
 def visualize_whitespace(text: str):
@@ -235,7 +235,7 @@ def overwrite_fstring(data, offset, new_text, does_offset_points_size):
 
 def datatable_override(file, data, pairs):
     size_offset_map = {
-        'AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset': 0x2C70
+        'AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset': 0x2e60
     }
 
     byte_difference = 0
