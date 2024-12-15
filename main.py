@@ -36,7 +36,7 @@ data/image/[버전]/이미지+까지+경로
 
 
 GAME_VERSION = "0.9.3.13049"
-PATCH_VERSION = "1.2.0"
+PATCH_VERSION = "1.2.1"
 
 
 def visualize_whitespace(text: str):
@@ -108,7 +108,7 @@ def build_pak():
 
 
     extra = []
-    with (open(f'data/ko-{PATCH_VERSION}-extra.csv', newline='') as f):
+    with (open(f'data/ko-extra-{PATCH_VERSION}.csv', newline='') as f):
         reader = csv.reader(f, delimiter='\t')
         for row in reader:
             extra.append(row)

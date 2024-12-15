@@ -4,7 +4,7 @@ import struct
 import csv
 import subprocess
 
-VERSION = '0.9.2.12333'
+VERSION = '0.9.3.13049'
 
 
 def collect_compendium():

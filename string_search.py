@@ -1,9 +1,9 @@
 import glob
 
-VERSION = "0.9.1.11753"
+VERSION = "0.9.3.13049"
 
 # TARGET_STRING = b'\xb1\x02\x47\xaf'
-TARGET_STRING = "WORK IN PROGRESS"
+TARGET_STRING = "There are Royal Coins everywhere"
 
 files = glob.glob(f'archive/pack/vanilla_extracted/{VERSION}/AbioticFactor/Content/**/*.*', recursive=True)
 files = [f.replace('\\', '/') for f in files]
