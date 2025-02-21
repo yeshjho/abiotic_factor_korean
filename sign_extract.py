@@ -3,7 +3,7 @@ import json
 import csv
 import struct
 
-VERSION = "0.9.3.13049"
+VERSION = "0.10.0.15580"
 
 
 files = glob.glob(f'archive/offset_annotated/AbioticFactor/Content/Maps/**/*.*', recursive=True)

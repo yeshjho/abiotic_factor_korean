@@ -47,6 +47,15 @@ def inline_whitespace(text: str):
     return text.replace('\\n', '\n').replace('\\r', '\r').replace('\\t', '\t')
 
 
+def parse_offset(offset: str):
+    if offset.startswith('0x'):
+        return int(offset[2:], 16)
+    elif offset.endswith('h'):
+        return int(offset[:-1], 16)
+    else:
+        return int(offset)
+
+
 def build_pak():
     en_file = json.load(open(f'data/en-{GAME_VERSION}.json'))
 
@@ -347,7 +356,7 @@ def build_binary_overrides():
     files_no_fixes = []
 
     for file, pairs in pairs_per_file.items():
-        pairs = [(int(byte_offset), extra, original, inline_whitespace(translated))
+        pairs = [(parse_offset(byte_offset), extra, original, inline_whitespace(translated))
                  for byte_offset, extra, original, translated in pairs]
         pairs.sort(key=lambda x: x[0])  # 오프셋 순으로 정렬
 
