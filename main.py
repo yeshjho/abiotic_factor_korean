@@ -79,9 +79,10 @@ def build_pak():
                     (namespace_n_key, visualize_whitespace(en_file[namespace][key]), visualize_whitespace(original))
                 )
 
+            if namespace not in translated_file:
+                translated_file[namespace] = {}
+
             if translated:
-                if namespace not in translated_file:
-                    translated_file[namespace] = {}
                 translated_file[namespace][key] = inline_whitespace(translated)
             else:
                 keys_not_translated.append(namespace_n_key)
