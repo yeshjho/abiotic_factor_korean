@@ -52,6 +52,7 @@ def build_pak():
     keys_nonexistent_in_en = []
     keys_missing_in_ko = []
     keys_not_translated = []
+    keys_translated_identical = []
     original_not_matching = []
 
     translated_file = {}
@@ -73,6 +74,8 @@ def build_pak():
                 translated_file[namespace] = {}
 
             if translated:
+                if translated == original and original.isalpha():
+                    keys_translated_identical.append(namespace_n_key)
                 translated_file[namespace][key] = inline_whitespace(translated)
             else:
                 keys_not_translated.append(namespace_n_key)
@@ -100,6 +103,10 @@ def build_pak():
     if keys_not_translated:
         print('[경고] 다음 키들은 번역본이 없습니다. 원문이 출력됩니다.')
         print(keys_not_translated)
+        print()
+    if keys_translated_identical:
+        print('[경고] 다음 키들은 번역본이 원문과 동일합니다.')
+        print(keys_translated_identical)
         print()
     if original_not_matching:
         print('[경고] 다음 항목들은 영문 파일과 번역본의 원문에 차이가 있습니다.')
@@ -178,6 +185,9 @@ def build_pak():
         '',
         '# 번역이 되지 않은 키',
         pprint.pformat(keys_not_translated, indent=4),
+        '',
+        '# 번역본이 원문과 동일한 키',
+        pprint.pformat(keys_translated_identical, indent=4),
         '',
         '# 영문 파일의 값과 번역본의 원문이 동일하지 않은 키 (키, 영문 파일 값, 번역본 원문)',
         '[\n' + '\n'.join([f'  (\n    {repr(k)},\n    {repr(org)},\n    {repr(mis)}\n  ),'
