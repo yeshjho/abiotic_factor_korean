@@ -1,8 +1,5 @@
 import glob
-
-
-OLD_VERSION = "0.9.2.12333"
-NEW_VERSION = "0.9.3.13049"
+from common import *
 
 
 old_files = glob.glob(f'archive/pack/vanilla_extracted/{OLD_VERSION}/AbioticFactor/Content/**/*.*', recursive=True)

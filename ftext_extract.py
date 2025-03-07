@@ -1,9 +1,9 @@
 import glob
 import re
 import csv
+from common import *
 
 
-VERSION = "0.9.0.11307"
 
 
 files = glob.glob(f'archive/pack/vanilla_extracted_parsed/{VERSION}/AbioticFactor/Content/**/*.*', recursive=True)

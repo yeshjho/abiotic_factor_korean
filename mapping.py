@@ -1,5 +1,6 @@
 import os
 import shutil
+from common import *
 
 
 GAME_LOC = 'C:/Program Files (x86)/Steam/steamapps/common/AbioticFactor/AbioticFactor/Binaries/Win64'

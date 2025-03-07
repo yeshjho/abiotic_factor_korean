@@ -3,8 +3,7 @@ import shutil
 import struct
 import csv
 import subprocess
-
-VERSION = '0.10.0.15580'
+from common import *
 
 
 def collect_compendium():

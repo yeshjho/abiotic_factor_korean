@@ -8,6 +8,8 @@ import glob
 import pprint
 import bisect
 
+from common import *
+
 
 """
 # 영어 원문 파일
@@ -33,18 +35,6 @@ data/binary_override/[버전].csv
 # 이미지 덮어쓰는 파일
 data/image/[버전]/이미지+까지+경로
 """
-
-
-GAME_VERSION = "0.10.0.15580"
-PATCH_VERSION = "1.3.0"
-
-
-def visualize_whitespace(text: str):
-    return text.replace('\n', '\\n').replace('\r', '\\r').replace('\t', '\\t')
-
-
-def inline_whitespace(text: str):
-    return text.replace('\\n', '\n').replace('\\r', '\r').replace('\\t', '\t')
 
 
 def parse_offset(offset: str):
@@ -123,7 +113,7 @@ def build_pak():
         for row in reader:
             extra.append(row)
     extra.append(['6752A04747EF09B5E7C078AD8860A0EC', '{originaltext} | EARLY ACCESS',
-                  f'{{originaltext}} | EARLY ACCESS | 한국어 패치 v{PATCH_VERSION}'])
+                  f'{{originaltext}} | EARLY ACCESS | 한국어 패치 v{PATCH_VERSION} - 테스트 2'])
 
     for row in extra:
         if len(row) != 3:

@@ -1,9 +1,9 @@
 import os
 import subprocess
+from common import *
 
 
 run_pak = True
-VERSION = "0.9.1.11753"
 
 
 cwd = os.getcwd().replace('\\', '/')

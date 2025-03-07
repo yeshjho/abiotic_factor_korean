@@ -2,11 +2,10 @@ import glob
 import json
 import os
 import subprocess
+from common import *
 
 # export 형식 png로 바꿨더니 색이 뿌옇게 나와서 CUE4Parse로 이주
 """
-VERSION = "0.9.0.11307"
-
 cwd = os.getcwd().replace('\\', '/')
 
 

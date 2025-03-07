@@ -1,6 +1,7 @@
 import re
 import glob
 import csv
+from common import *
 
 files = glob.glob(f'archive/offset_annotated/AbioticFactor/Content/Blueprints/**/*.*', recursive=True)
 

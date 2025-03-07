@@ -1,7 +1,6 @@
 from glob import glob
 import json
-
-VERSION = "0.9.0.11307"
+from common import *
 
 
 files = glob(f'archive/pack/vanilla_extracted_parsed/{VERSION}/AbioticFactor/**/*.*', recursive=True)

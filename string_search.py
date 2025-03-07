@@ -1,11 +1,10 @@
 import glob
-
-VERSION = "0.9.3.13049"
+from common import *
 
 # TARGET_STRING = b'\xb1\x02\x47\xaf'
-TARGET_STRING = "There are Royal Coins everywhere"
+TARGET_STRING = "FUEL CRYOPOD"
 
-files = glob.glob(f'archive/pack/vanilla_extracted/{VERSION}/AbioticFactor/Content/**/*.*', recursive=True)
+files = glob.glob(f'archive/pack/vanilla_extracted/{VERSION}/AbioticFactor/Content/Maps/**/*.*', recursive=True)
 files = [f.replace('\\', '/') for f in files]
 
 

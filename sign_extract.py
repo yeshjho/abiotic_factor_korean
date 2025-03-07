@@ -2,6 +2,7 @@ import glob
 import json
 import csv
 import struct
+from common import *
 
 VERSION = "0.10.0.15580"
 
