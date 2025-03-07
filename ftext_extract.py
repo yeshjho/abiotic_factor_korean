@@ -4,8 +4,8 @@ import csv
 from common import *
 
 
-dir_prefix = f'archive/offset_annotated/'
-files = glob.glob(f'{dir_prefix}AbioticFactor/Content/Maps/**/*.*', recursive=True)
+dir_prefix = f'C:/Users/yeshj/Desktop/FModel/Output/Exports/'
+files = glob.glob(f'{dir_prefix}AbioticFactor/Content/Blueprints/DamageTypes/*.*', recursive=True)
 
 pat = re.compile(r"\"Namespace\": \"(.*)\",\s+\"Key\": \"([0-9A-F]+)\",\s+\"SourceString\": \"(.+)\",")
 writer = csv.writer(open(f'out/ftexts-{VERSION}.csv', 'w', newline=''), delimiter='\t')

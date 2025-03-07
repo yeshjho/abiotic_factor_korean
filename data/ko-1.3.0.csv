@@ -6368,9 +6368,9 @@ StringTable_Objects/liquid_laser	Laser	레이저
 StringTable_Objects/object_essence_leyak	Leyak Essence	레야크 정수
 StringTable_Objects/object_door_locked	Locked Door	잠긴 문
 StringTable_Objects/object_locker	Locker	락커
-StringTable_Objects/object_webbing_missingitem	Missing {item}	{item}이 없습니다
+StringTable_Objects/object_webbing_missingitem	Missing {item}	{item}|hpp(이,가) 없습니다
 StringTable_Objects/object_missingrequireditem	Missing required item	필요한 아이템이 없습니다
-StringTable_Objects/stove_missingitem	Missing required item.	필요한 아이템이 없습니다
+StringTable_Objects/stove_missingitem	Missing required item.	필요한 아이템이 없습니다.
 StringTable_Objects/liquid_molten	Molten Material	녹은 재료
 StringTable_Objects/fixit_kylie	Neural Transference Terminal	신경 전송 단말기
 StringTable_Objects/stove_nowatertoadd	No water to add.	넣을 물이 없습니다.
@@ -6784,7 +6784,7 @@ StringTable_Locations/fishingzone_lava	Molten Swirls	용암 소용돌이
 StringTable_Locations/fishingzone_portals	Portals	포탈
 StringTable_Locations/fishingzone_radwaste	Radioactive Waste	방사능 폐수
 StringTable_MenuText/chat_notice_characterremoved	has deleted their character.	이(가) 캐릭터를 삭제하였습니다.
-StringTable_MenuText/menu_compendium_fishlocations	Common Locations:	일반적인 위치:
+StringTable_MenuText/menu_compendium_fishlocations	Common Locations:	주로 발견되는 곳:
 StringTable_MenuText/menu_playerdata_delete	Delete Character Data	캐릭터 데이터 삭제
 StringTable_MenuText/menu_setting_difficulty	Difficulty	난이도
 StringTable_MenuText/menu_compendium_fish	FISH	물고기
@@ -7202,7 +7202,7 @@ Dialogue/D802C5BF47AB2DA1CC2C8FB8E3C06BFD_1E3C2DE000000000	This is a bouncy plac
 Dialogue/28D602924449773367F6B8B5EED11B40_1E3C2DE000000000	This was a wonderful place. [2.0]I'm scared, but I can't leave. Where would I go?	여긴 한때 아름다운 곳이었죠. [2.0]무섭지만 떠날 수도 없어요. 갈 곳도 없는걸요?
 Dialogue/42F645DF45D18885B24BC883FA204D2A_1E3C2DE000000000	Wait till the 7th Planetary Legion hears about this!	제 7 행성 연합군이 가만히 있지 않을 거예요!
 Dialogue/06567A9D4862265AFE8BE39C9946AAAB_1E3C2DE000000000	You escaped the Painted Planet! [2.5]Oh! You're not Space Queen Maxine! You don't look as fast either ... [8.0]Hmmm ... Well, anyway ...  Welcome to Royal Range! But I'm afraid you're in trouble - [14.5]Our home is ... [16.9]Excuse me, I feel strange. [19.3]Everything's changed here ... Once it was full of joy and laughter, then something terrible happened! [25.5]The Lamogi got sick ... somehow ... and now they're unbearable![30.9]They slaught -[31.6]Uh, they hurt my friends! [33.8]If you want to reach the Orbiting Oracle, you'll have to find a way past them! [38.5]You need seven Royal Crowns to open the way to Mighty Moon! But the Royal Crowns are ...[43.5]They're f- [44.6]They're sick! It was never like this before! [48.0]I don't know what's happening!	페인트 행성에서 탈출하셨군요! [2.5]앗! 당신은 우주 여왕 맥신이 아니네요! 그다지 빨라 보이지도 않고요... [8.0]음... 어쨌든... 로얄 레인지에 온 것을 환영해요! 그런데 문제가 생겼어요 [14.5]우리 고향이... [16.9]미안해요, 기분이 이상해서요. [19.3]이곳은 변했어요... 즐거움과 웃음이 끊이지 않았던 곳인데, 끔찍한 일이 일어나고 말았어요! [25.5]무슨 이유에선지... 람오기가 병에 걸리더니... 심술궂게 변했어요![30.9]놈들이 친구를 죽...[31.6]아니, 녀석들이 친구들을 다치게 했어요! [33.8]궤도의 예언자에 가기 위해서는 녀석들을 지나갈 방법을 찾아야 해요! [38.5]7개의 로얄 크라운을 모아서 위대한 달로 가는 길을 열어야 해요! 그런데 로얄 크라운이...[43.5]좆됐... [44.6]아파요! 이런 적은 처음인데! [48.0]대체 무슨 일이 벌어지고 있는 거죠?
-Dialogue/23102A664D4D1DA6ED5FA5B678389DAE_1E3C2DE000000000	You found all the Royal Crowns! You can fly back to space now! [4.2]I'm - I'm happy for you, and I'll see you again, if you ever come back. [11.3]But you should escape. As soon as you can. [15]Be safe, and good luck finding the Oracle!	로얄 크라운을 전부 찾았군요! 이제 우주로 돌아가실 수 있을 거에요! [4.2]잘됐네요. 기회가 된다면 다시 만나요. [11.3]하지만 최대한 빨리 탈출해야 해요. [15]조심하세요. 그리고 예언자를 찾길 바라요!
+Dialogue/23102A664D4D1DA6ED5FA5B678389DAE_1E3C2DE000000000	You found all the Royal Crowns! You can fly back to space now! [4.2]I'm - I'm happy for you, and I'll see you again, if you ever come back. [11.3]But you should escape. As soon as you can. [15]Be safe, and good luck finding the Oracle!	로얄 크라운을 전부 찾았군요! 이제 우주로 돌아가실 수 있을 거에요! [4.2]잘 됐네요. 기회가 된다면 다시 만나요. [11.3]하지만 최대한 빨리 탈출해야 해요. [15]조심하세요. 그리고 예언자를 찾길 바라요!
 Dialogue/4B59FB0240811EF77A4A00B1F06F8916_1E3C2DE000000000	You saw the Lamogi, didn't you? They're cruel and evil now. [4.5]It wasn't always like this, they just used to be ... pesky.	람오기를 보셨죠? 잔인하고 사악해져 버렸어요. [4.5]원래 이렇지 않았어요. 그냥... 성가신 정도였죠.
 Dialogue/0F7C09B04894747B4FA28EBCE2CDBBA5_1E3C2DE000000000	You're back again.	돌아왔군요.
 Dialogue/861490E44A0E1BFF71AAD89A1515174F_1E3C2DE000000000	You're getting closer to the Orbiting Oracle! But ... something's wrong with the Royal Crowns ... they're sick. [6.6]And I don't feel that great myself. [9.5]You need seven Crowns to get back to space! But be careful! [13.2]They do strange things to you!	궤도의 예언자에 가까워지고 있네요! 하지만... 로얄 크라운이 이상해요... 병들어 버렸어요. [6.6]저도 몸이 좋지 않아요. [9.5]일곱 개의 로얄 크라운을 찾아서 우주로 돌아가셔야 해요! 하지만 조심하세요! [13.2]무슨 일이 생길지 모르니까요!
@@ -8692,7 +8692,7 @@ StringTable_Inventory/trading_outofstock	OUT OF STOCK	매진
 StringTable_Inventory/soup_unknown	THEORETICAL SOUP	이론 단계의 수프
 StringTable_Inventory/trading_title	TRADING	거래
 StringTable_Inventory/trading_withname	with {0}	대상 : {0}
-DT_GameplaySettings/VRR_DisplayName	Variable High Framerate Mode	Variable High Framerate Mode
+DT_GameplaySettings/VRR_DisplayName	Variable High Framerate Mode	가변 고주사율 모드
 StringTable_Locations/vignette_shadowgate	Shadowgate	쉐도우게이트
 StringTable_Locations/sector_maggot	The Encroachment	침식지
 StringTable_Locations/sector_mines	The Mines	광산
@@ -8716,7 +8716,7 @@ StringTable_MenuText/menu_port	Port	포트
 StringTable_MenuText/menu_dedicatedserver_tooltip	Search for Dedicated Servers	데디케이티드 서버 검색
 StringTable_MenuText/menu_playerhosted_tooltip	Search for Player Hosted Servers	플레이어 호스팅 서버 검색
 StringTable_MenuText/menu_service_offline_title	Server Browser Offline	서버 브라우저 오프라인
-StringTable_MenuText/menu_filter_servername	Server Name	서버 이름
+StringTable_MenuText/menu_filter_servername	Server Name	Server Name
 StringTable_MenuText/menu_worldsave_upgrade	UPGRADE	업그레이드
 StringTable_MenuText/menu_service_offline_desc	"Unable to connect to the server browser service. Would you like to retry?
 
@@ -8729,16 +8729,16 @@ StringTable_Objects/object_tram_button_request	Tram Operation	트램 작동
 StringTable_Objects/button_watervalve	Waterway Valve	수로 밸브
 StringTable_Objects/object_zipline	Zipline	짚라인
 DT_BuffsDebuffs/Buff_AmmoPack_TooltipText_Apply	Increases weapon reload speed.	무기 재장전 속도 증가.
-StringTable_Errors/timezoneissue	Operating System Clock Issue	Operating System Clock Issue
+StringTable_Errors/timezoneissue	Operating System Clock Issue	운영체제 시간대 설정 문제
 StringTable_Errors/timezoneissue_desc	"We detected that your operating system time or timezone is not set to Automatic.
 
 Other scientists have reported receiving Einstein or Faraday error codes when trying to join a game if they have manually changed their clock time for their operation system.
 
-We recommend setting your operating system clock time to Automatic if you are experiencing this issue as it may help avoid this issue."	"We detected that your operating system time or timezone is not set to Automatic.
+We recommend setting your operating system clock time to Automatic if you are experiencing this issue as it may help avoid this issue."	"운영체제의 시간대 설정이 ""자동""으로 설정되지 않은 것이 감지되었습니다.
 
-Other scientists have reported receiving Einstein or Faraday error codes when trying to join a game if they have manually changed their clock time for their operation system.
+다른 과학자들로부터 시간대 설정을 수동으로 한 경우 다른 게임에 참가할 때 아인슈타인이나 페러데이 에러 코드가 뜨는 현상에 대한 보고가 있었습니다.
 
-We recommend setting your operating system clock time to Automatic if you are experiencing this issue as it may help avoid this issue."
+이러한 문제를 피하기 위해 운영체제의 시간대 설정을 ""자동""으로 설정하는 것을 추천드립니다."
 StringTable_Interactions/interact_glass_off	glass tint off	유리 선팅 끄기
 StringTable_Interactions/interact_glass_on	glass tint on	유리 선팅 켜기
 StringTable_Objects/damagetype_cold	Cold	냉기

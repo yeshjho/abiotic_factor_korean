@@ -486,7 +486,7 @@ AbioticFactor/Content/Maps/Facility.umap	11171333		GYM & POOL	체육실 & 수영
 AbioticFactor/Content/Maps/Facility.umap	11171466		DEFENSE SECTOR	방어 구역
 AbioticFactor/Content/Maps/Facility.umap	11171603		DEFENSE SECTOR	방어 구역
 AbioticFactor/Content/Maps/Facility.umap	11171740		REACTORS	반응로 구역
-AbioticFactor/Content/Maps/Facility.umap	11171871		SYNAPTIC LABS	시냅스 연구실
+AbioticFactor/Content/Maps/Facility.umap	11171871		SYNAPTIC LABS	시냅스 연구소
 AbioticFactor/Content/Maps/Facility.umap	11172007		DEFENSE SECTOR	방어 구역
 AbioticFactor/Content/Maps/Facility.umap	11172144		ROADWAY	진입로
 AbioticFactor/Content/Maps/Facility.umap	11172274		CLOUD REACTOR	구름 반응로
@@ -502,7 +502,7 @@ AbioticFactor/Content/Maps/Facility_Containment.umap	7085235		CURIE BLOCK	퀴리
 AbioticFactor/Content/Maps/Facility_Containment.umap	7085369		INNER WING	내부동
 AbioticFactor/Content/Maps/Facility_Containment.umap	7085502		HEAT EXCHANGE	열 교환
 AbioticFactor/Content/Maps/Facility_Containment.umap	7085638		REACTOR FLOW	반응로 유체관
-AbioticFactor/Content/Maps/Facility_Containment.umap	7085773		SYN. COOLANT	SYN. COOLANT
+AbioticFactor/Content/Maps/Facility_Containment.umap	7085773		SYN. COOLANT	시냅스 연구소 냉각수
 AbioticFactor/Content/Maps/Facility_Containment.umap	7085908		COOLING	냉각수
 AbioticFactor/Content/Maps/Facility_Containment.umap	7086038		EXCESS RUNOFF	과잉 유출액
 AbioticFactor/Content/Maps/Facility_Containment.umap	7086174		FLOW TRANSIT	유체 운반실
@@ -554,15 +554,15 @@ AbioticFactor/Content/Maps/Facility_DF_Central.umap	1246217		MIST REACTOR	안개
 AbioticFactor/Content/Maps/Facility_DF_Central.umap	1246352		GALE REACTOR	돌풍 반응로
 AbioticFactor/Content/Maps/Facility_DF_Central.umap	1246487		POWER RELAY	송전실
 AbioticFactor/Content/Maps/Facility_DF_Central.umap	1246621		REACTORS	반응로 구역
-AbioticFactor/Content/Maps/Facility_DF_Central.umap	1246752		WAYGATE CTRL	웨이게이트 제어소
+AbioticFactor/Content/Maps/Facility_DF_Central.umap	1246752		WAYGATE CTRL	웨이게이트 제어실
 AbioticFactor/Content/Maps/Facility_DF_Central.umap	1246887		TRAM STATION	트램 정거장
-AbioticFactor/Content/Maps/Facility_DF_Central.umap	1247022		WAYGATE CTRL	웨이게이트 제어소
+AbioticFactor/Content/Maps/Facility_DF_Central.umap	1247022		WAYGATE CTRL	웨이게이트 제어실
 AbioticFactor/Content/Maps/Facility_DF_Central.umap	1247157		POWER RELAY	송전실
 AbioticFactor/Content/Maps/Facility_DF_Central.umap	1247291		WAYGATE	웨이게이트
 AbioticFactor/Content/Maps/Facility_DF_Central.umap	1247421		POWER RELAY	송전실
 AbioticFactor/Content/Maps/Facility_DF_Central.umap	1247555		WG-INTRADOS	인트라도스 웨이게이트
 AbioticFactor/Content/Maps/Facility_DF_Central.umap	1247689		UPPER BRIDGE	고층 교량
-AbioticFactor/Content/Maps/Facility_DF_Central.umap	1247824		WAYGATE CTRL	웨이게이트 제어소
+AbioticFactor/Content/Maps/Facility_DF_Central.umap	1247824		WAYGATE CTRL	웨이게이트 제어실
 AbioticFactor/Content/Maps/Facility_DF_Labs.umap	6251631		DUSK REACTOR	황혼 반응로
 AbioticFactor/Content/Maps/Facility_DF_Labs.umap	6251766		DUSK REACTOR	황혼 반응로
 AbioticFactor/Content/Maps/Facility_DF_Overgrowth.umap	3164353		CONTROL ROOM	제어실
@@ -638,9 +638,9 @@ AbioticFactor/Content/Maps/Facility_Labs_Control.umap	2521639		CONTROL LIFT	관�
 AbioticFactor/Content/Maps/Facility_Labs_Control.umap	2521774		OBSERVATION	관측소
 AbioticFactor/Content/Maps/Facility_Labs_Control.umap	2521908		CONTROL LIFT	관제 승강기
 AbioticFactor/Content/Maps/Facility_Labs_Control.umap	2522043		OBSERVATION	관측소
-AbioticFactor/Content/Maps/Facility_MFFoundry.umap	868706		MANUFACTURING EAST	제조 구역 동쪽
+AbioticFactor/Content/Maps/Facility_MFFoundry.umap	868706		MANUFACTURING EAST	동부 제조 구역
 AbioticFactor/Content/Maps/Facility_MFFoundry.umap	868871		MANUFACTURING	제조 구역
-AbioticFactor/Content/Maps/Facility_MFFoundry.umap	869009		MANUFACTURING EAST	제조 구역 동쪽
+AbioticFactor/Content/Maps/Facility_MFFoundry.umap	869009		MANUFACTURING EAST	동부 제조 구역
 AbioticFactor/Content/Maps/Facility_MFFoundry.umap	869174		SYNCHROTRON	싱크로트론
 AbioticFactor/Content/Maps/Facility_MFMines.umap	5856913		SITE OFFICE	형장 사무실
 AbioticFactor/Content/Maps/Facility_MFMines.umap	5857337		CHECK-IN	체크인
@@ -908,10 +908,10 @@ AbioticFactor/Content/Maps/V_Intro.umap	9710229		KITCHEN	주방
 AbioticFactor/Content/Maps/V_Intro.umap	9710359		CRUCIS STUDY	크루시스 연구
 AbioticFactor/Content/Maps/V_Intro.umap	9710494		POWER SOURCE	동력원
 AbioticFactor/Content/Maps/V_Intro.umap	9710629		RESIDENCES	주거 구역
-AbioticFactor/Content/Maps/V_Intro.umap	9710762		SYNAPTIC LABS	시냅스 연구실
+AbioticFactor/Content/Maps/V_Intro.umap	9710762		SYNAPTIC LABS	시냅스 연구소
 AbioticFactor/Content/Maps/V_Intro.umap	9710898		ORDO ACCESS	오르도 접근로
 AbioticFactor/Content/Maps/V_Intro.umap	9711032		RESIDENCES	주거 구역
 AbioticFactor/Content/Maps/V_Intro.umap	9711165		ORDO STORAGE	오르도 보관실
-AbioticFactor/Content/Maps/V_Intro.umap	9711300		SYNAPTIC LABS	시냅스 연구실
+AbioticFactor/Content/Maps/V_Intro.umap	9711300		SYNAPTIC LABS	시냅스 연구소
 AbioticFactor/Content/Maps/Facility_DF_War.umap	7891827		MAINTENANCE	관리실
 AbioticFactor/Content/Maps/Facility_DF_War.umap	7891962		FUEL CRYOPOD	연료 냉각 장치
