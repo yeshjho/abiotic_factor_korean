@@ -4,9 +4,8 @@ import csv
 from common import *
 
 
-
-
-files = glob.glob(f'archive/pack/vanilla_extracted_parsed/{VERSION}/AbioticFactor/Content/**/*.*', recursive=True)
+dir_prefix = f'archive/offset_annotated/'
+files = glob.glob(f'{dir_prefix}AbioticFactor/Content/Maps/**/*.*', recursive=True)
 
 pat = re.compile(r"\"Namespace\": \"(.*)\",\s+\"Key\": \"([0-9A-F]+)\",\s+\"SourceString\": \"(.+)\",")
 writer = csv.writer(open(f'out/ftexts-{VERSION}.csv', 'w', newline=''), delimiter='\t')
@@ -37,7 +36,7 @@ for file in files:
 
             ns_n_key = f'{ns}/{key}' if ns else key
 
-            file_name = file.replace('\\', '/').replace(f'archive/pack/vanilla_extracted_parsed/{VERSION}/', '').replace('.json', '')
+            file_name = file.replace('\\', '/').replace(dir_prefix, '').replace('.json', '')
             rows.append((file_name, ns_n_key, text))
 
 rows = list(dict.fromkeys(rows))
