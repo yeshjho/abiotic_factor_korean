@@ -2,9 +2,9 @@ import glob
 from common import *
 
 # TARGET_STRING = b'\xb1\x02\x47\xaf'
-TARGET_STRING = "FUEL CRYOPOD"
+TARGET_STRING = input("Target String: ")
 
-files = glob.glob(f'archive/pack/vanilla_extracted/{VERSION}/AbioticFactor/Content/Maps/**/*.*', recursive=True)
+files = glob.glob(f'archive/pack/vanilla_extracted/{VERSION}/AbioticFactor/Content/**/*.*', recursive=True)
 files = [f.replace('\\', '/') for f in files]
 
 

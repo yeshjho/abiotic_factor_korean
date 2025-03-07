@@ -113,7 +113,7 @@ def build_pak():
         for row in reader:
             extra.append(row)
     extra.append(['6752A04747EF09B5E7C078AD8860A0EC', '{originaltext} | EARLY ACCESS',
-                  f'{{originaltext}} | EARLY ACCESS | 한국어 패치 v{PATCH_VERSION} - 테스트 2'])
+                  f'{{originaltext}} | EARLY ACCESS | 한국어 패치 v{PATCH_VERSION} - 테스트 3'])
 
     for row in extra:
         if len(row) != 3:

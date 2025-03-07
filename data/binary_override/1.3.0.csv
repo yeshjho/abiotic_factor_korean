@@ -60,7 +60,7 @@ AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	33818	GKWitch_K
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	34527	Offices_Title	Office Sector	사무 구역
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	34589	Offices_Subtitle	Administration and Management	행정 및 관리
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	34712	Offices_Sections_Index0_SectionText	The Office Sector is the GATE Cascade Research Facility's main center of administration, and comprises 12 levels, as well as several repurposed silos. Once used for storing gas, water and ore, these immense spaces now house key perforation research systems.	사무 구역은 GATE 캐스케이드 연구 시설의 주요 행정 구역이며, 12개 층과 재사용된 사일로로 구성되어 있다. 한때, 가스, 물, 광석 등을 저장하던 이 거대한 공간들은 이제 주요한 천공 연구 시스템을 수용하고 있다.
-AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	35097	Manufacturing_Title	Manufacturing West	제조 구역 서쪽
+AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	35097	Manufacturing_Title	Manufacturing West	서부 제조 구역
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	35170	Manufacturing_Subtitle	Engineering and Fabrication	공학 및 제작
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	35297	Manufacturing_Sections_Index0_SectionText	The industrial heart of the GATE Cascade Research Facility, the Manufacturing Sector is responsible for designing and engineering all research equipment and machinery for study within the facility - as well as fabricating technical and specialist tools for other GATE facilities.\r\n\r\nIt is here the facility's origins as a decommissioned lithium mine are most clearly visible.	GATE 캐스케이드 시설의 산업 중추인 제조 구역은, 시설 내 연구를 위한 모든 연구 장비 및 기계를 설계하고 제작한다. 또한 타 GATE 시설을 위해 특수한 도구를 제작하기도 한다.\r\n\r\n시설의 기반이 된 폐쇄된 리튬 광산이 가장 두드러지게 보이는 곳이기도 하다.
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	35791	Labs_Title	Cascade Laboratories	캐스케이드 연구소
@@ -83,7 +83,7 @@ AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	40615	Warehouse
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	40730	Warehouse_Sections_Index0_SectionText	Anteverse XXIII was assessed by TR investigators to have been a luxury furniture outlet. However this location, and the surrounding region, is believed to have suffered a systemic collapse following an aggressive viral outbreak. \r\n\r\nData is inconclusive, and GATE is currently investigating the source and cause of this calamity, including its precise location in space and time.	차원정찰대 조사관들은 안테버스 XXIII를 고급 가구 판매점으로 확인했다. 하지만, 해당 위치와 주변 지역을 살펴보았을 때, 위협적인 바이러스 발생 이후 시스템 붕괴를 겪은 것으로 여겨진다.\r\n\r\n현 정보로는 결론을 짓기에 부족하여, GATE는 이 사태의 근원과 원인, 그리고 시공간의 위치를 조사 중이다.
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	41234	NightRealm_Title	Anteverse XXXIX	안테버스 XXXIX
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	41301	NightRealm_Subtitle	The Night Realm	밤의 왕국
-AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	41413	NightRealm_Sections_Index0_SectionText	First brought to GATE's attention in 1991 following the initial appearance of IS-0059 in the Cascade Research Facility, little is known about the origins or purpose of Anteverse 39, or the precise nature of its connection to IS-0059.\r\n\r\nDue in part to the unpredictability of access, there have been no successful TransRecon or Gatekeeper expeditions to this location, and while ██ personnel are believed to have been translocated there by IS-0059, none have subsequently returned.\r\n\r\nIn the absence of substantive or reliable data, research remains speculative. Dr. Hammond suggests Anteverse 39 is not one but a series of 'psycho-nests', however his theories have received little support among other GATE staff. At this time, all of Dr. Hammond's proposed sleep studies have been denied.	1991년 캐스케이드 연구 시설에서 IS-0059가 처음 등장한 이후, GATE는 안테버스 39에 대해 관심을 가지게 되었다. 하지만 그 기원이나, 목적, 그리고 IS-0059와의 정확한 연관성에 대해서는 알려진 바가 없다.\r\n\r\n예측 불가능한 접근방식 때문에, 차원정찰대나 게이트키퍼의 원정은 성공한 적이 없으며, ██ 인원이 IS-0059로 전이되었을 것으로 추정되지만, 아직 돌아온 사람은 없다.\r\n\r\n확실하고 신뢰할 수 있는 데이터가 없는 상황에서, 연구 방식은 추측에만 머물러 있다. 해먼드 박사는 안테버스 39가 하나의 장소가 아닌, 일련의 '정신 둥지'라고 제안했으나, 이 이론은 GATE 직원 내에서 별다른 지지를 받지 못했다. 현재 해먼드 박사가 제안한 모든 수면 연구는 거절되었다.
+AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	41413	NightRealm_Sections_Index0_SectionText	First brought to GATE's attention in 1991 following the initial appearance of IS-0059 in the Cascade Research Facility, little is known about the origins or purpose of Anteverse 39, or the precise nature of its connection to IS-0059.\r\n\r\nDue in part to the unpredictability of access, there have been no successful TransRecon or Gatekeeper expeditions to this location, and while ██ personnel are believed to have been translocated there by IS-0059, none have subsequently returned.\r\n\r\nIn the absence of substantive or reliable data, research remains speculative. Dr. Hammond suggests Anteverse 39 is not one but a series of 'psycho-nests', however his theories have received little support among other GATE staff. At this time, all of Dr. Hammond's proposed sleep studies have been denied.	1991년 캐스케이드 연구 시설에서 IS-0059가 처음 등장한 이후, GATE는 안테버스 39에 대해 관심을 가지게 되었다. 하지만 그 기원이나, 목적, 그리고 IS-0059와의 정확한 연관성에 대해서는 알려진 바가 없다.\r\n\r\n예측 불가능한 접근 방식 때문에, 차원정찰대나 게이트키퍼의 원정은 성공한 적이 없으며, ██ 인원이 IS-0059로 전이되었을 것으로 추정되지만, 아직 돌아온 사람은 없다.\r\n\r\n확실하고 신뢰할 수 있는 데이터가 없는 상황에서, 연구 방식은 추측에만 머물러 있다. 해먼드 박사는 안테버스 39가 하나의 장소가 아닌, 일련의 '정신 둥지'라고 제안했으나, 이 이론은 GATE 직원 내에서 별다른 지지를 받지 못했다. 현재 해먼드 박사가 제안한 모든 수면 연구는 거절되었다.
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	43112	Salem_Title	Anteverse CLXVIII	안테버스 CLXVIII
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	43253	Salem_Sections_Index0_SectionText	Reliable data on Anteverse CLXVIII is currently limited, but it is believed to be an occupied, Earth-like world.\r\n\r\nA preliminary TransRecon expedition has been dispatched, led by Dr. Lenora Riggs. \r\n\r\nHer report is pending.	안테버스 CLXVIII에 대한 신뢰성 있는 자료는 현재 제한적이지만, 거주 가능한 지구형 세상으로 보여진다.\r\n\r\n레노라 리그 박사가 이끄는 선두 차원정찰대가 파견되었다. \r\n\r\n그녀의 보고는 아직이다.
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	43571	Salem_Sections_Index1_SectionText	While data on areas of Anteverse CLXVIII beyond the coastal settlement of Canaan remains limited, several things are now known about the location and its inhabitants.\r\n\r\nThe remote area is occupied by a small gnostic cult, whose creed holds that material reality was created as a cage for their sublime, immortal souls.\r\n\r\nWorshipping a piece of xenotechnology known as the Lodestone, which they believe may be the key to releasing them from their physical bondage, they follow a puritanical regime of self-abasement, regarding all others as tools of 'the enemy', who created their fetters, i.e. matter. \r\n\r\nHow this group came to settle in this remote region, whether it represents the past, present or future of this or some other Earth entirely, and how they came into possession of an artefact like the Lodestone is unknown.	안테버스 CLXVIII 연안 너머의 낙원 정착지에 관한 정보는 제한적이었지만, 최근 그 위치와 거주자들에 대한 정보를 확인했다. \r\n\r\n그 외딴 지역은 작은 영지주의 숭배자들이 점거하고 있으며, 그들은 물질적 현실이 그들의 숭고하고 불멸한 영혼을 가두기 위한 감옥으로 만들어졌다고 믿는다. \r\n\r\n외계 기술의 한 조각인 로드스톤을 숭배하며, 그것이 자신들을 물리적인 속박에서 해방시켜줄 열쇠라고 믿는다. 그들은 자기 비하적인 청교도적 규율을 따르며, 그것은 다른 모든 이를 적의 도구라 생각하게 하는데, 적이 족쇄, 즉 물질을 만들었다 생각한다. \r\n\r\n이 집단이 어떻게 이런 외딴 지역에 자리를 잡게 되었는지, 우리 지구의 과거, 현재, 미래의 모습인지, 아니면 완전히 다른 지구인지, 어떻게 로드스톤과 같은 외계 유물을 얻게된 건지는 알려지지 않았다.
@@ -236,9 +236,9 @@ AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	87875	ElectroPe
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	88404	ElectroPest_Sections_Index1_SectionText	The electric variant of IS-0173-A was a cybernetic experiment proposed by Dr. Abraham Stern. Although rapid progress was made towards a viable organism, Dr. Derek Manse ordered work suspended in favor of investigations into the creature's hypertrophied evolution. The program has been in hiatus since late 1992.	IS-0173-A의 전기 변종은 아브라함 스턴 박사가 제안한 사이버네틱 실험의 결과물입니다. 번식 가능한 유기체를 만들 수 있는 진전임에도 불구하고, 데릭 맨스 박사는 해당 생물체의 비대한 진화에 대한 조사를 위해 작업을 중단시켰습니다. 해당 프로그램은 1992년 말부터 중지된 상태입니다.
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	88825	ElectroPest_KillRequirementSection_SectionText	In conducting his cybernetic experimentations on IS-0173-A, Dr. Stern discovered something 'most remarkable'. \r\n\r\nWhile attempting micro-integration of a control system with the Pest's nervous system, he noted regular patterning in the gene-analogues for its insulative tissue. On closer investigation, Dr. Sterm claimed to have found 'what appears to be a bundle of coherent information' unrelated to expression of the tissue itself.\r\n\r\nIn his own words, Dr. Stern noted that 'it was as if someone had left a design note to themselves embedded in the structure of IS-0173-A's gene-analogues.'	스턴 박사는 IS-0173-A에 대한 실험을 진행하면서 '굉장히 대단한' 발견을 해냈습니다. \r\n\r\n페스트의 신경계와 제어 시스템의 정밀 병합을 시도하던 와중에, 박사는 절연 조직의 유전자 유사체에서 규칙적인 패턴을 발견했습니다. 더 자세한 조사에서 스턴 박사는 조직 자체의 발현과 관련이 없는 '논리적 정보의 묶음으로 보이는 것'을 발견했다고 주장했습니다.\r\n\r\n스턴 박사의 말에 따르면, 'IS-0173-A의 유전자 유사체의 구조에 누군가가 설계 노트를 남겨놓은 것 같았다'고 합니다.
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	89520	Pest_Volatile_Title	IS-0173-C	IS-0173-C
-AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	89584	Pest_Volatile_Subtitle	Volatile Pest	변덕스러운 페스트
-AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	89712	Pest_Volatile_Sections_Index0_SectionText	DESIGNATION: Crucis (AG/IN/EN)\r\n\r\nCONTAINMENT PROTOCOLS: Methods for approaching or studying IS-0173-C and other entities affected by 'volatile' phenomena are currently under investigation. The following provisional immurement standards are recommended:\r\n\r\n- Full viral and pathogenic biohazard containment, including corrosion resistant oxygen filters at all times.\r\n- Full body blast-resistant personal shielding.\r\n- Eyes and skin must remain covered at all times.\r\n- All storage sites should employ radiation shielding and grade 3 blast dampening.\r\n- All equipment must be irradiated in accordance with GISP decontamination procedures.	지정 등급: 크루시스 (AG/IN/EN)\r\n\r\n격리 절차: IS-0173-C를 포함하여 '변덕스러운' 현상에 영향을 받는 개체들에 접근하거나 연구하는 방법은 현재 조사 중입니다. 다음 임시 수용 기준을 준수할 것이 권장됩니다. \r\n\r\n- 부식 방지 산소필터가 포함된 전면적인 바이러스 및 병원성 생물학적 위험 격리 상시 유지.\r\n- 개인용 전신 방폭 장비 착용.\r\n- 눈과 피부를 가리는 보호구 상시 착용.\r\n- 모든 보관 장소에 대한 방사능 차폐 및 3등급 폭발 완충 장치 적용.\r\n- 모든 장비에 대한 GISP 오염 제거 절차에 따른 방사선 조사 실시.
-AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	90463	Pest_Volatile_KillRequirementSection_SectionText	A new and relatively under-studied phenomena, 'volatility' has been induced in a range of Anteverse II fauna: by exposing these creatures to high-strength sources of radiation for sustained periods, GATE researchers have triggered rapid and significant morphological change in endemic lifeforms.\r\n\r\nWhile the results have been unpredictable, there is no question that these entities are able to adapt to even the most hostile environments swiftly and successfully. The limits of this adaptive capacity are as yet unknown, but being actively explored by GATE staff.	'변덕성'은 현재 새롭게 연구 중인 현상으로, 다양한 안테버스 II의 생물군에서 관측되었습니다. GATE 연구진들은 이 토착 생물들을 장기간 강한 방사선에 노출시킴으로써, 급격하고 상당한 형태적 변화를 일으켰습니다. \r\n\r\n결과는 예측 불가능했지만, 이 개체들은 극한의 환경에도 빠르고 성공적으로 적응할 수 있음이 확실해 보입니다. 이러한 적응 능력의 한계는 아직 밝혀지지 않았으나, GATE 직원들의 적극적인 연구가 이루어지고 있습니다.
+AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	89584	Pest_Volatile_Subtitle	Volatile Pest	불안정한 페스트
+AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	89712	Pest_Volatile_Sections_Index0_SectionText	DESIGNATION: Crucis (AG/IN/EN)\r\n\r\nCONTAINMENT PROTOCOLS: Methods for approaching or studying IS-0173-C and other entities affected by 'volatile' phenomena are currently under investigation. The following provisional immurement standards are recommended:\r\n\r\n- Full viral and pathogenic biohazard containment, including corrosion resistant oxygen filters at all times.\r\n- Full body blast-resistant personal shielding.\r\n- Eyes and skin must remain covered at all times.\r\n- All storage sites should employ radiation shielding and grade 3 blast dampening.\r\n- All equipment must be irradiated in accordance with GISP decontamination procedures.	지정 등급: 크루시스 (AG/IN/EN)\r\n\r\n격리 절차: IS-0173-C를 포함하여 '불안정한' 현상에 영향을 받는 개체들에 접근하거나 연구하는 방법은 현재 조사 중입니다. 다음 임시 수용 기준을 준수할 것이 권장됩니다. \r\n\r\n- 부식 방지 산소필터가 포함된 전면적인 바이러스 및 병원성 생물학적 위험 격리 상시 유지.\r\n- 개인용 전신 방폭 장비 착용.\r\n- 눈과 피부를 가리는 보호구 상시 착용.\r\n- 모든 보관 장소에 대한 방사능 차폐 및 3등급 폭발 완충 장치 적용.\r\n- 모든 장비에 대한 GISP 오염 제거 절차에 따른 방사선 조사 실시.
+AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	90463	Pest_Volatile_KillRequirementSection_SectionText	A new and relatively under-studied phenomena, 'volatility' has been induced in a range of Anteverse II fauna: by exposing these creatures to high-strength sources of radiation for sustained periods, GATE researchers have triggered rapid and significant morphological change in endemic lifeforms.\r\n\r\nWhile the results have been unpredictable, there is no question that these entities are able to adapt to even the most hostile environments swiftly and successfully. The limits of this adaptive capacity are as yet unknown, but being actively explored by GATE staff.	불안정성'은 현재 새롭게 연구 중인 현상으로, 다양한 안테버스 II의 생물군에서 관측되었습니다. GATE 연구진들은 이 토착 생물들을 장기간 강한 방사선에 노출시킴으로써, 급격하고 상당한 형태적 변화를 일으켰습니다. \r\n\r\n결과는 예측 불가능했지만, 이 개체들은 극한의 환경에도 빠르고 성공적으로 적응할 수 있음이 확실해 보입니다. 이러한 적응 능력의 한계는 아직 밝혀지지 않았으나, GATE 직원들의 적극적인 연구가 이루어지고 있습니다.
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	91128	Perforations_Title	IS-0177	IS-0177
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	91189	Perforations_Subtitle	The Perforations	천공
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	91312	Perforations_Sections_Index0_SectionText	DESIGNATION: Jura (EX/GW/IN/IV/R)\r\n\r\nCONTAINMENT PROTOCOLS: None.\r\n\r\nFirst sighted in Jerusalem in 1 BCE, but theorized to have occurred much earlier, GATE has no current measures to counteract or contain these external perforation events.\r\n\r\nThese perforations have been shown to involve coherent data transfer, leading investigators to believe they are preliminary attempts to survey or possibly enter our world.\r\n\r\nSuspected purposes include communication, resource extraction, colonization.\r\n\r\nMore study required.	지정 등급: 유라 (EX/GW/IN/IV/R)\r\n\r\n격리 절차: 없음.\r\n\r\n처음 목격된 것은 기원전 1년 예루살렘이지만, 훨씬 이전부터 발생했을 것으로 추정되는 외부 천공 현상은, GATE도 대응하거나 격리할 방법이 없습니다.\r\n\r\n이러한 천공 현상들은 일관된 정보 전송을 수반하여, 조사관들로 하여금 이 현상이 우리 세계를 탐색하거나 진입하려는 예비 시도일 가능성이라 생각하게 만들었습니다.\r\n\r\n추정되는 목적은 다음과 같습니다. 대화, 자원 추출, 식민지화.\r\n\r\n추가 연구가 필요합니다.
@@ -268,7 +268,7 @@ AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	99721	ExorPikem
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	99783	ExorPikeman_Subtitle	Exor Cha	엑소르 차
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	99904	ExorPikeman_Sections_Index0_SectionText	DESIGNATION: Crucis (AG/GW/IN/R)\r\n\r\nCONTAINMENT PROTOCOLS: IS-0184-D must be kept in geomagnetically isolated conditions with permanent, fail-safe connection to back-up power. Full-spectrum perforation-suppressive measures must be observed at all times within 20 meters of the entity, as with the closely related IS-0184-B.\r\n\r\nFurther, IS-0184-D must not be permitted near sticks, branches, short poles, pikes, long-handled tools or any implement it might use as a weapon.	지정 등급: 크루시스 (AG/GW/IN/R)\r\n\r\n격리 절차: IS-0184-D는 지자기적으로 독립된 환경에서 영구적인 비상 보조 전원에 연결되어 있어야만 합니다. 근연종인 IS-0184-B와 마찬가지로, 개체 반경 20미터 이내에서는 전 대역 천공 억제 조치가 취해져야 합니다.\r\n\r\n또한, IS-0184-D가 무기로 사용될 수 있는 막대기, 나뭇가지, 장대, 창, 긴 손잡이가 달린 도구 등에 접근해서는 안 됩니다.
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	100505	Exor_Volatile_Title	IS-0184-E	IS-0184-E
-AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	100569	Exor_Volatile_Subtitle	Volatile Exor	변덕스러운 엑소르
+AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	100569	Exor_Volatile_Subtitle	Volatile Exor	불안정한 엑소르
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	100697	Exor_Volatile_Sections_Index0_SectionText	DESIGNATION: Crucis (AG/EN/IN)\r\n\r\nCONTAINMENT PROTOCOLS: Full assessment of IS-0184-E immurement protocols: pending.\r\n\r\nThe origin of 0184-E's transformation is presumed to lie in fungal pathogens spread from Anteverse II. These pathogens have themselves undergone significant mutation since prolifertating through Mist Reactor and beyond. Staff are advised that previous safety directives may be no longer be reliable. \r\n\r\nAny personnel interacting with 0184-E should wear complete radiological and fungal protection at all times. However, any encounter with IS-0184-E under anything less than full physical restraint, total sedation and/or complete discontinuation of life signs is highly discouraged to prevent irrevocable harm to researchers.\r\n\r\nProvisional storage protocols for this entity stipulate Grade 2 concrete-reinforced radiation shielding for all sites, and extremely small containment spaces to limit the entities achievable kinetic velocity.	지정 등급: 크루시스 (AG/EN/IN)\r\n\r\n격리 절차: IS-0184-E 수용 절차에 대한 전수 평가: 보류 중.\r\n\r\n0184-E의 변이는 안테버스 II에서 유래한 진균성 감염체에 의한 것으로 추정됩니다. 해당 감염체는 안개 반응로를 거쳐 확산하는 과정에서 상당한 돌연변이를 일으켰습니다. 따라서, 기존의 안전 지침이 유효하지 않을 수 있음을 숙지하십시오. \r\n\r\n0184-E와 접촉하는 모든 인원은 방사선 및 진균을 완전히 차단할 수 있는 보호 장비를 착용해야 합니다. 단, 연구원이 비가역적인 피해를 입을 수 있으므로, IS-0184-E를 다룰 때는 완전 구속, 전신 마취, 또는 생체 신호의 완전 정지 상태를 반드시 유지하여야 합니다. \r\n\r\n해당 개체의 임시 보관 절차에 따르면, 현장은 2등급 콘크리트 보강 방사선 차폐를 갖춰야 하며, 개체가 도달할 수 있는 운동 속도를 제한하기 위해 극도로 작은 격리 공간을 규정하고 있습니다.
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	101781	Anteverse2A_Title	Anteverse II A	안테버스 II A
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	101848	Anteverse2A_Subtitle	Far Garden	먼 정원
@@ -291,7 +291,7 @@ AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	106130	Nighttim
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	106322	WinterSprite_Title	IS-0307	IS-0307
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	106383	WinterSprite_Subtitle	The Game Sprite	게임 영혼
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	106504	WinterSprite_Sections_Index0_SectionText	DESIGNATION: Crucis (AG/IN)\r\n\r\nCONTAINMENT PROTOCOL: Containment procedures for IS-0307 are part of an ongoing investigation led by Dr. Stern.\r\n\r\nWhile entirely effective containment protocols are not yet established, electromagnetic insulation and Faraday shielding is known to retard IS-0307's movement. When entering or egressing from such containment spaces, full spectrum EM-jamming equipment must be in operation.\r\n\r\nAny digital device, mechanism or hardware known to contain IS-0307 must be kept at least 40ft from unhardened video or digital equipment. 	지정 등급: 크루시스 (AG/IN)\r\n\r\n격리 절차: IS-0307의 격리 절차는 스턴 박사의 주도하에 수립 중입니다.\r\n\r\n완전한 격리 절차는 수립되지 않았지만, 전자기적 절연과 페러데이 차폐막이 IS-0307의 움직임을 둔화시키는 것으로 보입니다. 해당 격리 공간에 출입할 때는 전 대역 전자기 간섭 장비가 가동되어 있어야 합니다.\r\n\r\nIS-0307이 담긴 모든 디지털 장치, 기기, 하드웨어는 차폐되지 않은 영상매체 또는 디지털 장비로부터 최소 40 피트 이상 떨어진 곳에 보관해야 합니다.
-AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	107166	WinterSprite_Sections_Index1_SectionText	IS-0307 is currently contained within IS-0083, which Dr. Stern has argued was infected via an osmotic electromagnetic process originating from IS-0235's near-proximity containment cell.\r\n\r\nAlthough research staff are not yet certain as to the precise mechanics of this colonization, IS-0307 appears to have begun its lifecycle in IS-0235, then mutated as it migrated to the nearby, unprotected digital environment of IS-0083.\r\n\r\nIn the process, IS-0307 has infected the game's control systems, propogating itself through several independent entities or, as Dr. Stern theorizes, a singular entity with multiple instances: the so-called Lamogi and Bombogi of 'Space Queen'. In so doing, it has increased the apparent aggression of these pre-existing game enemies, and eradicated much of the endemic 'life' of the simulation, the remainder of which appear to have also been compromised or otherwise influenced by the infection. The symptoms of this infection are of much interest and require further study.\r\n\r\nThe exact demarcation between IS-0235 and IS-0307 remains contentious.	IS-0307은 현재 IS-0083 내부에 격리되어 있으며, 이는 스턴 박사의 주장에 따르면 인접한 IS-0235의 격리실에서 전자기 삼투현상을 통해 감염되었다고 합니다.\r\n\r\n아직 이 식민화 과정의 정확한 메커니즘은 연구진들도 파악하지 못했습니다. 다만, IS-0307은 IS-0235에서 생명 주기를 시작한 뒤, 근처의 보호되지 않은 디지털 환경인 IS-0083으로 이동하며 변이를 일으킨 것으로 보고 있습니다.\r\n\r\n이 과정에서, IS-0307은 게임의 제어 시스템을 감염시켰으며, 다른 독립 개체들을 통해 증식하였습니다. 스턴 박사의 이론에 따르면, '스페이스 퀸'에 존재하는 적인 '람오기'와 '폭탄오기'라는 다중 인스턴스를 가진 단일 개체를 통해 증식한다고 설명합니다. 이런 방식으로 IS-0307은 기존 게임 내 적들의 공격성을 증가시켰으며, 시뮬레이션 내 고유 '생명체'의 대부분을 제거했습니다. 감염되지 않은 생명체들은 감염의 영향을 받았거나 취약해진 것으로 보입니다. 이러한 감염의 증상은 매우 흥미로운 연구 주제로써 추가적인 조사가 요구됩니다.\r\n\r\nIS-0235와 IS-0307의 정확한 경계는 여전히 논란의 대상입니다.
+AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	107166	WinterSprite_Sections_Index1_SectionText	IS-0307 is currently contained within IS-0083, which Dr. Stern has argued was infected via an osmotic electromagnetic process originating from IS-0235's near-proximity containment cell.\r\n\r\nAlthough research staff are not yet certain as to the precise mechanics of this colonization, IS-0307 appears to have begun its lifecycle in IS-0235, then mutated as it migrated to the nearby, unprotected digital environment of IS-0083.\r\n\r\nIn the process, IS-0307 has infected the game's control systems, propogating itself through several independent entities or, as Dr. Stern theorizes, a singular entity with multiple instances: the so-called Lamogi and Bombogi of 'Space Queen'. In so doing, it has increased the apparent aggression of these pre-existing game enemies, and eradicated much of the endemic 'life' of the simulation, the remainder of which appear to have also been compromised or otherwise influenced by the infection. The symptoms of this infection are of much interest and require further study.\r\n\r\nThe exact demarcation between IS-0235 and IS-0307 remains contentious.	IS-0307은 현재 IS-0083 내부에 격리되어 있으며, 이는 스턴 박사의 주장에 따르면 인접한 IS-0235의 격리실에서 전자기 삼투현상을 통해 감염되었다고 합니다.\r\n\r\n아직 이 식민화 과정의 정확한 메커니즘은 연구진들도 파악하지 못했습니다. 다만, IS-0307은 IS-0235에서 생명 주기를 시작한 뒤, 근처의 보호되지 않은 디지털 환경인 IS-0083으로 이동하며 변이를 일으킨 것으로 보고 있습니다.\r\n\r\n이 과정에서, IS-0307은 게임의 제어 시스템을 감염시켰으며, 다른 독립 개체들을 통해 증식하였습니다. 스턴 박사의 이론에 따르면, '스페이스 퀸'에 존재하는 적인 '람오기'와 '봄보기'라는 다중 인스턴스를 가진 단일 개체를 통해 증식한다고 설명합니다. 이런 방식으로 IS-0307은 기존 게임 내 적들의 공격성을 증가시켰으며, 시뮬레이션 내 고유 '생명체'의 대부분을 제거했습니다. 감염되지 않은 생명체들은 감염의 영향을 받았거나 취약해진 것으로 보입니다. 이러한 감염의 증상은 매우 흥미로운 연구 주제로써 추가적인 조사가 요구됩니다.\r\n\r\nIS-0235와 IS-0307의 정확한 경계는 여전히 논란의 대상입니다.
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	108370	SpaceLettuce_Title	IS-0333	IS-0333
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	108431	SpaceLettuce_Subtitle	Space Lettuce	우주 양상추
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	108543	SpaceLettuce_Sections_Index0_SectionText	DESIGNATION: Ordo (EN/HL)\r\n\r\nCONTAINMENT PROTOCOL: General Ordo storage protocols apply (see GISP).	지정 등급: 오르도 (EN/HL)\r\n\r\n격리 철차: 일반적인 오르도 보관 절차를 따릅니다. GISP를 참조하십시오.
@@ -425,7 +425,7 @@ AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	134622	Weather_
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	134727	Weather_Fog_Sections_Index0_SectionText	Generally contained to Flathill and its surrounding area, the 'fog' phenomenon associated with Anteverse I occasionally leaks into the GATE Cascade Research Facility via open primary perforations.\r\n\r\nWhile the fog phenomenon is a harmless water vapor with no known ill-effects on those exposed to it, GATE researchers believe it emanates directly from entities (e.g. IS-0064) and the atmospheres of all known locations in Anteverse I.\r\n\r\nDr. Stern has theorized a hypothetical "mass micro-perforation event" could cause large influxes of this fog. Therefore, the fog's presence in the Facility, even briefly, may indicate a more significant containment concern.\r\n\r\nAs a precaution, GATE staff have installed a rapid ventilation override switch in Silo 3, which can help resolve a Fog Event sooner, though it's not entirely clear what the effect might be on the surface.	일반적으로 플랫힐과 그 주변만 일어나는 일명 '안개' 현상은 안테버스 I과 연관되어 있으며, 가끔 GATE 캐스케이드 연구 시설의 주요 천공을 통해 유출되기도 한다.\r\n\r\n안개 현상은 인체에 해를 끼치지 않는 일반적인 수증기이며, GATE 연구원들은 개체(e.g. IS-0064)와 안테버스 I의 대기에서 직접 분출되고 있다고 생각한다.\r\n\r\n스턴 박사는 '대규모 미세 천공'이 라는 가설을 통해 안개가 유입된다는 이론을 제시했다. 따라서 시설 내의 안개가 짧은 시간이더라도 존재한다는 것은 중요한 격리 문제를 나타낼 수도 있다.\r\n\r\n예방 조치를 위해, GATE 직원은 사일로 3에 안개 현상을 빨리 해결하는데 도움을 주는 신속 환기 스위치를 설치했으나, 빠져나간 밖에서 일어날 영향은 알 수 없다.
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	135722	Weather_Rad_Title	Radiation Leak	방사선 유출
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	135789	Weather_Rad_Subtitle	Weather	기상 현상
-AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	135894	Weather_Rad_Sections_Index0_SectionText	Following the introduction of fusion reactor testing in the Plant sector of the Cascade Research Facility, GATE installed sensitive radiation detection apparatus, heavy duty air scrubbers and ventilation. Radiation 'events' are an ever-present health risk, but as long as the reactors remain stable, the danger remains low.\r\n\r\nRecent revisions to the Gate Immurement Security Protocols (GISP) noted, however, that on-site perforation experiments will elevate this risk considerably if not carefully controlled.\r\n\r\nAs such, GISP stipulates Level 2 hazard-wear and frequent iodine supplements for all staff working in the vicinity of these reactors. Internal GATE researchers are also exploring other ingestible substances to mitigate radiation effects.\r\n\r\nAs a precaution, GATE technicians have installed a Rapid Ventilation switch in the Manufacturing West Shipping Control Tower, which may help clear the effects of a Radiation Leak Event. It is the GATE Safety Committee's understanding that this would have a negligible impact on surface wildlife over the next 10 years.	캐스케이드 연구 시설 수력발전소 안에 핵융합 반응로 테스트가 도입된 이후, GATE는 정확한 방사선 측정 장비, 고성능 공기 정화기 및 환풍 시스템을 설치했다. 방사선 '사고'는 항상 일어날 수 있지만, 반응로가 정상인 이상 그 가능성은 낮다.\r\n\r\n그러나 최근 개정된 Gate 수용 보안 절차(GISP)에 따르면, 현장 천공 실험이 신중하게 제어되지 않을 경우 위험을 상당히 증가시킬 수 있다고 한다.\r\n\r\n따라서 GISP는 이러한 반응로 근처에서 작업하는 모든 직원에게 레벨 2 보호의 착용 및 잦은 요오드 정제 섭취를 규정하고있다. 또한 GATE 내부 연구원들은 방사선 영향을 완하하기 위한 다른 섭취물도 연구 중이다.\r\n\r\n예방 조치를 위해 GATE 기술자들은 신속 환기 스위치를 제조 구역 서쪽 물류 배송지 관제탑에 설치했다. 방사능 유출 시 영향을 제거하는데 도움을 줄 수 있을 것이다. GATE 안전 경영위원회는 해당 장치가 향후 10년 동안 야생 동물에게 미치는 영향이 미비하다고 판단한다.
+AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	135894	Weather_Rad_Sections_Index0_SectionText	Following the introduction of fusion reactor testing in the Plant sector of the Cascade Research Facility, GATE installed sensitive radiation detection apparatus, heavy duty air scrubbers and ventilation. Radiation 'events' are an ever-present health risk, but as long as the reactors remain stable, the danger remains low.\r\n\r\nRecent revisions to the Gate Immurement Security Protocols (GISP) noted, however, that on-site perforation experiments will elevate this risk considerably if not carefully controlled.\r\n\r\nAs such, GISP stipulates Level 2 hazard-wear and frequent iodine supplements for all staff working in the vicinity of these reactors. Internal GATE researchers are also exploring other ingestible substances to mitigate radiation effects.\r\n\r\nAs a precaution, GATE technicians have installed a Rapid Ventilation switch in the Manufacturing West Shipping Control Tower, which may help clear the effects of a Radiation Leak Event. It is the GATE Safety Committee's understanding that this would have a negligible impact on surface wildlife over the next 10 years.	캐스케이드 연구 시설 수력발전소 안에 핵융합 반응로 테스트가 도입된 이후, GATE는 정확한 방사선 측정 장비, 고성능 공기 정화기 및 환풍 시스템을 설치했다. 방사선 '사고'는 항상 일어날 수 있지만, 반응로가 정상인 이상 그 가능성은 낮다.\r\n\r\n그러나 최근 개정된 Gate 수용 보안 절차(GISP)에 따르면, 현장 천공 실험이 신중하게 제어되지 않을 경우 위험을 상당히 증가시킬 수 있다고 한다.\r\n\r\n따라서 GISP는 이러한 반응로 근처에서 작업하는 모든 직원에게 레벨 2 보호의 착용 및 잦은 요오드 정제 섭취를 규정하고있다. 또한 GATE 내부 연구원들은 방사선 영향을 완하하기 위한 다른 섭취물도 연구 중이다.\r\n\r\n예방 조치를 위해 GATE 기술자들은 신속 환기 스위치를 서부 제조 구역 물류 배송지 관제탑에 설치했다. 방사능 유출 시 영향을 제거하는데 도움을 줄 수 있을 것이다. GATE 안전 경영위원회는 해당 장치가 향후 10년 동안 야생 동물에게 미치는 영향이 미비하다고 판단한다.
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	137096	Weather_Spores_Title	Airborne Spores	포자 확산
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	137167	Weather_Spores_Subtitle	Weather	기상 현상
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	137275	Weather_Spores_Sections_Index0_SectionText	As research expands across biological destinations throughout the so-called "Anteverses", all staff are reminded to take effective precautions when visiting these locations.\r\n\r\nGISP-approved airtight maskings are required when conducting experiments or visiting any site with a risk of ingesting or inhaling spores, viral analogues or other contaminants that may cause respiratory issues, infection or death.\r\n\r\nReturning to a GATE facility without undertaking complete decontamination procedures is strictly prohibited. Contamination of GATE property due to negligence by TransRecon or other field personnel is grounds for dismissal.	생물학 연구를 위한 목적지가 이른바 "안테버스"의 전역에 걸쳐 확장됨에 따라, 모든 직원은 이러한 장소를 방문할 때 효과적인 예방 조치를 취해야 함을 상기하길 바란다.\r\n\r\n호흡기 문제, 감염, 사망을 유발할 수 있는 포자, 바이러스 유사체, 또는 기타 오염물질을 섭취하거나 흡입할 위험이 있는 현장에서 실험을 수행하거나 방문할 때는 GISP 승인 방독면을 필수로 착용해야 한다.\r\n\r\n완전한 소독 절차를 수행하지 않고 GATE 시설로 복귀하는 것은 엄격히 금지되어 있다. 차원정찰대 또는 기타 현장 인원의 부주의로 인해 GATE 자산이 오염될 경우 해고 사유가 된다.
@@ -462,7 +462,7 @@ AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	145618	MGT_Nyth
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	145739	MGT_Nyth_Sections_Index0_SectionText	Previously unknown to GATE, A299-E is an uncontained, gelatinous gastopodal creature believed to originate from Anteverse CCXCIX. Recent perforation events have resulted in the entity (and what is presumed to be a section of its hive) manifesting in the defunct mines region of the GATE Cascade Research Facility.\r\n\r\nThe immense organism appears disoriented. No communication has been attempted, nor close study, but reports note its obsessive pursuit of nourishment, and a curious protruberance from its frontal skull.	기존 GATE에게 알려지지 않았던 A299-E는 안테버스 CCXCIX에서 유래한 것으로 보이며, 현재 제어되지 않은 점성을 가진 복족류 생물이다. 최근 천공 현상으로 인해 해당 개체와 그 군락의 일부로 추정되는 것이 GATE 캐스케이드 연구소의 폐광 지역에 나타났다. \r\n\r\n이 거대한 유기체는 혼란스러운 상태로 보인다. 아직 의사소통이나 자세한 연구는 이루어지지 않았으나, 보고에 의하면 영양분을 얻는데 집착하며, 두개골 전면부에 특이한 돌출부를 가진다.
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	146387	MGT_Anteverse_Title	Anteverse CCXCIX	안테버스 CCXCIX
 AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	146458	MGT_Anteverse_Subtitle	The Encroachment	침식지
-AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	146574	MGT_Anteverse_Sections_Index0_SectionText	Known but unmapped, Anteverse CCXCIX has previously been visited by TransRecon Team 7, who judged the location hostile and requested more probe-based research before further expeditions could safely proceed.\r\n\r\nPopulated by a plethora of varied larval, troglyditic, cancrine, gelatinous, crystalline, fungal, vermicular and semi-sentient biomechanical entities, Anteverse CCXCIX is a realm to be 'treated with great respect.', in the words of Dr. Derek Manse.\r\n\r\nPrecisely how a significant piece of this realm ended up embedded in the depths of the GATE Cascade Research Facility remains unknown, and the threat of further regional replacements weighs heavily on the minds of many researchers.	안테버스 CCXCIX의 존재는 알려져 있으나, 지도는 만들어지지 않았다. 이전에 투입된 제7 차원탐사대는 해당 지역을 적대적인 환경으로 판단하고, 추후 안전한 탐사를 위해 추가적인 무인 탐사를 요청하였다.\r\n\r\n안테버스 CCXCIX에는 다양한 유충형, 동굴 서식형, 갑각형, 젤라틴형, 결정형, 균류형, 곤충형 및 반지성의 생체형 개체들이 서식하고 있으며, 데릭 맨스 박사의 표현을 빌리자면 '세심한 주의가 필요한' 영역이다.\r\n\r\n해당 영역의 상당 부분이 어떻게 GATE 캐스케이드 연구소의 심층부에 묻혀들게 되었는지는 불분명하며, 추가적인 지역 치환 현상이 발생할 가능성은 많은 연구자들에게 큰 우려를 불러일으키고 있다.
+AbioticFactor/Content/Blueprints/DataTables/DT_Compendium.uasset	146574	MGT_Anteverse_Sections_Index0_SectionText	Known but unmapped, Anteverse CCXCIX has previously been visited by TransRecon Team 7, who judged the location hostile and requested more probe-based research before further expeditions could safely proceed.\r\n\r\nPopulated by a plethora of varied larval, troglyditic, cancrine, gelatinous, crystalline, fungal, vermicular and semi-sentient biomechanical entities, Anteverse CCXCIX is a realm to be 'treated with great respect.', in the words of Dr. Derek Manse.\r\n\r\nPrecisely how a significant piece of this realm ended up embedded in the depths of the GATE Cascade Research Facility remains unknown, and the threat of further regional replacements weighs heavily on the minds of many researchers.	안테버스 CCXCIX의 존재는 알려져 있으나, 지도는 만들어지지 않았다. 이전에 투입된 제7 차원탐사대는 해당 지역을 적대적인 환경으로 판단하고, 추후 안전한 탐사를 위해 추가적인 무인 탐사를 요청하였다.\r\n\r\n안테버스 CCXCIX에는 다양한 유충형, 동굴 서식형, 갑각형, 젤라틴형, 결정형, 균류형, 곤충형 및 반지성의 생체형 개체들이 서식하고 있으며, 데릭 맨스 박사의 표현을 빌리자면 '세심한 주의가 필요한' 영역이다.\r\n\r\n해당 영역의 상당 부분이 어떻게 GATE 캐스케이드 연구소의 심층부에 묻혀들게 되었는지는 불분명하며, 추가적인 지역 치환 현상 발생할 가능성은 많은 연구자들에게 큰 우려를 불러일으키고 있다.
 AbioticFactor/Content/Blueprints/Widgets/Inventory/W_Inventory_CraftingArea.uasset	342E4h		BACK TO CRAFTING	제작으로 돌아가기
 AbioticFactor/Content/Blueprints/Environment/Special/MapPamphletBox_BP.uasset	7A56h		TAKE A MAP	지도 얻기
 AbioticFactor/Content/Blueprints/Items/Consumables/Item_Consumable_ParentBP.uasset	E178h	NO_FSTRING	596F75	202020
@@ -502,10 +502,10 @@ AbioticFactor/Content/Maps/Facility_Containment.umap	7085235		CURIE BLOCK	퀴리
 AbioticFactor/Content/Maps/Facility_Containment.umap	7085369		INNER WING	내부동
 AbioticFactor/Content/Maps/Facility_Containment.umap	7085502		HEAT EXCHANGE	열 교환
 AbioticFactor/Content/Maps/Facility_Containment.umap	7085638		REACTOR FLOW	반응로 유체관
-AbioticFactor/Content/Maps/Facility_Containment.umap	7085773		SYN. COOLANT	시냅스 연구실
-AbioticFactor/Content/Maps/Facility_Containment.umap	7085908		COOLING	냉각기
-AbioticFactor/Content/Maps/Facility_Containment.umap	7086038		EXCESS RUNOFF	EXCESS RUNOFF
-AbioticFactor/Content/Maps/Facility_Containment.umap	7086174		FLOW TRANSIT	유량 수송
+AbioticFactor/Content/Maps/Facility_Containment.umap	7085773		SYN. COOLANT	SYN. COOLANT
+AbioticFactor/Content/Maps/Facility_Containment.umap	7085908		COOLING	냉각수
+AbioticFactor/Content/Maps/Facility_Containment.umap	7086038		EXCESS RUNOFF	과잉 유출액
+AbioticFactor/Content/Maps/Facility_Containment.umap	7086174		FLOW TRANSIT	유체 운반실
 AbioticFactor/Content/Maps/Facility_Containment.umap	7086309		ASSESSMENT	평가실
 AbioticFactor/Content/Maps/Facility_Containment.umap	7086442		ASSESSMENT	평가실
 AbioticFactor/Content/Maps/Facility_Containment.umap	7086575		HOLDING	구류실
@@ -513,7 +513,7 @@ AbioticFactor/Content/Maps/Facility_Containment.umap	7086705		HOLDING	구류실
 AbioticFactor/Content/Maps/Facility_Containment.umap	7086835		HYDROPLANT	수력발전소
 AbioticFactor/Content/Maps/Facility_Containment.umap	7086968		OBSERVATION	관측소
 AbioticFactor/Content/Maps/Facility_Containment.umap	7087102		OBSERVATION	관측소
-AbioticFactor/Content/Maps/Facility_Dam.umap	8017528		LOWER ACCESS	저층 접근
+AbioticFactor/Content/Maps/Facility_Dam.umap	8017528		LOWER ACCESS	저층 접근로
 AbioticFactor/Content/Maps/Facility_Dam.umap	8017663		ELECTRICAL GRID	전력 계통
 AbioticFactor/Content/Maps/Facility_Dam.umap	8017801		RELEASE DRAIN	배수 활성화
 AbioticFactor/Content/Maps/Facility_Dam.umap	8017937		DOCKS	정박지
@@ -544,24 +544,24 @@ AbioticFactor/Content/Maps/Facility_Dam_Waterfall.umap	1524030		MAINFRAME	메인
 AbioticFactor/Content/Maps/Facility_Dam_Waterfall.umap	1524162		MAINFRAME	메인프레임
 AbioticFactor/Content/Maps/Facility_DarkFusion.umap	5557687		SYNAPTIC LABS	시냅스 연구소
 AbioticFactor/Content/Maps/Facility_DarkFusion.umap	5557823		DUSK REACTOR	황혼 반응로
-AbioticFactor/Content/Maps/Facility_DarkFusion.umap	5557958		CHECK-IN BELOW	CHECK-IN BELOW
+AbioticFactor/Content/Maps/Facility_DarkFusion.umap	5557958		CHECK-IN BELOW	체크인
 AbioticFactor/Content/Maps/Facility_DarkFusion.umap	5558095		TRAM STATION	트램 정거장
 AbioticFactor/Content/Maps/Facility_DarkFusion.umap	5558230		CLOUD REACTOR	구름 반응로
-AbioticFactor/Content/Maps/Facility_DarkFusion.umap	5558366		OBSERVATION	관측소
-AbioticFactor/Content/Maps/Facility_DarkFusion.umap	5558500		OBSERVATION	관측소
-AbioticFactor/Content/Maps/Facility_DarkFusion.umap	5558634		OBSERVATION	관측소
+AbioticFactor/Content/Maps/Facility_DarkFusion.umap	5558366		OBSERVATION	관측실
+AbioticFactor/Content/Maps/Facility_DarkFusion.umap	5558500		OBSERVATION	관측실
+AbioticFactor/Content/Maps/Facility_DarkFusion.umap	5558634		OBSERVATION	관측실
 AbioticFactor/Content/Maps/Facility_DF_Central.umap	1246217		MIST REACTOR	안개 반응로
 AbioticFactor/Content/Maps/Facility_DF_Central.umap	1246352		GALE REACTOR	돌풍 반응로
-AbioticFactor/Content/Maps/Facility_DF_Central.umap	1246487		POWER RELAY	POWER RELAY
+AbioticFactor/Content/Maps/Facility_DF_Central.umap	1246487		POWER RELAY	송전실
 AbioticFactor/Content/Maps/Facility_DF_Central.umap	1246621		REACTORS	반응로 구역
 AbioticFactor/Content/Maps/Facility_DF_Central.umap	1246752		WAYGATE CTRL	웨이게이트 제어소
 AbioticFactor/Content/Maps/Facility_DF_Central.umap	1246887		TRAM STATION	트램 정거장
 AbioticFactor/Content/Maps/Facility_DF_Central.umap	1247022		WAYGATE CTRL	웨이게이트 제어소
-AbioticFactor/Content/Maps/Facility_DF_Central.umap	1247157		POWER RELAY	POWER RELAY
+AbioticFactor/Content/Maps/Facility_DF_Central.umap	1247157		POWER RELAY	송전실
 AbioticFactor/Content/Maps/Facility_DF_Central.umap	1247291		WAYGATE	웨이게이트
-AbioticFactor/Content/Maps/Facility_DF_Central.umap	1247421		POWER RELAY	POWER RELAY
+AbioticFactor/Content/Maps/Facility_DF_Central.umap	1247421		POWER RELAY	송전실
 AbioticFactor/Content/Maps/Facility_DF_Central.umap	1247555		WG-INTRADOS	인트라도스 웨이게이트
-AbioticFactor/Content/Maps/Facility_DF_Central.umap	1247689		UPPER BRIDGE	UPPER BRIDGE
+AbioticFactor/Content/Maps/Facility_DF_Central.umap	1247689		UPPER BRIDGE	고층 교량
 AbioticFactor/Content/Maps/Facility_DF_Central.umap	1247824		WAYGATE CTRL	웨이게이트 제어소
 AbioticFactor/Content/Maps/Facility_DF_Labs.umap	6251631		DUSK REACTOR	황혼 반응로
 AbioticFactor/Content/Maps/Facility_DF_Labs.umap	6251766		DUSK REACTOR	황혼 반응로
@@ -573,21 +573,21 @@ AbioticFactor/Content/Maps/Facility_DF_Overgrowth.umap	3164884		TURBINE 01	터�
 AbioticFactor/Content/Maps/Facility_DF_Overgrowth.umap	3165017		RECEPTION	접수처
 AbioticFactor/Content/Maps/Facility_DF_Overgrowth.umap	3165149		CONTROL ROOM	제어실
 AbioticFactor/Content/Maps/Facility_DF_Overgrowth.umap	3165284		TURBINE 02	터빈 02
-AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5445316		TOPSIDE ACCESS	TOPSIDE ACCESS
+AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5445316		TOPSIDE ACCESS	상층부 접근로
 AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5445453		TRAM STATION	트램 정거장
 AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5445588		REACTOR ENTRY	반응로 입구
 AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5445724		REACTOR ENTRY	반응로 입구
 AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5445860		TRAM STATION	트램 정거장
 AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5445995		TRAM STATION	트램 정거장
-AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5446130		LOWER ACCESS	저층 접근
-AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5446265		UPPER ACCESS	고층 접근
+AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5446130		LOWER ACCESS	저층 접근로
+AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5446265		UPPER ACCESS	고층 접근로
 AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5446400		REACTOR ENTRY	반응로 입구
 AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5446536		REACTOR ENTRY	반응로 입구
 AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5446672		TRAM STATION	트램 정거장
 AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5446807		REACTOR ENTRY	반응로 입구
 AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5446943		REACTOR ENTRY	반응로 입구
 AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5447079		REACTOR ENTRY	반응로 입구
-AbioticFactor/Content/Maps/Facility_DF_War.umap	7892098		DEPLETED FUEL	DEPLETED FUEL
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7892098		DEPLETED FUEL	폐기 연료 보관고
 AbioticFactor/Content/Maps/Facility_DF_War.umap	7892235		LOWER OFFICES	저층 사무 구역
 AbioticFactor/Content/Maps/Facility_DF_War.umap	7892371		GALE REACTOR	돌풍 반응로
 AbioticFactor/Content/Maps/Facility_DF_War.umap	7892506		GALE REACTOR	돌풍 반응로
@@ -598,10 +598,10 @@ AbioticFactor/Content/Maps/Facility_DF_War.umap	7893046		GALE REACTOR	돌풍 반
 AbioticFactor/Content/Maps/Facility_DF_War.umap	7893181		GALE REACTOR	돌풍 반응로
 AbioticFactor/Content/Maps/Facility_DF_War.umap	7893316		TRAM STATION	트램 정거장
 AbioticFactor/Content/Maps/Facility_DF_War.umap	7893451		GALE REACTOR	돌풍 반응로
-AbioticFactor/Content/Maps/Facility_DF_War.umap	7893586		LAB/ FUEL CRYO	LAB/ FUEL CRYO
-AbioticFactor/Content/Maps/Facility_DF_War.umap	7893723		DEPLETED FUEL	DEPLETED FUEL
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7893586		LAB/ FUEL CRYO	연구실/연료 냉동고
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7893723		DEPLETED FUEL	폐기 연료 보관고
 AbioticFactor/Content/Maps/Facility_DF_War.umap	7893860		LOUNGE	라운지
-AbioticFactor/Content/Maps/Facility_DF_War.umap	7893989		LAB/ FUEL CRYO	LAB/ FUEL CRYO
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7893989		LAB/ FUEL CRYO	연구실/연료 냉동고
 AbioticFactor/Content/Maps/Facility_DF_War.umap	7894126		GALE REACTOR	돌풍 반응로
 AbioticFactor/Content/Maps/Facility_DF_War.umap	7894261		GALE REACTOR	돌풍 반응로
 AbioticFactor/Content/Maps/Facility_DF_War.umap	7894396		MAIN LOBBY	메인 로비
@@ -692,7 +692,7 @@ AbioticFactor/Content/Maps/Facility_MFWest.umap	8029163		ALLOY HANDLING	합금 �
 AbioticFactor/Content/Maps/Facility_MFWest.umap	8029300		INSPECTION	검사실
 AbioticFactor/Content/Maps/Facility_MFWest.umap	8029433		LOT OVERSIGHT	구역 관리소
 AbioticFactor/Content/Maps/Facility_MFWest.umap	8029569		ROADWAY	진입로
-AbioticFactor/Content/Maps/Facility_MFWest.umap	8029699		TRAM ACCESS	트램 접근
+AbioticFactor/Content/Maps/Facility_MFWest.umap	8029699		TRAM ACCESS	트램 접근로
 AbioticFactor/Content/Maps/Facility_MFWest.umap	8029833		ROADWAY	진입로
 AbioticFactor/Content/Maps/Facility_MFWest.umap	8029963		CONTROL TOWER	관제탑
 AbioticFactor/Content/Maps/Facility_MFWest.umap	8030099		FLOW CONTROL	유량 제어
@@ -702,7 +702,7 @@ AbioticFactor/Content/Maps/Facility_MFWest.umap	8030500		TRAM STATION	트램 정
 AbioticFactor/Content/Maps/Facility_MFWest.umap	8030635		LOT OVERSIGHT	구역 관리소
 AbioticFactor/Content/Maps/Facility_MFWest.umap	8030771		FLOW CONTROL	유량 제어
 AbioticFactor/Content/Maps/Facility_MFWest.umap	8030908		SHIPPING	물류 배송지
-AbioticFactor/Content/Maps/Facility_MFWest.umap	8031063		UPPER SHIPPING	고층 접근
+AbioticFactor/Content/Maps/Facility_MFWest.umap	8031063		UPPER SHIPPING	고층 접근로
 AbioticFactor/Content/Maps/Facility_MFWest.umap	8031200		MINE ENTRANCE B	광산 입구 B
 AbioticFactor/Content/Maps/Facility_MFWest.umap	8031338		MAPPING CENTER	지도 제작 센터
 AbioticFactor/Content/Maps/Facility_MFWest.umap	8031475		MAPPING CENTER	지도 제작 센터
@@ -713,7 +713,7 @@ AbioticFactor/Content/Maps/Facility_MFWest.umap	8032022		CHECK-IN	체크인
 AbioticFactor/Content/Maps/Facility_MFWest.umap	8032153		SHIPPING	물류 배송지
 AbioticFactor/Content/Maps/Facility_MFWest.umap	8032284		GARAGE	차고
 AbioticFactor/Content/Maps/Facility_Office1.umap	5018685		SERVER ROOM O1	서버실 01
-AbioticFactor/Content/Maps/Facility_Office1.umap	5018822		FLOW TRANSIT	유량 수송
+AbioticFactor/Content/Maps/Facility_Office1.umap	5018822		FLOW TRANSIT	유체 운반실
 AbioticFactor/Content/Maps/Facility_Office1.umap	5018957		SECURITY OFFICE	보안 초소
 AbioticFactor/Content/Maps/Facility_Office1.umap	5019095		GYM & POOL	체육실 & 수영장
 AbioticFactor/Content/Maps/Facility_Office1.umap	5019228		LEVEL 2	2층
@@ -730,9 +730,9 @@ AbioticFactor/Content/Maps/Facility_Office1.umap	5020557		SERVER ROOM 01	서버�
 AbioticFactor/Content/Maps/Facility_Office1.umap	5020694		OFFICE SECTOR	사무 구역
 AbioticFactor/Content/Maps/Facility_Office1.umap	5020830		CAFETERIA	구내식당
 AbioticFactor/Content/Maps/Facility_Office1.umap	5020962		MANUFACTURING	제조 구역
-AbioticFactor/Content/Maps/Facility_Office1.umap	5021098		LOWER ACCESS	저층 접근
+AbioticFactor/Content/Maps/Facility_Office1.umap	5021098		LOWER ACCESS	저층 접근로
 AbioticFactor/Content/Maps/Facility_Office1.umap	5021233		MANUFACTURING	제조 구역
-AbioticFactor/Content/Maps/Facility_Office1.umap	5021369		LIFT ACCESS	승강기 접근
+AbioticFactor/Content/Maps/Facility_Office1.umap	5021369		LIFT ACCESS	승강기 접근로
 AbioticFactor/Content/Maps/Facility_Office1.umap	5021503		TRAM PLAZA	트램 광장
 AbioticFactor/Content/Maps/Facility_Office1.umap	5021636		PUBLIC TERMINAL	공공 터미널
 AbioticFactor/Content/Maps/Facility_Office1.umap	5021774		LEVEL 2	2층
@@ -764,20 +764,20 @@ AbioticFactor/Content/Maps/Facility_Office2.umap	5992823		GYM & POOL	체육실 &
 AbioticFactor/Content/Maps/Facility_Office2.umap	5992956		DATA FARM	데이터 저장소
 AbioticFactor/Content/Maps/Facility_Office2.umap	5993088		EXEC. OFFICES	임원 사무실
 AbioticFactor/Content/Maps/Facility_Office2.umap	5993224		LEVEL 3 STAIRS	3층 계단
-AbioticFactor/Content/Maps/Facility_Office2.umap	5993361		SILO 3 ACCESS	사일로 3 접근
+AbioticFactor/Content/Maps/Facility_Office2.umap	5993361		SILO 3 ACCESS	사일로 3 접근로
 AbioticFactor/Content/Maps/Facility_Office2.umap	5993497		EXEC. OFFICES	임원 사무실
 AbioticFactor/Content/Maps/Facility_Office2.umap	5993633		STORAGE	창고
 AbioticFactor/Content/Maps/Facility_Office2.umap	5993763		TRAM STATION	트램 정거장
-AbioticFactor/Content/Maps/Facility_Office2.umap	5993898		SILO 3 ACCESS	사일로 3 접근
+AbioticFactor/Content/Maps/Facility_Office2.umap	5993898		SILO 3 ACCESS	사일로 3 접근로
 AbioticFactor/Content/Maps/Facility_Office2.umap	5994034		TRAM STATION	트램 정거장
 AbioticFactor/Content/Maps/Facility_Office2.umap	5994169		KITCHEN	주방
 AbioticFactor/Content/Maps/Facility_Office2.umap	5994299		L1 TRAM PLAZA	1층 트램 광장
 AbioticFactor/Content/Maps/Facility_Office2.umap	5994435		BIO LAB D	생물학 연구실 D
 AbioticFactor/Content/Maps/Facility_Office2.umap	5994567		RECEPTION	접수처
-AbioticFactor/Content/Maps/Facility_Office3.umap	6667919		LIFT ACCESS	승강기 접근
+AbioticFactor/Content/Maps/Facility_Office3.umap	6667919		LIFT ACCESS	승강기 접근로
 AbioticFactor/Content/Maps/Facility_Office3.umap	6668053		LEVEL 2	2층
 AbioticFactor/Content/Maps/Facility_Office3.umap	6668183		CHECK-IN	체크인
-AbioticFactor/Content/Maps/Facility_Office3.umap	6668314		SILO 2 ACCESS	사일로 3 접근
+AbioticFactor/Content/Maps/Facility_Office3.umap	6668314		SILO 2 ACCESS	사일로 3 접근로
 AbioticFactor/Content/Maps/Facility_Office3.umap	6668450		LEVEL 2 LIFT	2층 승강기
 AbioticFactor/Content/Maps/Facility_Office3.umap	6668585		ANALYSIS OFFICE	분석실
 AbioticFactor/Content/Maps/Facility_Office3.umap	6668723		BREAK ROOM	휴게실
@@ -792,22 +792,22 @@ AbioticFactor/Content/Maps/Facility_Office3.umap	6669796		SILO 2 LOUNGE	사일�
 AbioticFactor/Content/Maps/Facility_Office3.umap	6669932		EXEC. OFFICES	임원 사무실
 AbioticFactor/Content/Maps/Facility_Office3.umap	6670068		L2 / L3 JUNCTION	2층 / 3층 교차로
 AbioticFactor/Content/Maps/Facility_Office3.umap	6670207		SILO 2	사일로 2
-AbioticFactor/Content/Maps/Facility_Office3.umap	6670336		LEVEL 3 ACCESS	3층 접근
+AbioticFactor/Content/Maps/Facility_Office3.umap	6670336		LEVEL 3 ACCESS	3층 접근로
 AbioticFactor/Content/Maps/Facility_Office3.umap	6670473		LEVEL 2	2층
 AbioticFactor/Content/Maps/Facility_Office3.umap	6670603		TRUCK TUNNEL D	트럭 터널 D
-AbioticFactor/Content/Maps/Facility_Office3.umap	6670740		LIFT ACCESS	승강기 접근
+AbioticFactor/Content/Maps/Facility_Office3.umap	6670740		LIFT ACCESS	승강기 접근로
 AbioticFactor/Content/Maps/Facility_Office3.umap	6670874		EXEC. RESTROOM	임원 화장실
 AbioticFactor/Content/Maps/Facility_Office3.umap	6671011		EXEC. RESTROOM	임원 화장실
 AbioticFactor/Content/Maps/Facility_Office3.umap	6671148		BOARDROOM	회의실
 AbioticFactor/Content/Maps/Facility_Office3.umap	6671280		CHECK-IN	체크인
 AbioticFactor/Content/Maps/Facility_Office3.umap	6671411		PHYSICS LAB D	물리학 연구실 D
 AbioticFactor/Content/Maps/Facility_Office4.umap	1923630		MANUFACTURING	제조 구역
-AbioticFactor/Content/Maps/Facility_Office4.umap	1923766		SILO 2 ACCESS	사일로 3 접근
-AbioticFactor/Content/Maps/Facility_Office4.umap	1923902		LIFT ACCESS	승강기 접근
-AbioticFactor/Content/Maps/Facility_Office4.umap	1924036		SILO 2 ACCESS	사일로 3 접근
+AbioticFactor/Content/Maps/Facility_Office4.umap	1923766		SILO 2 ACCESS	사일로 3 접근로
+AbioticFactor/Content/Maps/Facility_Office4.umap	1923902		LIFT ACCESS	승강기 접근로
+AbioticFactor/Content/Maps/Facility_Office4.umap	1924036		SILO 2 ACCESS	사일로 3 접근로
 AbioticFactor/Content/Maps/Facility_Office4.umap	1924172		RECEPTION	접수처
 AbioticFactor/Content/Maps/Facility_Office4.umap	1924304		SECURITY	보안
-AbioticFactor/Content/Maps/Facility_Office4.umap	1924435		LIFT ACCESS	승강기 접근
+AbioticFactor/Content/Maps/Facility_Office4.umap	1924435		LIFT ACCESS	승강기 접근로
 AbioticFactor/Content/Maps/Facility_Office4.umap	1924569		L1 TRAM PLAZA	1층 트램 광장
 AbioticFactor/Content/Maps/Facility_Office4.umap	1924705		RECEPTION	접수처
 AbioticFactor/Content/Maps/Facility_Pens.umap	6852608		XR CONTAINMENT	XR 격리실
@@ -859,14 +859,14 @@ AbioticFactor/Content/Maps/Facility_Security.umap	4809617		SURFACE LIFT	지표 �
 AbioticFactor/Content/Maps/Facility_Security.umap	4809752		REPAIR BAY	정비소
 AbioticFactor/Content/Maps/Facility_Security.umap	4809885		FITNESS COURSE	운동 코스
 AbioticFactor/Content/Maps/Facility_Security.umap	4810022		VEHICLE DEPOT	차고지
-AbioticFactor/Content/Maps/Facility_Security.umap	4810158		DEPOT ACCESS	차고 접근
-AbioticFactor/Content/Maps/Facility_Security.umap	4810293		SURFACE ACCESS	지표 접근
+AbioticFactor/Content/Maps/Facility_Security.umap	4810158		DEPOT ACCESS	차고 접근로
+AbioticFactor/Content/Maps/Facility_Security.umap	4810293		SURFACE ACCESS	지표 접근로
 AbioticFactor/Content/Maps/Facility_Security.umap	4810430		OFFICE SECTOR	사무 구역
 AbioticFactor/Content/Maps/Facility_Security.umap	4810566		OFFICE SECTOR	사무 구역
-AbioticFactor/Content/Maps/Facility_Security.umap	4810702		SURFACE ACCESS	지표 접근
+AbioticFactor/Content/Maps/Facility_Security.umap	4810702		SURFACE ACCESS	지표 접근로
 AbioticFactor/Content/Maps/Facility_Security.umap	4810839		OFFICE SECTOR	사무 구역
 AbioticFactor/Content/Maps/Facility_Security.umap	4810975		HYDROPLANT	수력발전소
-AbioticFactor/Content/Maps/Facility_Security.umap	4811108		SURFACE ACCESS	지표 접근
+AbioticFactor/Content/Maps/Facility_Security.umap	4811108		SURFACE ACCESS	지표 접근로
 AbioticFactor/Content/Maps/Facility_Security.umap	4811245		OFFICE SECTOR	사무 구역
 AbioticFactor/Content/Maps/Facility_Security.umap	4811381		HYDROPLANT	수력발전소
 AbioticFactor/Content/Maps/Facility_Security.umap	4811514		HYDROPLANT	수력발전소
@@ -875,14 +875,14 @@ AbioticFactor/Content/Maps/Facility_Security.umap	4811780		HYDROPLANT	수력발�
 AbioticFactor/Content/Maps/Facility_Security.umap	4811913		REPAIR BAY	정비소
 AbioticFactor/Content/Maps/Facility_Security.umap	4812046		TOWER	탑
 AbioticFactor/Content/Maps/Facility_Security.umap	4812174		STORAGE UNIT C	창고 구역 C
-AbioticFactor/Content/Maps/Facility_Security.umap	4812311		SURFACE ACCESS	지표 접근
+AbioticFactor/Content/Maps/Facility_Security.umap	4812311		SURFACE ACCESS	지표 접근로
 AbioticFactor/Content/Maps/Facility_Security.umap	4812448		LABORATORIES	연구소
 AbioticFactor/Content/Maps/Facility_Security.umap	4812583		REPAIR BAY	정비소
 AbioticFactor/Content/Maps/Facility_Security.umap	4812716		FIREARMS RANGE	사격장
 AbioticFactor/Content/Maps/Facility_Security.umap	4812853		VEHICLE DEPOT	차고지
 AbioticFactor/Content/Maps/Facility_Security.umap	4812989		REPAIR BAY	정비소
 AbioticFactor/Content/Maps/Facility_Security.umap	4813122		REPAIR BAY	정비소
-AbioticFactor/Content/Maps/Facility_Security.umap	4813255		SURFACE ACCESS	지표 접근
+AbioticFactor/Content/Maps/Facility_Security.umap	4813255		SURFACE ACCESS	지표 접근로
 AbioticFactor/Content/Maps/Facility_Security.umap	4813392		OFFICE SECTOR	사무 구역
 AbioticFactor/Content/Maps/Facility_Security.umap	4813528		REPAIR BAY	정비소
 AbioticFactor/Content/Maps/Facility_Security.umap	4813661		HYDROPLANT	수력발전소
@@ -891,7 +891,7 @@ AbioticFactor/Content/Maps/Facility_Security.umap	4813931		REPAIR BAY	정비소
 AbioticFactor/Content/Maps/MainMenu_Labs.umap	651243		ADJUSTMENT	조정동
 AbioticFactor/Content/Maps/MainMenu_Labs.umap	651376		LENS EPICENTRE	렌즈 중심점
 AbioticFactor/Content/Maps/MainMenu_MFWest.umap	1262157		SYNCHROTRON	싱크로트론
-AbioticFactor/Content/Maps/MainMenu_MFWest.umap	1262291		TRAM ACCESS	트램 접근
+AbioticFactor/Content/Maps/MainMenu_MFWest.umap	1262291		TRAM ACCESS	트램 접근로
 AbioticFactor/Content/Maps/MainMenu_MFWest.umap	1262425		MINE ENTRANCE B	광산 입구 B
 AbioticFactor/Content/Maps/MainMenu_MFWest.umap	1262563		SHIPPING	물류 배송지
 AbioticFactor/Content/Maps/MainMenu_MFWest.umap	1262694		OFFICE SECTOR	사무 구역
@@ -909,7 +909,9 @@ AbioticFactor/Content/Maps/V_Intro.umap	9710359		CRUCIS STUDY	크루시스 연�
 AbioticFactor/Content/Maps/V_Intro.umap	9710494		POWER SOURCE	동력원
 AbioticFactor/Content/Maps/V_Intro.umap	9710629		RESIDENCES	주거 구역
 AbioticFactor/Content/Maps/V_Intro.umap	9710762		SYNAPTIC LABS	시냅스 연구실
-AbioticFactor/Content/Maps/V_Intro.umap	9710898		ORDO ACCESS	오르도 접근
+AbioticFactor/Content/Maps/V_Intro.umap	9710898		ORDO ACCESS	오르도 접근로
 AbioticFactor/Content/Maps/V_Intro.umap	9711032		RESIDENCES	주거 구역
 AbioticFactor/Content/Maps/V_Intro.umap	9711165		ORDO STORAGE	오르도 보관실
 AbioticFactor/Content/Maps/V_Intro.umap	9711300		SYNAPTIC LABS	시냅스 연구실
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7891827		MAINTENANCE	관리실
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7891962		FUEL CRYOPOD	연료 냉각 장치
