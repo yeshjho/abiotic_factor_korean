@@ -6,7 +6,7 @@ import re
 from common import *
 
 
-is_Sign_ModularFacility_only = False
+is_Sign_ModularFacility_only = True
 
 
 files = glob.glob(f'archive/offset_annotated/AbioticFactor/Content/Maps/**/*.*', recursive=True)
@@ -58,14 +58,14 @@ for file in files:
 
         writer.writerow([
             f'AbioticFactor/Content/Maps/{map_name}.umap',
-            outer,
+            # outer,
             int(text_start) + 4,  # 텍스트 사이즈부터 시작하는데 메인 스크립트가 실제 텍스트 오프셋을 기대해서 4만큼 더하기
             '',
             text
         ])
         writer2.writerow([
             f'AbioticFactor/Content/Maps/{map_name}.umap',
-            outer,
+            # outer,
             '',
             text
         ])
