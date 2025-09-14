@@ -119,8 +119,8 @@ def build_pak():
         reader = csv.reader(f, delimiter='\t')
         for row in reader:
             extra.append(row)
-    extra.append(['6752A04747EF09B5E7C078AD8860A0EC', '{originaltext} | EARLY ACCESS',
-                  f'{{originaltext}} | EARLY ACCESS | 한국어 패치 v{PATCH_VERSION}'])
+    extra.append(['78A16F4242E154B8137464B3BC39D221', 'V. {1}',
+                  f'V. {{1}} | 한국어 패치 v{PATCH_VERSION}'])
 
     for row in extra:
         if len(row) != 3:
@@ -358,7 +358,7 @@ def build_binary_overrides():
 
     for file, pairs in pairs_per_file.items():
         pairs = [(parse_offset(byte_offset), extra, original, inline_whitespace(translated))
-                 for byte_offset, extra, original, translated in pairs]
+                 for byte_offset, extra, original, translated in pairs if translated]
         pairs.sort(key=lambda x: x[0])  # 오프셋 순으로 정렬
 
         with open(f'archive/pack/vanilla_extracted/{GAME_VERSION}/{file}', 'rb') as f:
