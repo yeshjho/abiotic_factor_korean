@@ -226,19 +226,34 @@ def build_io_store(skip_binary_overrides: bool, skip_images: bool):
     return output
 
 
-def overwrite_fstring(data, offset, new_text, does_offset_points_size):
-    size_offset = offset - (0 if does_offset_points_size else 4)
-    original_length = struct.unpack_from('<i', data, size_offset)[0]
-    original_length_bytes = original_length if original_length > 0 else -original_length * 2
-
+def overwrite_fstring(data, offset, mode, old_text, new_text, does_offset_point_text):
     is_translated_ascii = new_text.isascii()
     new_length = (len(new_text) + 1) * (1 if is_translated_ascii else -1)
     new_length_bytes = (len(new_text) + 1) * (1 if is_translated_ascii else 2)
     new_text = (new_text.encode('ascii') + b'\x00') if is_translated_ascii \
         else new_text.encode('utf-16')[2:] + b'\x00\x00'
 
-    data[size_offset:size_offset + 4] = bytearray(struct.pack('<i', new_length))
-    data[size_offset + 4:size_offset + 4 + original_length_bytes] = bytearray(new_text)
+    match mode:
+        case 'NO_FSTRING':
+            overwrite_data = bytearray.fromhex(new_text)
+            original_length_bytes = len(bytearray.fromhex(old_text))
+            data[offset:offset + original_length_bytes] = overwrite_data
+            new_length_bytes = len(overwrite_data)
+
+        case 'STRING_CONST':
+            is_original_ascii = old_text.isascii()
+            original_length_bytes = (len(old_text) + 1) * (1 if is_original_ascii else 2)
+            expression_token_offset = offset - (1 if does_offset_point_text else 0)
+            assert data[expression_token_offset] == 0x1f
+            data[expression_token_offset:expression_token_offset + 1 + original_length_bytes] = b'\x34' + new_text
+
+        case _:
+            size_offset = offset - (4 if does_offset_point_text else 0)
+            original_length = struct.unpack_from('<i', data, size_offset)[0]
+            original_length_bytes = original_length if original_length > 0 else -original_length * 2
+
+            data[size_offset:size_offset + 4] = bytearray(struct.pack('<i', new_length))
+            data[size_offset + 4:size_offset + 4 + original_length_bytes] = bytearray(new_text)
 
     return data, original_length_bytes, new_length_bytes
 
@@ -251,13 +266,8 @@ def datatable_override(file, data, pairs):
     byte_difference = 0
     for byte_offset, extra, original, translated in pairs:
         offset_to_use = byte_offset + byte_difference
-        if extra == "NO_FSTRING":
-            overwrite_data = bytearray.fromhex(translated)
-            original_length_bytes = len(bytearray.fromhex(original))
-            data[offset_to_use:offset_to_use + original_length_bytes] = overwrite_data
-            new_length_bytes = len(overwrite_data)
-        else:
-            data, original_length_bytes, new_length_bytes = overwrite_fstring(data, offset_to_use, translated, False)
+        data, original_length_bytes, new_length_bytes = (
+            overwrite_fstring(data, offset_to_use, extra, original, translated, True))
         byte_difference += new_length_bytes - original_length_bytes
 
     if file in size_offset_map:
@@ -301,14 +311,8 @@ def default_uobject_override(file, data, pairs):
     for byte_offset, extra, original, translated in pairs:
         if byte_offset > last_entry_address:
             offset_to_use = byte_offset + total_byte_difference + total_byte_difference_outside
-            if extra == "NO_FSTRING":
-                overwrite_data = bytearray.fromhex(translated)
-                original_length_bytes = len(bytearray.fromhex(original))
-                data[offset_to_use:offset_to_use + original_length_bytes] = overwrite_data
-                new_length_bytes = len(overwrite_data)
-            else:
-                data, original_length_bytes, new_length_bytes = \
-                    overwrite_fstring(data, offset_to_use, translated, False)
+            data, original_length_bytes, new_length_bytes = (
+                overwrite_fstring(data, offset_to_use, extra, original, translated, True))
             total_byte_difference_outside += new_length_bytes - original_length_bytes
             continue
 
@@ -318,13 +322,8 @@ def default_uobject_override(file, data, pairs):
         prev_entry_index = entry_index
 
         offset_to_use = byte_offset + total_byte_difference
-        if extra == "NO_FSTRING":
-            overwrite_data = bytearray.fromhex(translated)
-            original_length_bytes = len(bytearray.fromhex(original))
-            data[offset_to_use:offset_to_use + original_length_bytes] = overwrite_data
-            new_length_bytes = len(overwrite_data)
-        else:
-            data, original_length_bytes, new_length_bytes = overwrite_fstring(data, offset_to_use, translated, False)
+        data, original_length_bytes, new_length_bytes = (
+            overwrite_fstring(data, offset_to_use, extra, original, translated, True))
         size_difference = new_length_bytes - original_length_bytes
         total_byte_difference += size_difference
         map_entries[entry_index - 1].new_size += size_difference
@@ -413,9 +412,9 @@ def build_image_overrides():
 
 
 def main():
-    SKIP_PAK = False
+    SKIP_PAK = True
     SKIP_BINARY_OVERRIDES = False
-    SKIP_IMAGES = False
+    SKIP_IMAGES = True
 
     if os.path.exists('out/pakchunk0-Windows_P.pak'):
         os.remove('out/pakchunk0-Windows_P.pak')
