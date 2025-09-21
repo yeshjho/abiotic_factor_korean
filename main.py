@@ -227,12 +227,6 @@ def build_io_store(skip_binary_overrides: bool, skip_images: bool):
 
 
 def overwrite_fstring(data, offset, mode, old_text, new_text, does_offset_point_text):
-    is_translated_ascii = new_text.isascii()
-    new_length = (len(new_text) + 1) * (1 if is_translated_ascii else -1)
-    new_length_bytes = (len(new_text) + 1) * (1 if is_translated_ascii else 2)
-    new_text = (new_text.encode('ascii') + b'\x00') if is_translated_ascii \
-        else new_text.encode('utf-16')[2:] + b'\x00\x00'
-
     match mode:
         case 'NO_FSTRING':
             overwrite_data = bytearray.fromhex(new_text)
@@ -241,13 +235,37 @@ def overwrite_fstring(data, offset, mode, old_text, new_text, does_offset_point_
             new_length_bytes = len(overwrite_data)
 
         case 'STRING_CONST':
+            new_text, bytecode_buffer_size_offset = new_text.split('|')
+            bytecode_buffer_size_offset = parse_offset(bytecode_buffer_size_offset)
+
+            is_translated_ascii = new_text.isascii()
+            new_length_bytes = (len(new_text) + 1) * (1 if is_translated_ascii else 2)
+            new_text = (new_text.encode('ascii') + b'\x00') if is_translated_ascii \
+                else new_text.encode('utf-16')[2:] + b'\x00\x00'
+
             is_original_ascii = old_text.isascii()
             original_length_bytes = (len(old_text) + 1) * (1 if is_original_ascii else 2)
             expression_token_offset = offset - (1 if does_offset_point_text else 0)
-            assert data[expression_token_offset] == 0x1f
-            data[expression_token_offset:expression_token_offset + 1 + original_length_bytes] = b'\x34' + new_text
+            assert data[expression_token_offset] == (0x1f if is_original_ascii else 0x34)
+
+            length_bytes_diff = new_length_bytes - original_length_bytes
+
+            bytecode_buffer_size, serialized_script_size = struct.unpack_from('<ii', data, bytecode_buffer_size_offset)
+            data[bytecode_buffer_size_offset:bytecode_buffer_size_offset + 4] = (
+                bytearray(struct.pack('<i', bytecode_buffer_size + length_bytes_diff)))
+            data[bytecode_buffer_size_offset + 4:bytecode_buffer_size_offset + 8] = (
+                bytearray(struct.pack('<i', serialized_script_size + length_bytes_diff)))
+
+            type_enum = b'\x1f' if is_translated_ascii else b'\x34'
+            data[expression_token_offset:expression_token_offset + 1 + original_length_bytes] = type_enum + new_text
 
         case _:
+            is_translated_ascii = new_text.isascii()
+            new_length = (len(new_text) + 1) * (1 if is_translated_ascii else -1)
+            new_length_bytes = (len(new_text) + 1) * (1 if is_translated_ascii else 2)
+            new_text = (new_text.encode('ascii') + b'\x00') if is_translated_ascii \
+                else new_text.encode('utf-16')[2:] + b'\x00\x00'
+
             size_offset = offset - (4 if does_offset_point_text else 0)
             original_length = struct.unpack_from('<i', data, size_offset)[0]
             original_length_bytes = original_length if original_length > 0 else -original_length * 2
@@ -412,9 +430,9 @@ def build_image_overrides():
 
 
 def main():
-    SKIP_PAK = True
+    SKIP_PAK = False
     SKIP_BINARY_OVERRIDES = False
-    SKIP_IMAGES = True
+    SKIP_IMAGES = False
 
     if os.path.exists('out/pakchunk0-Windows_P.pak'):
         os.remove('out/pakchunk0-Windows_P.pak')
