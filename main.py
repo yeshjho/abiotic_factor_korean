@@ -235,6 +235,7 @@ def overwrite_fstring(data, offset, mode, old_text, new_text, does_offset_point_
             new_length_bytes = len(overwrite_data)
 
         case 'STRING_CONST':
+            assert False
             new_text, bytecode_buffer_size_offset = new_text.split('|')
             bytecode_buffer_size_offset = parse_offset(bytecode_buffer_size_offset)
 

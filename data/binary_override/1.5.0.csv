@@ -28,15 +28,16 @@ AbioticFactor/Content/Maps/Facility.umap	14461280		C. BLOCKS	격리 블록
 AbioticFactor/Content/Maps/Facility.umap	14461412		ADJUSTMENT	조정동
 AbioticFactor/Content/Maps/Facility.umap	14461545		VAC CHAMBER	진공 챔버
 AbioticFactor/Content/Maps/Facility.umap	14461679		OFFICE SECTOR	사무 구역
-AbioticFactor/Content/Maps/Facility_Botanical.umap	4945929		BIOLAB SECURITY	생물학 연구실 보안 초소
-AbioticFactor/Content/Maps/Facility_Botanical.umap	4946067		DELTA LAB	
-AbioticFactor/Content/Maps/Facility_Botanical.umap	4946199		DOOR CONTROL	
-AbioticFactor/Content/Maps/Facility_Botanical.umap	4946334		BIOLAB SECURITY	생물학 연구실 보안 초소
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4945929		BIOLAB SECURITY	생물학연구소 보안초소
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4946067		DELTA LAB	델타 연구실
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4946199		DOOR CONTROL	출입 제어실
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4946334		BIOLAB SECURITY	생물학연구소 보안초소
 AbioticFactor/Content/Maps/Facility_Botanical.umap	4946472		BIOLABS	생물학 연구소
 AbioticFactor/Content/Maps/Facility_Botanical.umap	4946602		01 BLAST DOOR	01 방폭문
-AbioticFactor/Content/Maps/Facility_Botanical.umap	4946738		VAULT DOOR	
-AbioticFactor/Content/Maps/Facility_Botanical.umap	4946871		PROCESSING	
-AbioticFactor/Content/Maps/Facility_Botanical.umap	4947004		EQUIPMENT	
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4946738		VAULT DOOR	강화문
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4946871		PROCESSING	처리실
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4947004		EQUIPMENT	장비실
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4949231	TextRenderActor	SECRET\r\nENTRANCE	비밀\r\n통로
 AbioticFactor/Content/Maps/Facility_Containment.umap	6929111		CONTROL CENTER	관제 센터
 AbioticFactor/Content/Maps/Facility_Containment.umap	6929248		TRAM STATION	트램 정거장
 AbioticFactor/Content/Maps/Facility_Containment.umap	6929383		CURIE BLOCK	퀴리 블록
@@ -132,6 +133,8 @@ AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5594137		TRAM STATION	트�
 AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5594272		REACTOR ENTRY	반응로 입구
 AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5594408		REACTOR ENTRY	반응로 입구
 AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5594544		REACTOR ENTRY	반응로 입구
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7854405	Sign_ModularDormitory_C	MAINTENANCE	관리실
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7854540	Sign_ModularDormitory_C	FUEL CRYOPOD	연료 냉각 장치
 AbioticFactor/Content/Maps/Facility_DF_War.umap	7854676		DEPLETED FUEL	폐기 연료 보관고
 AbioticFactor/Content/Maps/Facility_DF_War.umap	7854813		LOWER OFFICES	저층 사무 구역
 AbioticFactor/Content/Maps/Facility_DF_War.umap	7854949		GALE REACTOR	돌풍 반응로
@@ -162,6 +165,14 @@ AbioticFactor/Content/Maps/Facility_Labs.umap	7374754		INNER WING	내부동
 AbioticFactor/Content/Maps/Facility_Labs.umap	7374887		INNER WING	내부동
 AbioticFactor/Content/Maps/Facility_Labs.umap	7375020		WILDLIFE PENS	야생 동물 우리
 AbioticFactor/Content/Maps/Facility_Labs.umap	7375156		ADJUSTMENT	조정동
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5618121	Sign_ModularDormitory_C	SHOWERS	샤워실
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5618251	Sign_ModularDormitory_C	DECONTAMINATION	오염 제거
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5618389	Sign_ModularDormitory_C	SHOWERS	샤워실
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5618519	Sign_ModularDormitory_C	DECONTAMINATION	오염 제거
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5618657	Sign_ModularDormitory_C	SHOWERS	샤워실
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5618787	Sign_ModularDormitory_C	DECONTAMINATION	오염 제거
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5618925	Sign_ModularDormitory_C	SHOWERS	샤워실
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5619055	Sign_ModularDormitory_C	DECONTAMINATION	오염 제거
 AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5619193		LASER LAB	레이저 연구실
 AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5619325		LASER LAB	레이저 연구실
 AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5619457		CELLULAR LAB	세포 연구실
@@ -396,24 +407,60 @@ AbioticFactor/Content/Maps/Facility_Pens.umap	7019398		PARTICLE LAB	입자 연�
 AbioticFactor/Content/Maps/Facility_Pens.umap	7019533		PARTICLE LAB	입자 연구실
 AbioticFactor/Content/Maps/Facility_Plant.umap	4029881		TRAM STATION	트램 정거장
 AbioticFactor/Content/Maps/Facility_Reservoir.umap	3218015		DETECTOR	탐지기
+AbioticFactor/Content/Maps/Facility_Residence.umap	9067523	Sign_ModularDormitory_C	DR. MANJINDER SANA	만진더 사나 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9067664	Sign_ModularDormitory_C	DR. PETRA PETERS	페트라 피터스 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9067803	Sign_ModularDormitory_C	DR. REYNA BELL	레이나 벨 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9067940	Sign_ModularDormitory_C	DR. JESSICA LAMBERT	제시카 램버트 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9068082	Sign_ModularDormitory_C	DR. SOPHIA TZIRKOTI	소피아 치르코티 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9068224	Sign_ModularDormitory_C	DR. ZOE KINCHIN-WALLER	조이 킨친-월러 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9068369	Sign_ModularDormitory_C	DR. PIOTR RANDONJIC	피오트르 란도니치 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9068511	Sign_ModularDormitory_C	DR. MARIJA KRYZSTYNIAK	마리야 크리스티니악 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9068656	Sign_ModularDormitory_C	DR. NAMAN HAMAYUN	나만 하마윤 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9068796	Sign_ModularDormitory_C	DR. MARIO GARBARINO	마리오 가르바리노 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9068938	Sign_ModularDormitory_C	DR. OSCAR BEVILACQUA	오스카 베빌아쿠아 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9069081	Sign_ModularDormitory_C	DR. MAJID ACHEAMPONG	마지드 아참퐁 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9069224	Sign_ModularDormitory_C	DR. YANG HONG	양 홍 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9069360	Sign_ModularDormitory_C	DR. RICH MELANCHTON	리치 멜란히톤 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9069502	Sign_ModularDormitory_C	DR. MACHIKO ISODA	마치코 이소다 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9069642	Sign_ModularDormitory_C	DR. GAYUSH ADIVAR	게이유시 아디바르 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9069782	Sign_ModularDormitory_C	DR. YUSUF AZIZ	유수프 아지즈 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9069919	Sign_ModularDormitory_C	DR. ABDULRAZAK OTHMAN	압둘라자크 오스만 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9070063	Sign_ModularDormitory_C	DR. MANUEL MARCOS	마누엘 마르코스 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9070203	Sign_ModularDormitory_C	DR. NASRA BADAR	나스라 바다르 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9070341	Sign_ModularDormitory_C	DR. LLOYD GARBIT	로이드 가빗 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9070480	Sign_ModularDormitory_C	DR. SAMEER MISHOD	사미르 미쇼드 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9070620	Sign_ModularDormitory_C	DR. JUDITH ANDERSON	주디스 안더슨 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9070762	Sign_ModularDormitory_C	DR. ZHAO LI	자오 리 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9070896	Sign_ModularDormitory_C	DR. ALEXANDER HANNITY	알렉산더 해니티 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9071040	Sign_ModularDormitory_C	DR. PERRY BUTLER	페리 버틀러 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9071179	Sign_ModularDormitory_C	DR. SVETLANA PRICE	스베틀라나 프라이스 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9071320	Sign_ModularDormitory_C	DR. JANET ROSS	자넷 로스 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9071457	Sign_ModularDormitory_C	DR. LUKAS BENES	루카스 베네스 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9071595	Sign_ModularDormitory_C	DR. DANIEL FLINT	다니엘 플린트 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9071734	Sign_ModularDormitory_C	DR. GARRISON SOYINKA	개리슨 소잉카 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9071877	Sign_ModularDormitory_C	DR. AIDAN OSBORNE	에이든 오스본 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9072017	Sign_ModularDormitory_C	DR. RASHAD DERRICK	라샤드 데릭 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9072158	Sign_ModularDormitory_C	DR. STEPHEN WINCKOWSKI	스티븐 윈카우스키 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9072303	Sign_ModularDormitory_C	DR. EDWARD KRAUS	에드워드 크라우스 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9072442	Sign_ModularDormitory_C	DR. ABRAHAM STERN	에이브라함 스턴 박사
 AbioticFactor/Content/Maps/Facility_Residence.umap	9072582		ATHLETIC POOL	체육관 수영장
-AbioticFactor/Content/Maps/Facility_Residence.umap	9072718		E-SUITES	
-AbioticFactor/Content/Maps/Facility_Residence.umap	9072849		RUTGER STRAUSS	
+AbioticFactor/Content/Maps/Facility_Residence.umap	9072718		E-SUITES	E-스위트룸
+AbioticFactor/Content/Maps/Facility_Residence.umap	9072849		RUTGER STRAUSS	루트거 슈트라우스
 AbioticFactor/Content/Maps/Facility_Residence.umap	9072986		DEFENSE SECTOR	방어 구역
-AbioticFactor/Content/Maps/Facility_Residence.umap	9073123		ENGINEERING	
+AbioticFactor/Content/Maps/Facility_Residence.umap	9073123		ENGINEERING	엔지니어링
 AbioticFactor/Content/Maps/Facility_Residence.umap	9073257		ATHLETICS	체육관
 AbioticFactor/Content/Maps/Facility_Residence.umap	9073389		MAIN LOBBY	메인 로비
-AbioticFactor/Content/Maps/Facility_Residence.umap	9073522		E-SUITES	
+AbioticFactor/Content/Maps/Facility_Residence.umap	9073522		E-SUITES	E-스위트룸
 AbioticFactor/Content/Maps/Facility_Residence.umap	9073653		DORMITORIES (A)	기숙사 (A)
-AbioticFactor/Content/Maps/Facility_Residence.umap	9073791		BARRACKS	
+AbioticFactor/Content/Maps/Facility_Residence.umap	9073791		BARRACKS	병영
 AbioticFactor/Content/Maps/Facility_Residence.umap	9073922		MAIN LOBBY	메인 로비
-AbioticFactor/Content/Maps/Facility_Residence.umap	9074055		BARRACKS	
+AbioticFactor/Content/Maps/Facility_Residence.umap	9074055		BARRACKS	병영
 AbioticFactor/Content/Maps/Facility_Residence.umap	9074186		T. R. ENDERSON	T. R. 엔더슨
-AbioticFactor/Content/Maps/Facility_Residence.umap	9074323		BARRACKS A	
+AbioticFactor/Content/Maps/Facility_Residence.umap	9074323		BARRACKS A	병영 A
 AbioticFactor/Content/Maps/Facility_Residence.umap	9074456		TOILETS	화장실
-AbioticFactor/Content/Maps/Facility_Residence.umap	9074586		E-SUITES	
-AbioticFactor/Content/Maps/Facility_Residence.umap	9074717		EATERY	
-AbioticFactor/Content/Maps/Facility_Residence.umap	9074846		EATERY	
+AbioticFactor/Content/Maps/Facility_Residence.umap	9074586		E-SUITES	E-스위트룸
+AbioticFactor/Content/Maps/Facility_Residence.umap	9074717		EATERY	식당
+AbioticFactor/Content/Maps/Facility_Residence.umap	9074846		EATERY	식당
 AbioticFactor/Content/Maps/Facility_Residence.umap	9074975		MAINTENANCE	관리실
 AbioticFactor/Content/Maps/Facility_Residence.umap	9075109		HYDROPLANT	수력발전소
 AbioticFactor/Content/Maps/Facility_Residence.umap	9075242		HYDROPLANT	수력발전소
@@ -430,7 +477,7 @@ AbioticFactor/Content/Maps/Facility_Residence.umap	9076599		JANE KARENSKI	제인
 AbioticFactor/Content/Maps/Facility_Residence.umap	9076735		DR. MICHAEL HUTTON	마이클 허튼 박사
 AbioticFactor/Content/Maps/Facility_Residence.umap	9076876		DR. DINA KHATTAR	디나 카타르 박사
 AbioticFactor/Content/Maps/Facility_Residence.umap	9077015		HYDROPLANT	수력발전소
-AbioticFactor/Content/Maps/Facility_Residence.umap	9077148		FIONA GARNER	
+AbioticFactor/Content/Maps/Facility_Residence.umap	9077148		FIONA GARNER	피오나 가너
 AbioticFactor/Content/Maps/Facility_Security.umap	4733132		FIREARMS RANGE	사격장
 AbioticFactor/Content/Maps/Facility_Security.umap	4733270		FITNESS COURSE	운동 코스
 AbioticFactor/Content/Maps/Facility_Security.umap	4733408		FIREARMS RANGE	사격장
@@ -480,25 +527,62 @@ AbioticFactor/Content/Maps/MainMenu_MFWest.umap	1241438		MINE ENTRANCE B	광산 
 AbioticFactor/Content/Maps/MainMenu_MFWest.umap	1241576		GARAGE	차고
 AbioticFactor/Content/Maps/MainMenu_Offices.umap	827001		TRAM - B SIDE	트램 - 역방향
 AbioticFactor/Content/Maps/MainMenu_Offices.umap	827137		TRAM STATION	트램 정거장
-AbioticFactor/Content/Maps/MainMenu_Residence.umap	2287972		E-SUITES	
-AbioticFactor/Content/Maps/MainMenu_Residence.umap	2288103		BARRACKS	
-AbioticFactor/Content/Maps/MainMenu_Residence.umap	2288234		BARRACKS A	
-AbioticFactor/Content/Maps/MainMenu_Residence.umap	2288367		EATERY	
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2282916	Sign_ModularDormitory_C	DR. MANJINDER SANA	만진더 사나 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2283057	Sign_ModularDormitory_C	DR. A. PETERS	A. 피터스 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2283193	Sign_ModularDormitory_C	DR. REYNA BELL	레이나 벨 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2283330	Sign_ModularDormitory_C	DR. JESSICA LAMBERT	제시카 램버트 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2283472	Sign_ModularDormitory_C	DR. SOPHIA TZIRKOTI	소피아 치르코티 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2283614	Sign_ModularDormitory_C	DR. ZOE KINCHIN-WALLER	조이 킨친-월러 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2283759	Sign_ModularDormitory_C	DR. PIOTR RANDONJIC	피오트르 란도니치 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2283901	Sign_ModularDormitory_C	DR. MARIJA KRYZSTYNIAK	마리야 크리스티니악 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2284046	Sign_ModularDormitory_C	DR. NAMAN HAMAYUN	나만 하마윤 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2284186	Sign_ModularDormitory_C	DR. MARIO GARBARINO	마리오 가르바리노 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2284328	Sign_ModularDormitory_C	DR. OSCAR BEVILACQUA	오스카 베빌아쿠아 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2284471	Sign_ModularDormitory_C	DR. MAJID ACHEAMPONG	마지드 아참퐁 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2284614	Sign_ModularDormitory_C	DR. YANG HONG	양 홍 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2284750	Sign_ModularDormitory_C	DR. RICH MELANCHTON	리치 멜란히톤 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2284892	Sign_ModularDormitory_C	DR. MACHIKO ISODA	마치코 이소다 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2285032	Sign_ModularDormitory_C	DR. GAYUSH ADIVAR	게이유시 아디바르 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2285172	Sign_ModularDormitory_C	DR. YUSUF AZIZ	유수프 아지즈 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2285309	Sign_ModularDormitory_C	DR. ABDULRAZAK OTHMAN	압둘라자크 오스만 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2285453	Sign_ModularDormitory_C	DR. MANUEL MARCOS	마누엘 마르코스 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2285593	Sign_ModularDormitory_C	DR. NASRA BADAR	나스라 바다르 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2285731	Sign_ModularDormitory_C	DR. LLOYD GARBIT	로이드 가빗 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2285870	Sign_ModularDormitory_C	DR. SAMEER MISHOD	사미르 미쇼드 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2286010	Sign_ModularDormitory_C	DR. JUDITH ANDERSON	주디스 안더슨 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2286152	Sign_ModularDormitory_C	DR. ZHAO LI	자오 리 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2286286	Sign_ModularDormitory_C	DR. ALEXANDER HANNITY	알렉산더 해니티 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2286430	Sign_ModularDormitory_C	DR. PERRY BUTLER	페리 버틀러 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2286569	Sign_ModularDormitory_C	DR. SVETLANA PRICE	스베틀라나 프라이스 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2286710	Sign_ModularDormitory_C	DR. JANET ROSS	자넷 로스 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2286847	Sign_ModularDormitory_C	DR. LUKAS BENES	루카스 베네스 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2286985	Sign_ModularDormitory_C	DR. DANIEL FLINT	다니엘 플린트 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2287124	Sign_ModularDormitory_C	DR. GARRISON SOYINKA	개리슨 소잉카 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2287267	Sign_ModularDormitory_C	DR. AIDAN OSBORNE	에이든 오스본 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2287407	Sign_ModularDormitory_C	DR. RASHAD DERRICK	라샤드 데릭 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2287548	Sign_ModularDormitory_C	DR. STEPHEN WINCKOWSKI	스티븐 윈카우스키 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2287693	Sign_ModularDormitory_C	DR. EDWARD KRAUS	에드워드 크라우스 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2287832	Sign_ModularDormitory_C	DR. ABRAHAM STERN	에이브라함 스턴 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2287972		E-SUITES	E-스위트룸
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2288103		BARRACKS	병영
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2288234		BARRACKS A	병영 A
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2288367		EATERY	식당
 AbioticFactor/Content/Maps/MainMenu_Residence.umap	2288496		DR. STEWART WAKEMAN	스튜워트 웨이크먼 박사
 AbioticFactor/Content/Maps/MainMenu_Residence.umap	2288638		TOILETS	화장실
 AbioticFactor/Content/Maps/MainMenu_Security.umap	243735		OFFICE SECTOR	사무 구역
 AbioticFactor/Content/Maps/MainMenu_Security.umap	243871		DEFENSE SECTOR	방어 구역
 AbioticFactor/Content/Maps/MainMenu_Security.umap	244008		VAC CHAMBER	진공 챔버
+AbioticFactor/Content/Maps/Vignette_MirrorWorld.umap	50510140	TextRenderActor	For L.W. --\r\nLove, B.B.	L.W.에게 --\r\n사랑을 담아, B.B.
 AbioticFactor/Content/Maps/V_Alps.umap	5273694		OBSERVATOIRE	천문대
-AbioticFactor/Content/Maps/V_BOTANICAL.umap	3419711		DOOR CONTROL	
-AbioticFactor/Content/Maps/V_BOTANICAL.umap	3419846		BIOLAB SECURITY	생물학 연구실 보안 초소
-AbioticFactor/Content/Maps/V_BOTANICAL.umap	3419984		BIOLAB SECURITY	생물학 연구실 보안 초소
+AbioticFactor/Content/Maps/V_BOTANICAL.umap	3419711		DOOR CONTROL	출입 제어실
+AbioticFactor/Content/Maps/V_BOTANICAL.umap	3419846		BIOLAB SECURITY	생물학연구소 보안초소
+AbioticFactor/Content/Maps/V_BOTANICAL.umap	3419984		BIOLAB SECURITY	생물학연구소 보안초소
 AbioticFactor/Content/Maps/V_BOTANICAL.umap	3420122		BIOLABS	생물학 연구소
 AbioticFactor/Content/Maps/V_BOTANICAL.umap	3420252		01 BLAST DOOR	01 방폭문
-AbioticFactor/Content/Maps/V_BOTANICAL.umap	3420388		VAULT DOOR	
-AbioticFactor/Content/Maps/V_BOTANICAL.umap	3420521		PROCESSING	
-AbioticFactor/Content/Maps/V_BOTANICAL.umap	3420654		EQUIPMENT	
-AbioticFactor/Content/Maps/V_BOTANICAL.umap	3420786		DELTA LAB	
+AbioticFactor/Content/Maps/V_BOTANICAL.umap	3420388		VAULT DOOR	강화문
+AbioticFactor/Content/Maps/V_BOTANICAL.umap	3420521		PROCESSING	처리실
+AbioticFactor/Content/Maps/V_BOTANICAL.umap	3420654		EQUIPMENT	장비실
+AbioticFactor/Content/Maps/V_BOTANICAL.umap	3420786		DELTA LAB	델타 연구실
 AbioticFactor/Content/Maps/V_Intro.umap	9543112		PACKAGE	포장
 AbioticFactor/Content/Maps/V_Intro.umap	9543242		KITCHEN	주방
 AbioticFactor/Content/Maps/V_Intro.umap	9543372		CRUCIS STUDY	크루시스 연구
@@ -509,5 +593,3 @@ AbioticFactor/Content/Maps/V_Intro.umap	9543911		ORDO ACCESS	오르도 접근로
 AbioticFactor/Content/Maps/V_Intro.umap	9544045		RESIDENCES	주거 구역
 AbioticFactor/Content/Maps/V_Intro.umap	9544178		ORDO STORAGE	오르도 보관실
 AbioticFactor/Content/Maps/V_Intro.umap	9544313		SYNAPTIC LABS	시냅스 연구소
-AbioticFactor/Content/Maps/Facility_DF_War.umap	77D945h		MAINTENANCE	관리실
-AbioticFactor/Content/Maps/Facility_DF_War.umap	77D9CCh		FUEL CRYOPOD	연료 냉각 장치
