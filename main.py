@@ -54,6 +54,7 @@ def build_pak():
     keys_not_translated = []
     keys_translated_identical = []
     original_not_matching = []
+    duplicate_keys = []
 
     translated_file = {}
     with (open(f'data/ko-{PATCH_VERSION}.csv', newline='') as f):
@@ -76,6 +77,11 @@ def build_pak():
             if translated:
                 if translated == original and original.isalpha():
                     keys_translated_identical.append(namespace_n_key)
+
+                if key in translated_file[namespace]:
+                    duplicate_keys.append(namespace_n_key)
+                    continue
+
                 translated_file[namespace][key] = inline_whitespace(translated)
             else:
                 keys_not_translated.append(namespace_n_key)
@@ -111,6 +117,10 @@ def build_pak():
     if original_not_matching:
         print('[경고] 다음 항목들은 영문 파일과 번역본의 원문에 차이가 있습니다.')
         print(original_not_matching)
+        print()
+    if duplicate_keys:
+        print('[경고] 다음 키들은 여러 번 들어가 있습니다. 처음 것만 적용됩니다')
+        print(duplicate_keys)
         print()
 
 
@@ -192,7 +202,10 @@ def build_pak():
         '# 영문 파일의 값과 번역본의 원문이 동일하지 않은 키 (키, 영문 파일 값, 번역본 원문)',
         '[\n' + '\n'.join([f'  (\n    {repr(k)},\n    {repr(org)},\n    {repr(mis)}\n  ),'
                            for k, org, mis in original_not_matching]) + '\n]'
-        ''
+        '',
+        '# 중복된 키',
+        pprint.pformat(duplicate_keys, indent=4),
+        '',
     ]
 
 
