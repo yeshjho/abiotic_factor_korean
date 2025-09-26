@@ -229,8 +229,3 @@ DA25F6944FAE7C56F2D2BA8678656B1F	rotate Laser Emitter	레이저 방출기 회전
 BCF97FE747FE8A991382CCBBA6C1DF64	set teleport location	순간이동기 위치 설정하기
 F4F3014E4481321B54FDB79E3895253A	No special characters. Only A-Z, 1-9, 0 and Spaces	특수문자 사용 불가. 알파벳, 숫자, 공백으로만 설정하세요.
 C652C51C481565D9A999F6B7C478C6B1	No special characters. Only A-Z, 1-9, 0 and Spaces	특수문자 사용 불가. 알파벳, 숫자, 공백으로만 설정하세요.
-AbioticFactor/Content/Maps/Facility_Botanical.umap	4DDC92284F674DA5C3DE778D1448F7B1	STAND CLEAR	작동 중
-AbioticFactor/Content/Maps/Facility_Botanical.umap	C7B7C0474405A9573762AAB506EDDFB1	DURING OPERATION	접근 주의
-AbioticFactor/Content/Maps/Facility_Botanical.umap	DBC39D5C4168A9966771A28E785E6DA4	STAND CLEAR DURING OPERATION	작동 중 접근 주의
-AbioticFactor/Content/Maps/Facility_Botanical.umap	EF42883A4BFD8133522498B074B9FA51	STAND CLEAR DURING OPERATION	작동 중 접근 주의
-AbioticFactor/Content/Maps/Facility_Botanical.umap	FD26465148BD5125A482078E99E32D9F	STAND CLEAR DURING OPERATION	작동 중 접근 주의

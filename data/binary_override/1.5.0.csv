@@ -7,6 +7,11 @@ AbioticFactor/Content/Blueprints/Items/ItemTable_Global.uasset	94411h		healed	�
 AbioticFactor/Content/Blueprints/Items/ItemTable_Global.uasset	992E4h		healed	을(를) 치료해주었습니다
 AbioticFactor/Content/Blueprints/Items/ItemTable_Global.uasset	A7AA9h		healed	을(를) 치료해주었습니다
 AbioticFactor/Content/Blueprints/Items/ItemTable_Global.uasset	AF6E2h		given pills/gave pills to	에게 알약을 주었습니다
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4B81F9h		STAND CLEAR	작동 중
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4B828Dh		DURING OPERATION	접근 주의
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4B8326h		STAND CLEAR DURING OPERATION	작동 중 접근 주의
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4B83CBh		STAND CLEAR DURING OPERATION	작동 중 접근 주의
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4B8470h		STAND CLEAR DURING OPERATION	작동 중 접근 주의
 AbioticFactor/Content/Maps/Facility.umap	14458529		RECEPTION	접수처
 AbioticFactor/Content/Maps/Facility.umap	14458661		SECURITY	보안
 AbioticFactor/Content/Maps/Facility.umap	14458792		HYDROPLANT	수력발전소
