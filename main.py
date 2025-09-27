@@ -7,6 +7,7 @@ import struct
 import glob
 import pprint
 import bisect
+import re
 
 from common import *
 
@@ -42,6 +43,8 @@ SKIP_BINARY_OVERRIDES = True
 SKIP_IMAGES = False
 IS_XBOX_GAME_PASS = True
 
+pat_dialogue_sync = re.compile(r'\[([\d\.]+)\]')
+
 
 def parse_offset(offset: str):
     if offset.startswith('0x'):
@@ -61,6 +64,7 @@ def build_pak():
     keys_translated_identical = []
     original_not_matching = []
     duplicate_keys = []
+    dialogue_sync_mismatches = []
 
     translated_file = {}
     with (open(f'data/ko-{PATCH_VERSION}.csv', newline='') as f):
@@ -91,6 +95,12 @@ def build_pak():
                 translated_file[namespace][key] = inline_whitespace(translated)
             else:
                 keys_not_translated.append(namespace_n_key)
+
+            if namespace == 'Dialogue':
+                original_syncs = re.findall(pat_dialogue_sync, original)
+                translated_syncs = re.findall(pat_dialogue_sync, translated)
+                if original_syncs != translated_syncs:
+                    dialogue_sync_mismatches.append((namespace_n_key, original_syncs, translated_syncs))
 
     for namespace, pairs in en_file.items():
         if namespace not in translated_file:
@@ -127,6 +137,10 @@ def build_pak():
     if duplicate_keys:
         print('[경고] 다음 키들은 여러 번 들어가 있습니다. 처음 것만 적용됩니다')
         print(duplicate_keys)
+        print()
+    if dialogue_sync_mismatches:
+        print('[경고] 다음 키들은 자막 싱크 포인트가 원문과 다릅니다.')
+        print(dialogue_sync_mismatches)
         print()
 
 
@@ -211,6 +225,9 @@ def build_pak():
         '',
         '# 중복된 키',
         pprint.pformat(duplicate_keys, indent=4),
+        '',
+        '# 대사 자막 싱크 포인트 불일치',
+        pprint.pformat(dialogue_sync_mismatches, indent=4),
         '',
     ]
 
