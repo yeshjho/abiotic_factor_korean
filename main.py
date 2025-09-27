@@ -37,6 +37,12 @@ data/image/[버전]/이미지+까지+경로
 """
 
 
+SKIP_PAK = False
+SKIP_BINARY_OVERRIDES = True
+SKIP_IMAGES = False
+IS_XBOX_GAME_PASS = True
+
+
 def parse_offset(offset: str):
     if offset.startswith('0x'):
         return int(offset[2:], 16)
@@ -130,7 +136,7 @@ def build_pak():
         for row in reader:
             extra.append(row)
     extra.append(['78A16F4242E154B8137464B3BC39D221', 'V. {1}',
-                  f'V. {{1}} | 한국어 패치 v{PATCH_VERSION}'])
+                  f'V. {{1}} | 한국어 패치 v{PATCH_VERSION}{"+XboxGamePass" if IS_XBOX_GAME_PASS else ""}'])
 
     for row in extra:
         if len(row) != 3:
@@ -444,10 +450,6 @@ def build_image_overrides():
 
 
 def main():
-    SKIP_PAK = False
-    SKIP_BINARY_OVERRIDES = False
-    SKIP_IMAGES = False
-
     if os.path.exists('out/pakchunk0-Windows_P.pak'):
         os.remove('out/pakchunk0-Windows_P.pak')
     if os.path.exists('out/pakchunk0-Windows_P.utoc'):
@@ -470,7 +472,7 @@ def main():
         shutil.move('out/pakchunk0-Windows_P.utoc', f'{pak_out_dir}/pakchunk0-Windows_P.utoc')
     if os.path.exists('out/pakchunk0-Windows_P.ucas'):
         shutil.move('out/pakchunk0-Windows_P.ucas', f'{pak_out_dir}/pakchunk0-Windows_P.ucas')
-    shutil.make_archive(f'out/abiotic_korean_{GAME_VERSION}_{PATCH_VERSION}',
+    shutil.make_archive(f'out/abiotic_korean_{GAME_VERSION}_{PATCH_VERSION}{"+XboxGamePass" if IS_XBOX_GAME_PASS else ""}',
                         'zip',
                         f'out/abiotic_korean_{GAME_VERSION}_{PATCH_VERSION}')
 
