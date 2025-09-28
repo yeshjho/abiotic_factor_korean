@@ -39,9 +39,9 @@ data/image/[버전]/이미지+까지+경로
 
 
 SKIP_PAK = False
-SKIP_BINARY_OVERRIDES = True
+SKIP_BINARY_OVERRIDES = False
 SKIP_IMAGES = False
-IS_XBOX_GAME_PASS = True
+IS_XBOX_GAME_PASS = False
 
 pat_dialogue_sync = re.compile(r'\[([\d\.]+)\]')
 

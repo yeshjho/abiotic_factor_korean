@@ -3,7 +3,7 @@ OLD_VERSION = "1.0.0.20513"
 NEW_VERSION = GAME_VERSION
 VERSION = GAME_VERSION
 
-PATCH_VERSION = "1.5.0"
+PATCH_VERSION = "1.5.1"
 
 
 def visualize_whitespace(text: str):
