@@ -1,0 +1,602 @@
+AbioticFactor/Content/Blueprints/Environment/Special/MapPamphletBox_BP.uasset	784Bh		TAKE A MAP	지도 얻기
+AbioticFactor/Content/Blueprints/Items/ItemTable_Global.uasset	603A7h		bandaged	에게 붕대를 감아주었습니다
+AbioticFactor/Content/Blueprints/Items/ItemTable_Global.uasset	666ACh		given pills/gave pills to	에게 알약을 주었습니다
+AbioticFactor/Content/Blueprints/Items/ItemTable_Global.uasset	76E93h		bandaged	에게 붕대를 감아주었습니다
+AbioticFactor/Content/Blueprints/Items/ItemTable_Global.uasset	990F6h		splinted	에게 부목을 대주었습니다
+AbioticFactor/Content/Blueprints/Items/ItemTable_Global.uasset	9AD71h		healed	을(를) 치료해주었습니다
+AbioticFactor/Content/Blueprints/Items/ItemTable_Global.uasset	9FC44h		healed	을(를) 치료해주었습니다
+AbioticFactor/Content/Blueprints/Items/ItemTable_Global.uasset	AE409h		healed	을(를) 치료해주었습니다
+AbioticFactor/Content/Blueprints/Items/ItemTable_Global.uasset	B6043h		given pills/gave pills to	에게 알약을 주었습니다
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4B891Eh		STAND CLEAR	작동 중
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4B89B2h		DURING OPERATION	접근 주의
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4B8A4Bh		STAND CLEAR DURING OPERATION	작동 중 접근 주의
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4B8AF0h		STAND CLEAR DURING OPERATION	작동 중 접근 주의
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4B8B95h		STAND CLEAR DURING OPERATION	작동 중 접근 주의
+AbioticFactor/Content/Maps/Facility.umap	14482436		RECEPTION	접수처
+AbioticFactor/Content/Maps/Facility.umap	14482568		SECURITY	보안
+AbioticFactor/Content/Maps/Facility.umap	14482699		HYDROPLANT	수력발전소
+AbioticFactor/Content/Maps/Facility.umap	14482832		DATA FARM	데이터 저장소
+AbioticFactor/Content/Maps/Facility.umap	14482964		WILDLIFE PENS	야생 동물 우리
+AbioticFactor/Content/Maps/Facility.umap	14483572		OFFICE SECTOR	사무 구역
+AbioticFactor/Content/Maps/Facility.umap	14483708		CONTAINMENT	격리 블록
+AbioticFactor/Content/Maps/Facility.umap	14483842		GYM & POOL	체육실 & 수영장
+AbioticFactor/Content/Maps/Facility.umap	14483975		DEFENSE SECTOR	방어 구역
+AbioticFactor/Content/Maps/Facility.umap	14484112		DEFENSE SECTOR	방어 구역
+AbioticFactor/Content/Maps/Facility.umap	14484249		REACTORS	반응로 구역
+AbioticFactor/Content/Maps/Facility.umap	14484380		SYNAPTIC LABS	시냅스 연구소
+AbioticFactor/Content/Maps/Facility.umap	14484516		DEFENSE SECTOR	방어 구역
+AbioticFactor/Content/Maps/Facility.umap	14484653		ROADWAY	진입로
+AbioticFactor/Content/Maps/Facility.umap	14484783		CLOUD REACTOR	구름 반응로
+AbioticFactor/Content/Maps/Facility.umap	14484919		DATA FARM	데이터 저장소
+AbioticFactor/Content/Maps/Facility.umap	14485051		L1 TRAM PLAZA	1층 트램 광장
+AbioticFactor/Content/Maps/Facility.umap	14485187		C. BLOCKS	격리 블록
+AbioticFactor/Content/Maps/Facility.umap	14485319		ADJUSTMENT	조정동
+AbioticFactor/Content/Maps/Facility.umap	14485452		VAC CHAMBER	진공 챔버
+AbioticFactor/Content/Maps/Facility.umap	14485586		OFFICE SECTOR	사무 구역
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4947758		BIOLAB SECURITY	생물학연구소 보안초소
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4947896		DELTA LAB	델타 연구실
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4948028		DOOR CONTROL	출입 제어실
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4948163		BIOLAB SECURITY	생물학연구소 보안초소
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4948301		BIOLABS	생물학 연구소
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4948431		01 BLAST DOOR	01 방폭문
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4948567		VAULT DOOR	강화문
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4948700		PROCESSING	처리실
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4948833		EQUIPMENT	장비실
+AbioticFactor/Content/Maps/Facility_Botanical.umap	4951060	TextRenderActor	SECRET\r\nENTRANCE	비밀\r\n통로
+AbioticFactor/Content/Maps/Facility_Containment.umap	6952392		CONTROL CENTER	관제 센터
+AbioticFactor/Content/Maps/Facility_Containment.umap	6952529		TRAM STATION	트램 정거장
+AbioticFactor/Content/Maps/Facility_Containment.umap	6952664		CURIE BLOCK	퀴리 블록
+AbioticFactor/Content/Maps/Facility_Containment.umap	6952798		INNER WING	내부동
+AbioticFactor/Content/Maps/Facility_Containment.umap	6952931		HEAT EXCHANGE	열 교환
+AbioticFactor/Content/Maps/Facility_Containment.umap	6953067		REACTOR FLOW	반응로 유체관
+AbioticFactor/Content/Maps/Facility_Containment.umap	6953202		SYN. COOLANT	시냅스 연구소 냉각수
+AbioticFactor/Content/Maps/Facility_Containment.umap	6953337		COOLING	냉각수
+AbioticFactor/Content/Maps/Facility_Containment.umap	6953467		EXCESS RUNOFF	과잉 유출액
+AbioticFactor/Content/Maps/Facility_Containment.umap	6953605		MANUFACTURING EAST	동부 제조 구역
+AbioticFactor/Content/Maps/Facility_Containment.umap	6953772		SYNAPTIC LABS	시냅스 연구소
+AbioticFactor/Content/Maps/Facility_Containment.umap	6953932		FLOW TRANSIT	유체 운반실
+AbioticFactor/Content/Maps/Facility_Containment.umap	6954067		ASSESSMENT	평가실
+AbioticFactor/Content/Maps/Facility_Containment.umap	6954200		ASSESSMENT	평가실
+AbioticFactor/Content/Maps/Facility_Containment.umap	6954333		HOLDING	구류실
+AbioticFactor/Content/Maps/Facility_Containment.umap	6954463		HOLDING	구류실
+AbioticFactor/Content/Maps/Facility_Containment.umap	6954593		HYDROPLANT	수력발전소
+AbioticFactor/Content/Maps/Facility_Containment.umap	6954726		OBSERVATION	관측소
+AbioticFactor/Content/Maps/Facility_Containment.umap	6954860		OBSERVATION	관측소
+AbioticFactor/Content/Maps/Facility_Dam.umap	7732441		HYDROPLANT	수력발전소
+AbioticFactor/Content/Maps/Facility_Dam.umap	7732574		LOWER ACCESS	저층 접근로
+AbioticFactor/Content/Maps/Facility_Dam.umap	7732709		ELECTRICAL GRID	전력 계통
+AbioticFactor/Content/Maps/Facility_Dam.umap	7732847		RELEASE DRAIN	배수 활성화
+AbioticFactor/Content/Maps/Facility_Dam.umap	7732983		DOCKS	정박지
+AbioticFactor/Content/Maps/Facility_Dam.umap	7733111		ROBOTICS	로보틱스
+AbioticFactor/Content/Maps/Facility_Dam.umap	7733242		MONITORING	모니터링
+AbioticFactor/Content/Maps/Facility_Dam.umap	7733375		TRAM STATION	트램 정거장
+AbioticFactor/Content/Maps/Facility_Dam.umap	7733510		TRAM STATION	트램 정거장
+AbioticFactor/Content/Maps/Facility_Dam.umap	7733645		TRAM STATION	트램 정거장
+AbioticFactor/Content/Maps/Facility_Dam.umap	7733780		RESIDENCES	주거 구역
+AbioticFactor/Content/Maps/Facility_Dam.umap	7733913		ELECTRICAL GRID	전력 계통
+AbioticFactor/Content/Maps/Facility_Dam.umap	7734051		ELECTRICAL GRID	전력 계통
+AbioticFactor/Content/Maps/Facility_Dam.umap	7734189		TRANSFORMERS	변전소
+AbioticFactor/Content/Maps/Facility_Dam.umap	7734324		TRAM STATION	트램 정거장
+AbioticFactor/Content/Maps/Facility_Dam_Central.umap	2469718		SPILLWAY C	배수로 C
+AbioticFactor/Content/Maps/Facility_Dam_Central.umap	2469851		SPILLWAY B	배수로 B
+AbioticFactor/Content/Maps/Facility_Dam_Central.umap	2469984		STORAGE DECK	창고 데크
+AbioticFactor/Content/Maps/Facility_Dam_Central.umap	2470119		STORAGE DECK	창고 데크
+AbioticFactor/Content/Maps/Facility_Dam_Hydroplant.umap	1979771		ELECTRICAL	전력소
+AbioticFactor/Content/Maps/Facility_Dam_Hydroplant.umap	1979905		SYSTEMS	시스템
+AbioticFactor/Content/Maps/Facility_Dam_Hydroplant.umap	1980035		LOCKERS	락커
+AbioticFactor/Content/Maps/Facility_Dam_Hydroplant.umap	1980167		MAINFRAME	메인프레임
+AbioticFactor/Content/Maps/Facility_Dam_Hydroplant.umap	1980302		FLOW VALVES	유량 밸브
+AbioticFactor/Content/Maps/Facility_Dam_Hydroplant.umap	1980439		TRANSMITTER	송신기
+AbioticFactor/Content/Maps/Facility_Dam_Hydroplant.umap	1980574		SYSTEMS CHIEF	시스템 관리자
+AbioticFactor/Content/Maps/Facility_Dam_Lower.umap	1321764		ROBOTICS	로보틱스
+AbioticFactor/Content/Maps/Facility_Dam_Waterfall.umap	1453389		EXERCISE	헬스장
+AbioticFactor/Content/Maps/Facility_Dam_Waterfall.umap	1453520		MAINFRAME	메인프레임
+AbioticFactor/Content/Maps/Facility_Dam_Waterfall.umap	1453652		MAINFRAME	메인프레임
+AbioticFactor/Content/Maps/Facility_DarkFusion.umap	5680228		SYNAPTIC LABS	시냅스 연구소
+AbioticFactor/Content/Maps/Facility_DarkFusion.umap	5680364		DUSK REACTOR	황혼 반응로
+AbioticFactor/Content/Maps/Facility_DarkFusion.umap	5680499		CHECK-IN BELOW	체크인
+AbioticFactor/Content/Maps/Facility_DarkFusion.umap	5680636		TRAM STATION	트램 정거장
+AbioticFactor/Content/Maps/Facility_DarkFusion.umap	5680771		CLOUD REACTOR	구름 반응로
+AbioticFactor/Content/Maps/Facility_DarkFusion.umap	5680907		OBSERVATION	관측실
+AbioticFactor/Content/Maps/Facility_DarkFusion.umap	5681041		OBSERVATION	관측실
+AbioticFactor/Content/Maps/Facility_DarkFusion.umap	5681175		OBSERVATION	관측실
+AbioticFactor/Content/Maps/Facility_DF_Central.umap	1221999		MIST REACTOR	안개 반응로
+AbioticFactor/Content/Maps/Facility_DF_Central.umap	1222134		GALE REACTOR	돌풍 반응로
+AbioticFactor/Content/Maps/Facility_DF_Central.umap	1222269		POWER RELAY	송전실
+AbioticFactor/Content/Maps/Facility_DF_Central.umap	1222403		REACTORS	반응로 구역
+AbioticFactor/Content/Maps/Facility_DF_Central.umap	1222534		WAYGATE CTRL	웨이게이트 제어실
+AbioticFactor/Content/Maps/Facility_DF_Central.umap	1222669		TRAM STATION	트램 정거장
+AbioticFactor/Content/Maps/Facility_DF_Central.umap	1222804		WAYGATE CTRL	웨이게이트 제어실
+AbioticFactor/Content/Maps/Facility_DF_Central.umap	1222939		POWER RELAY	송전실
+AbioticFactor/Content/Maps/Facility_DF_Central.umap	1223073		WAYGATE	웨이게이트
+AbioticFactor/Content/Maps/Facility_DF_Central.umap	1223203		POWER RELAY	송전실
+AbioticFactor/Content/Maps/Facility_DF_Central.umap	1223337		WG-INTRADOS	인트라도스 웨이게이트
+AbioticFactor/Content/Maps/Facility_DF_Central.umap	1223471		UPPER BRIDGE	고층 교량
+AbioticFactor/Content/Maps/Facility_DF_Central.umap	1223606		WAYGATE CTRL	웨이게이트 제어실
+AbioticFactor/Content/Maps/Facility_DF_Labs.umap	6120256		DUSK REACTOR	황혼 반응로
+AbioticFactor/Content/Maps/Facility_DF_Labs.umap	6120391		DUSK REACTOR	황혼 반응로
+AbioticFactor/Content/Maps/Facility_DF_Overgrowth.umap	3546527		CONTROL ROOM	제어실
+AbioticFactor/Content/Maps/Facility_DF_Overgrowth.umap	3546662		ROADWAY	진입로
+AbioticFactor/Content/Maps/Facility_DF_Overgrowth.umap	3546792		LOWER STORAGE	저층 창고
+AbioticFactor/Content/Maps/Facility_DF_Overgrowth.umap	3546928		REACTOR	반응로
+AbioticFactor/Content/Maps/Facility_DF_Overgrowth.umap	3547058		TURBINE 01	터빈 01
+AbioticFactor/Content/Maps/Facility_DF_Overgrowth.umap	3547191		RECEPTION	접수처
+AbioticFactor/Content/Maps/Facility_DF_Overgrowth.umap	3547323		CONTROL ROOM	제어실
+AbioticFactor/Content/Maps/Facility_DF_Overgrowth.umap	3547458		TURBINE 02	터빈 02
+AbioticFactor/Content/Maps/Facility_DF_Overgrowth.umap	3547591		RECEPTION	접수처
+AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5598530		TOPSIDE ACCESS	상층부 접근로
+AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5598667		TRAM STATION	트램 정거장
+AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5598802		REACTOR ENTRY	반응로 입구
+AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5598938		REACTOR ENTRY	반응로 입구
+AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5599074		REACTOR ENTRY	반응로 입구
+AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5599210		TRAM STATION	트램 정거장
+AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5599345		TRAM STATION	트램 정거장
+AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5599480		FUEL STORAGE	연료 저장소
+AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5599615		LOWER ACCESS	저층 접근로
+AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5599750		UPPER ACCESS	고층 접근로
+AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5599885		REACTOR ENTRY	반응로 입구
+AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5600021		REACTOR ENTRY	반응로 입구
+AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5600157		TRAM STATION	트램 정거장
+AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5600292		REACTOR ENTRY	반응로 입구
+AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5600428		REACTOR ENTRY	반응로 입구
+AbioticFactor/Content/Maps/Facility_DF_RadWaste.umap	5600564		REACTOR ENTRY	반응로 입구
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7859373	Sign_ModularDormitory_C	MAINTENANCE	관리실
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7859508	Sign_ModularDormitory_C	FUEL CRYOPOD	연료 냉각 장치
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7859644		DEPLETED FUEL	폐기 연료 보관고
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7859781		LOWER OFFICES	저층 사무 구역
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7859917		GALE REACTOR	돌풍 반응로
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7860052		GALE REACTOR	돌풍 반응로
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7860187		GALE REACTOR	돌풍 반응로
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7860322		GALE REACTOR	돌풍 반응로
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7860457		GALE REACTOR	돌풍 반응로
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7860592		GALE REACTOR	돌풍 반응로
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7860727		GALE REACTOR	돌풍 반응로
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7860862		TRAM STATION	트램 정거장
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7860997		GALE REACTOR	돌풍 반응로
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7861132		LAB/ FUEL CRYO	연구실/연료 냉동고
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7861269		DEPLETED FUEL	폐기 연료 보관고
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7861406		LOUNGE	라운지
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7861535		LAB/ FUEL CRYO	연구실/연료 냉동고
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7861672		GALE REACTOR	돌풍 반응로
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7861807		GALE REACTOR	돌풍 반응로
+AbioticFactor/Content/Maps/Facility_DF_War.umap	7861942		MAIN LOBBY	메인 로비
+AbioticFactor/Content/Maps/Facility_Labs.umap	7394737		HOLDING	구류실
+AbioticFactor/Content/Maps/Facility_Labs.umap	7394891		LENS EPICENTRE	렌즈 중심점
+AbioticFactor/Content/Maps/Facility_Labs.umap	7395028		ADJUSTMENT	조정동
+AbioticFactor/Content/Maps/Facility_Labs.umap	7395161		LENS EPICENTRE	렌즈 중심점
+AbioticFactor/Content/Maps/Facility_Labs.umap	7395298		LENS EPICENTRE	렌즈 중심점
+AbioticFactor/Content/Maps/Facility_Labs.umap	7395437		VACUUM CHAMBER	진공 챔버
+AbioticFactor/Content/Maps/Facility_Labs.umap	7395598		PORTAL LAB 04	포탈 연구실 04
+AbioticFactor/Content/Maps/Facility_Labs.umap	7395734		INNER WING	내부동
+AbioticFactor/Content/Maps/Facility_Labs.umap	7395867		INNER WING	내부동
+AbioticFactor/Content/Maps/Facility_Labs.umap	7396000		INNER WING	내부동
+AbioticFactor/Content/Maps/Facility_Labs.umap	7396133		WILDLIFE PENS	야생 동물 우리
+AbioticFactor/Content/Maps/Facility_Labs.umap	7396269		ADJUSTMENT	조정동
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5626740	Sign_ModularDormitory_C	SHOWERS	샤워실
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5626870	Sign_ModularDormitory_C	DECONTAMINATION	오염 제거
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5627008	Sign_ModularDormitory_C	SHOWERS	샤워실
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5627138	Sign_ModularDormitory_C	DECONTAMINATION	오염 제거
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5627276	Sign_ModularDormitory_C	SHOWERS	샤워실
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5627406	Sign_ModularDormitory_C	DECONTAMINATION	오염 제거
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5627544	Sign_ModularDormitory_C	SHOWERS	샤워실
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5627674	Sign_ModularDormitory_C	DECONTAMINATION	오염 제거
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5627812		LASER LAB	레이저 연구실
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5627944		LASER LAB	레이저 연구실
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5628076		CELLULAR LAB	세포 연구실
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5628211		VIEWING ROOM	관측실
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5628346		VIEWING ROOM	관측실
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5628481		HOLDING	구류실
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5628611		COLD STORAGE	저온 보관실
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5628746		COLD STORAGE	저온 보관실
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5628881		LASER LAB	레이저 연구실
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5629013		CELLULAR LAB	세포 연구실
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5629148		LASER LAB	레이저 연구실
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5629280		COLD STORAGE	저온 보관실
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5629415		CELLULAR LAB	세포 연구실
+AbioticFactor/Content/Maps/Facility_Labs_Adjustment.umap	5629550		SCANNING	스캔실
+AbioticFactor/Content/Maps/Facility_Labs_Control.umap	2493894		HELMHOLTZ LIFT	헬름홀츠 승강기
+AbioticFactor/Content/Maps/Facility_Labs_Control.umap	2494033		CONTROL CENTER	관제 센터
+AbioticFactor/Content/Maps/Facility_Labs_Control.umap	2494194		CONTROL LIFT	관제 승강기
+AbioticFactor/Content/Maps/Facility_Labs_Control.umap	2494329		CONTROL LIFT	관제 승강기
+AbioticFactor/Content/Maps/Facility_Labs_Control.umap	2494464		OBSERVATION	관측소
+AbioticFactor/Content/Maps/Facility_Labs_Control.umap	2494598		CONTROL LIFT	관제 승강기
+AbioticFactor/Content/Maps/Facility_Labs_Control.umap	2494733		OBSERVATION	관측소
+AbioticFactor/Content/Maps/Facility_MFFoundry.umap	858315		MANUFACTURING EAST	동부 제조 구역
+AbioticFactor/Content/Maps/Facility_MFFoundry.umap	858480		MANUFACTURING	제조 구역
+AbioticFactor/Content/Maps/Facility_MFFoundry.umap	858618		MANUFACTURING EAST	동부 제조 구역
+AbioticFactor/Content/Maps/Facility_MFFoundry.umap	858783		SYNCHROTRON	싱크로트론
+AbioticFactor/Content/Maps/Facility_MFHQ.umap	1709859		RESIDENCE TRAM	주거 구역 트램
+AbioticFactor/Content/Maps/Facility_MFMines.umap	5632342		SITE OFFICE	형장 사무실
+AbioticFactor/Content/Maps/Facility_MFMines.umap	5632766		CHECK-IN	체크인
+AbioticFactor/Content/Maps/Facility_MFMines.umap	5632897		CHECK-IN	체크인
+AbioticFactor/Content/Maps/Facility_MFMines.umap	5633028		CHECK-IN	체크인
+AbioticFactor/Content/Maps/Facility_MFMines.umap	5633159		OLD MINES	옛 광산
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7805772		TRAM STATION	트램 정거장
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7805907		OFFICE SECTOR	사무 구역
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7806043		FLOW CONTROL	유량 제어
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7806178		GARAGE	차고
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7806307		OFFICE SECTOR	사무 구역
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7806443		SECURITY	보안
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7806574		CARGO DISTRICT	화물 지구
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7806711		TOOL DEPOT	도구 보관소
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7806844		TOOL DEPOT	도구 보관소
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7806977		TOOL DEPOT	도구 보관소
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7807110		MAINT. OFFICE	정비 사무실
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7807246		TOILETS	화장실
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7807376		ROADWAY LIMA	진입로 리마
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7807511		TRAM STATION	트램 정거장
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7807646		CONTROL TOWER	관제탑
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7807782		MAINT. OFFICE	정비 사무실
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7807918		CONTROL TOWER	관제탑
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7808054		TRAM STATION	트램 정거장
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7808189		LOT OVERSIGHT	구역 관리소
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7808325		CONTAINER LOT	저장소 구역
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7808461		SHIP. LOGISTICS	물류지
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7808599		GARAGE	차고
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7808728		ALLOY HANDLING	합금 처리 시설
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7808865		SYNCHROTRON	싱크로트론
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7808999		GARAGE	차고
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7809128		ALLOY HANDLING	합금 처리 시설
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7809265		KITCHEN	주방
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7809395		ROADWAY	진입로
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7809525		TRAM STATION	트램 정거장
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7809660		GARAGE	차고
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7809789		CONTROL TOWER	관제탑
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7809925		SHIP. LOGISTICS	물류지
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7810063		OFFICE SECTOR	사무 구역
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7810199		KITCHEN	주방
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7810329		SYNCHROTRON	싱크로트론
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7810463		INSPECTION	검사실
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7810596		INSPECTION	검사실
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7810729		SHIP. LOGISTICS	물류지
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7810867		RAILWAY	철로
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7810997		CONTAINER LOT	저장소 구역
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7811133		OVERFLOW	오버플로우
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7811265		ALLOY HANDLING	합금 처리 시설
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7811402		INSPECTION	검사실
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7811535		LOT OVERSIGHT	구역 관리소
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7811671		ROADWAY	진입로
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7811801		TRAM ACCESS	트램 접근로
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7811935		ROADWAY	진입로
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7812065		CONTROL TOWER	관제탑
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7812201		FLOW CONTROL	유량 제어
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7812336		ROADWAY	진입로
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7812466		CONTROL TOWER	관제탑
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7812602		TRAM STATION	트램 정거장
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7812737		LOT OVERSIGHT	구역 관리소
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7812873		FLOW CONTROL	유량 제어
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7813010		SHIPPING	물류 배송지
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7813165		UPPER SHIPPING	고층 접근로
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7813302		MINE ENTRANCE B	광산 입구 B
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7813440		MAPPING CENTER	지도 제작 센터
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7813577		MAPPING CENTER	지도 제작 센터
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7813714		OFFICE SECTOR	사무 구역
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7813850		OFFICE SECTOR	사무 구역
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7813986		MINE ENTRANCE B	광산 입구 B
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7814124		CHECK-IN	체크인
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7814255		SHIPPING	물류 배송지
+AbioticFactor/Content/Maps/Facility_MFWest.umap	7814386		GARAGE	차고
+AbioticFactor/Content/Maps/Facility_Office1.umap	5013233		SERVER ROOM O1	서버실 01
+AbioticFactor/Content/Maps/Facility_Office1.umap	5013370		FLOW TRANSIT	유체 운반실
+AbioticFactor/Content/Maps/Facility_Office1.umap	5013505		SECURITY OFFICE	보안실
+AbioticFactor/Content/Maps/Facility_Office1.umap	5013643		GYM & POOL	체육실 & 수영장
+AbioticFactor/Content/Maps/Facility_Office1.umap	5013776		LEVEL 2	2층
+AbioticFactor/Content/Maps/Facility_Office1.umap	5013906		RECEPTION	접수처
+AbioticFactor/Content/Maps/Facility_Office1.umap	5014038		TRAM STATION	트램 정거장
+AbioticFactor/Content/Maps/Facility_Office1.umap	5014173		STORAGE	창고
+AbioticFactor/Content/Maps/Facility_Office1.umap	5014303		OFFICE SECTOR	사무 구역
+AbioticFactor/Content/Maps/Facility_Office1.umap	5014439		DATA FARM	데이터 저장소
+AbioticFactor/Content/Maps/Facility_Office1.umap	5014571		KITCHEN	주방
+AbioticFactor/Content/Maps/Facility_Office1.umap	5014701		SECURITY SEC.	보안 구역
+AbioticFactor/Content/Maps/Facility_Office1.umap	5014837		DATA FARM	데이터 저장소
+AbioticFactor/Content/Maps/Facility_Office1.umap	5014969		WILDLIFE PENS	야생 동물 우리
+AbioticFactor/Content/Maps/Facility_Office1.umap	5015105		SERVER ROOM 01	서버실 01
+AbioticFactor/Content/Maps/Facility_Office1.umap	5015242		OFFICE SECTOR	사무 구역
+AbioticFactor/Content/Maps/Facility_Office1.umap	5015378		CAFETERIA	구내식당
+AbioticFactor/Content/Maps/Facility_Office1.umap	5015510		MANUFACTURING	제조 구역
+AbioticFactor/Content/Maps/Facility_Office1.umap	5015646		LOWER ACCESS	저층 접근로
+AbioticFactor/Content/Maps/Facility_Office1.umap	5015781		MANUFACTURING	제조 구역
+AbioticFactor/Content/Maps/Facility_Office1.umap	5015917		LIFT ACCESS	승강기 접근로
+AbioticFactor/Content/Maps/Facility_Office1.umap	5016051		TRAM PLAZA	트램 광장
+AbioticFactor/Content/Maps/Facility_Office1.umap	5016184		PUBLIC TERMINAL	공공 터미널
+AbioticFactor/Content/Maps/Facility_Office1.umap	5016322		LEVEL 2	2층
+AbioticFactor/Content/Maps/Facility_Office1.umap	5016452		TRAM - B SIDE	트램 - 역방향
+AbioticFactor/Content/Maps/Facility_Office1.umap	5016588		RECEPTION	접수처
+AbioticFactor/Content/Maps/Facility_Office2.umap	5717295		L1 TRAM PLAZA	1층 트램 광장
+AbioticFactor/Content/Maps/Facility_Office2.umap	5717431		SECURITY OFFICE	보안실
+AbioticFactor/Content/Maps/Facility_Office2.umap	5717569		RESIDENCE TRAM	주거 구역 트램
+AbioticFactor/Content/Maps/Facility_Office2.umap	5717706		LEVEL 3 LIFT	3층 승강기
+AbioticFactor/Content/Maps/Facility_Office2.umap	5717841		LOCKER ROOM	락커룸
+AbioticFactor/Content/Maps/Facility_Office2.umap	5717975		SECTOR MAP	구역 안내 지도
+AbioticFactor/Content/Maps/Facility_Office2.umap	5718108		LOCKER ROOM	락커룸
+AbioticFactor/Content/Maps/Facility_Office2.umap	5718242		KITCHEN	주방
+AbioticFactor/Content/Maps/Facility_Office2.umap	5718372		BIO LAB D	생물학 연구실 D
+AbioticFactor/Content/Maps/Facility_Office2.umap	5718504		DATA FARM	데이터 저장소
+AbioticFactor/Content/Maps/Facility_Office2.umap	5718636		RECEPTION	접수처
+AbioticFactor/Content/Maps/Facility_Office2.umap	5718768		MANUFACTURING	제조 구역
+AbioticFactor/Content/Maps/Facility_Office2.umap	5718904		DATA FARM	데이터 저장소
+AbioticFactor/Content/Maps/Facility_Office2.umap	5719036		RESIDENCE TRAM	주거 구역 트램
+AbioticFactor/Content/Maps/Facility_Office2.umap	5719173		BIO LAB D	생물학 연구실 D
+AbioticFactor/Content/Maps/Facility_Office2.umap	5719305		DATA FARM	데이터 저장소
+AbioticFactor/Content/Maps/Facility_Office2.umap	5719437		BIO LAB D	생물학 연구실 D
+AbioticFactor/Content/Maps/Facility_Office2.umap	5719569		RECEPTION	접수처
+AbioticFactor/Content/Maps/Facility_Office2.umap	5719701		RESIDENCES	주거 구역
+AbioticFactor/Content/Maps/Facility_Office2.umap	5719834		RECEPTION	접수처
+AbioticFactor/Content/Maps/Facility_Office2.umap	5719966		BIO LAB D	생물학 연구실 D
+AbioticFactor/Content/Maps/Facility_Office2.umap	5720098		DATA FARM	데이터 저장소
+AbioticFactor/Content/Maps/Facility_Office2.umap	5720230		GYM & POOL	체육실 & 수영장
+AbioticFactor/Content/Maps/Facility_Office2.umap	5720363		DATA FARM	데이터 저장소
+AbioticFactor/Content/Maps/Facility_Office2.umap	5720495		EXEC. OFFICES	임원 사무실
+AbioticFactor/Content/Maps/Facility_Office2.umap	5720631		LEVEL 3 STAIRS	3층 계단
+AbioticFactor/Content/Maps/Facility_Office2.umap	5720768		SILO 3 ACCESS	사일로 3 접근로
+AbioticFactor/Content/Maps/Facility_Office2.umap	5720904		EXEC. OFFICES	임원 사무실
+AbioticFactor/Content/Maps/Facility_Office2.umap	5721040		STORAGE	창고
+AbioticFactor/Content/Maps/Facility_Office2.umap	5721170		TRAM STATION	트램 정거장
+AbioticFactor/Content/Maps/Facility_Office2.umap	5721305		SILO 3 ACCESS	사일로 3 접근로
+AbioticFactor/Content/Maps/Facility_Office2.umap	5721441		TRAM STATION	트램 정거장
+AbioticFactor/Content/Maps/Facility_Office2.umap	5721576		KITCHEN	주방
+AbioticFactor/Content/Maps/Facility_Office2.umap	5721706		L1 TRAM PLAZA	1층 트램 광장
+AbioticFactor/Content/Maps/Facility_Office2.umap	5721842		BIO LAB D	생물학 연구실 D
+AbioticFactor/Content/Maps/Facility_Office2.umap	5721974		RECEPTION	접수처
+AbioticFactor/Content/Maps/Facility_Office3.umap	6501255		LIFT ACCESS	승강기 접근로
+AbioticFactor/Content/Maps/Facility_Office3.umap	6501389		LEVEL 2	2층
+AbioticFactor/Content/Maps/Facility_Office3.umap	6501519		CHECK-IN	체크인
+AbioticFactor/Content/Maps/Facility_Office3.umap	6501650		SILO 2 ACCESS	사일로 3 접근로
+AbioticFactor/Content/Maps/Facility_Office3.umap	6501786		LEVEL 2 LIFT	2층 승강기
+AbioticFactor/Content/Maps/Facility_Office3.umap	6501921		ANALYSIS OFFICE	분석실
+AbioticFactor/Content/Maps/Facility_Office3.umap	6502059		BREAK ROOM	휴게실
+AbioticFactor/Content/Maps/Facility_Office3.umap	6502192		SILO 3 VIEWING	사일로 3 조망대
+AbioticFactor/Content/Maps/Facility_Office3.umap	6502329		SILO 3	사일로 3
+AbioticFactor/Content/Maps/Facility_Office3.umap	6502458		PHYSICS LAB D	물리학 연구실 D
+AbioticFactor/Content/Maps/Facility_Office3.umap	6502594		PHYSICS LAB D	물리학 연구실 D
+AbioticFactor/Content/Maps/Facility_Office3.umap	6502730		SILO 3 VIEWING	사일로 3 조망대
+AbioticFactor/Content/Maps/Facility_Office3.umap	6502867		EXEC. OFFICES	임원 사무실
+AbioticFactor/Content/Maps/Facility_Office3.umap	6503003		SILO 3	사일로 3
+AbioticFactor/Content/Maps/Facility_Office3.umap	6503132		SILO 2 LOUNGE	사일로 2 라운지
+AbioticFactor/Content/Maps/Facility_Office3.umap	6503268		EXEC. OFFICES	임원 사무실
+AbioticFactor/Content/Maps/Facility_Office3.umap	6503404		L2 / L3 JUNCTION	2층 / 3층 교차로
+AbioticFactor/Content/Maps/Facility_Office3.umap	6503543		SILO 2	사일로 2
+AbioticFactor/Content/Maps/Facility_Office3.umap	6503672		LEVEL 3 ACCESS	3층 접근로
+AbioticFactor/Content/Maps/Facility_Office3.umap	6503809		LEVEL 2	2층
+AbioticFactor/Content/Maps/Facility_Office3.umap	6503939		TRUCK TUNNEL D	트럭 터널 D
+AbioticFactor/Content/Maps/Facility_Office3.umap	6504076		LIFT ACCESS	승강기 접근로
+AbioticFactor/Content/Maps/Facility_Office3.umap	6504210		EXEC. RESTROOM	임원 화장실
+AbioticFactor/Content/Maps/Facility_Office3.umap	6504347		EXEC. RESTROOM	임원 화장실
+AbioticFactor/Content/Maps/Facility_Office3.umap	6504484		BOARDROOM	회의실
+AbioticFactor/Content/Maps/Facility_Office3.umap	6504616		CHECK-IN	체크인
+AbioticFactor/Content/Maps/Facility_Office3.umap	6504747		PHYSICS LAB D	물리학 연구실 D
+AbioticFactor/Content/Maps/Facility_Office4.umap	1853264		MANUFACTURING	제조 구역
+AbioticFactor/Content/Maps/Facility_Office4.umap	1853400		SILO 2 ACCESS	사일로 3 접근로
+AbioticFactor/Content/Maps/Facility_Office4.umap	1853536		LIFT ACCESS	승강기 접근로
+AbioticFactor/Content/Maps/Facility_Office4.umap	1853670		SILO 2 ACCESS	사일로 3 접근로
+AbioticFactor/Content/Maps/Facility_Office4.umap	1853806		RECEPTION	접수처
+AbioticFactor/Content/Maps/Facility_Office4.umap	1853938		SECURITY	보안
+AbioticFactor/Content/Maps/Facility_Office4.umap	1854069		LIFT ACCESS	승강기 접근로
+AbioticFactor/Content/Maps/Facility_Office4.umap	1854203		L1 TRAM PLAZA	1층 트램 광장
+AbioticFactor/Content/Maps/Facility_Office4.umap	1854339		RECEPTION	접수처
+AbioticFactor/Content/Maps/Facility_Pens.umap	7017912		XR CONTAINMENT	XR 격리실
+AbioticFactor/Content/Maps/Facility_Pens.umap	7018049		EASTERN TUNNEL	동쪽 터널
+AbioticFactor/Content/Maps/Facility_Pens.umap	7018186		VEHICLE LOT 7	7번 차고지
+AbioticFactor/Content/Maps/Facility_Pens.umap	7018322		C. STATION	C 정거장
+AbioticFactor/Content/Maps/Facility_Pens.umap	7018455		TOILETS	화장실
+AbioticFactor/Content/Maps/Facility_Pens.umap	7018585		ROADWAY	진입로
+AbioticFactor/Content/Maps/Facility_Pens.umap	7018715		C. BLOCKS	격리 블록
+AbioticFactor/Content/Maps/Facility_Pens.umap	7018847		WILDLIFE PENS	야생 동물 우리
+AbioticFactor/Content/Maps/Facility_Pens.umap	7018983		PARTICLE LAB	입자 연구실
+AbioticFactor/Content/Maps/Facility_Pens.umap	7019118		TOILETS	화장실
+AbioticFactor/Content/Maps/Facility_Pens.umap	7019248		PARTICLE LAB	입자 연구실
+AbioticFactor/Content/Maps/Facility_Pens.umap	7019383		C. STATION	C 정거장
+AbioticFactor/Content/Maps/Facility_Pens.umap	7019516		HEAVY DEPOT	중장비 차고
+AbioticFactor/Content/Maps/Facility_Pens.umap	7019650		OFFICE SECTOR	사무 구역
+AbioticFactor/Content/Maps/Facility_Pens.umap	7019786		WILDLIFE PENS	야생 동물 우리
+AbioticFactor/Content/Maps/Facility_Pens.umap	7019922		TOILETS	화장실
+AbioticFactor/Content/Maps/Facility_Pens.umap	7020052		PARTICLE LAB	입자 연구실
+AbioticFactor/Content/Maps/Facility_Pens.umap	7020187		XR TRANSFER	XR 이동실
+AbioticFactor/Content/Maps/Facility_Pens.umap	7020321		HOLDING	구류실
+AbioticFactor/Content/Maps/Facility_Pens.umap	7020451		WILDLIFE PENS	야생 동물 우리
+AbioticFactor/Content/Maps/Facility_Pens.umap	7020587		VEHICLE LOT 7	7번 차고지
+AbioticFactor/Content/Maps/Facility_Pens.umap	7020723		XR CONTAINMENT	XR 격리실
+AbioticFactor/Content/Maps/Facility_Pens.umap	7020860		TOILETS	화장실
+AbioticFactor/Content/Maps/Facility_Pens.umap	7020990		WILDLIFE PENS	야생 동물 우리
+AbioticFactor/Content/Maps/Facility_Pens.umap	7021126		TOILETS	화장실
+AbioticFactor/Content/Maps/Facility_Pens.umap	7021256		WILDLIFE PENS	야생 동물 우리
+AbioticFactor/Content/Maps/Facility_Pens.umap	7021392		C. STATION	C 정거장
+AbioticFactor/Content/Maps/Facility_Pens.umap	7021525		WILDLIFE PENS	야생 동물 우리
+AbioticFactor/Content/Maps/Facility_Pens.umap	7021661		TOILETS	화장실
+AbioticFactor/Content/Maps/Facility_Pens.umap	7021791		PARTICLE LAB	입자 연구실
+AbioticFactor/Content/Maps/Facility_Pens.umap	7021926		TOILETS	화장실
+AbioticFactor/Content/Maps/Facility_Pens.umap	7022056		C. BLOCKS	격리 블록
+AbioticFactor/Content/Maps/Facility_Pens.umap	7022188		VEHICLE LOT 7	7번 차고지
+AbioticFactor/Content/Maps/Facility_Pens.umap	7022324		XR CONTAINMENT	XR 격리실
+AbioticFactor/Content/Maps/Facility_Pens.umap	7022461		WILDLIFE PENS	야생 동물 우리
+AbioticFactor/Content/Maps/Facility_Pens.umap	7022597		C. STATION	C 정거장
+AbioticFactor/Content/Maps/Facility_Pens.umap	7022730		PARTICLE LAB	입자 연구실
+AbioticFactor/Content/Maps/Facility_Pens.umap	7022865		PARTICLE LAB	입자 연구실
+AbioticFactor/Content/Maps/Facility_Plant.umap	4030509		TRAM STATION	트램 정거장
+AbioticFactor/Content/Maps/Facility_Reservoir.umap	3218643		DETECTOR	탐지기
+AbioticFactor/Content/Maps/Facility_Residence.umap	9077253	Sign_ModularDormitory_C	DR. MANJINDER SANA	만진더 사나 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9077394	Sign_ModularDormitory_C	DR. PETRA PETERS	페트라 피터스 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9077533	Sign_ModularDormitory_C	DR. REYNA BELL	레이나 벨 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9077670	Sign_ModularDormitory_C	DR. JESSICA LAMBERT	제시카 램버트 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9077812	Sign_ModularDormitory_C	DR. SOPHIA TZIRKOTI	소피아 치르코티 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9077954	Sign_ModularDormitory_C	DR. ZOE KINCHIN-WALLER	조이 킨친-월러 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9078099	Sign_ModularDormitory_C	DR. PIOTR RANDONJIC	피오트르 란도니치 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9078241	Sign_ModularDormitory_C	DR. MARIJA KRYZSTYNIAK	마리야 크리스티니악 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9078386	Sign_ModularDormitory_C	DR. NAMAN HAMAYUN	나만 하마윤 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9078526	Sign_ModularDormitory_C	DR. MARIO GARBARINO	마리오 가르바리노 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9078668	Sign_ModularDormitory_C	DR. OSCAR BEVILACQUA	오스카 베빌아쿠아 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9078811	Sign_ModularDormitory_C	DR. MAJID ACHEAMPONG	마지드 아참퐁 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9078954	Sign_ModularDormitory_C	DR. YANG HONG	양 홍 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9079090	Sign_ModularDormitory_C	DR. RICH MELANCHTON	리치 멜란히톤 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9079232	Sign_ModularDormitory_C	DR. MACHIKO ISODA	마치코 이소다 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9079372	Sign_ModularDormitory_C	DR. GAYUSH ADIVAR	게이유시 아디바르 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9079512	Sign_ModularDormitory_C	DR. YUSUF AZIZ	유수프 아지즈 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9079649	Sign_ModularDormitory_C	DR. ABDULRAZAK OTHMAN	압둘라자크 오스만 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9079793	Sign_ModularDormitory_C	DR. MANUEL MARCOS	마누엘 마르코스 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9079933	Sign_ModularDormitory_C	DR. NASRA BADAR	나스라 바다르 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9080071	Sign_ModularDormitory_C	DR. LLOYD GARBIT	로이드 가빗 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9080210	Sign_ModularDormitory_C	DR. SAMEER MISHOD	사미르 미쇼드 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9080350	Sign_ModularDormitory_C	DR. JUDITH ANDERSON	주디스 안더슨 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9080492	Sign_ModularDormitory_C	DR. ZHAO LI	자오 리 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9080626	Sign_ModularDormitory_C	DR. ALEXANDER HANNITY	알렉산더 해니티 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9080770	Sign_ModularDormitory_C	DR. PERRY BUTLER	페리 버틀러 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9080909	Sign_ModularDormitory_C	DR. SVETLANA PRICE	스베틀라나 프라이스 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9081050	Sign_ModularDormitory_C	DR. JANET ROSS	자넷 로스 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9081187	Sign_ModularDormitory_C	DR. LUKAS BENES	루카스 베네스 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9081325	Sign_ModularDormitory_C	DR. DANIEL FLINT	다니엘 플린트 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9081464	Sign_ModularDormitory_C	DR. GARRISON SOYINKA	개리슨 소잉카 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9081607	Sign_ModularDormitory_C	DR. AIDAN OSBORNE	에이든 오스본 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9081747	Sign_ModularDormitory_C	DR. RASHAD DERRICK	라샤드 데릭 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9081888	Sign_ModularDormitory_C	DR. STEPHEN WINCKOWSKI	스티븐 윈카우스키 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9082033	Sign_ModularDormitory_C	DR. EDWARD KRAUS	에드워드 크라우스 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9082172	Sign_ModularDormitory_C	DR. ABRAHAM STERN	에이브라함 스턴 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9082312		ATHLETIC POOL	체육관 수영장
+AbioticFactor/Content/Maps/Facility_Residence.umap	9082448		E-SUITES	E-스위트룸
+AbioticFactor/Content/Maps/Facility_Residence.umap	9082579		RUTGER STRAUSS	루트거 슈트라우스
+AbioticFactor/Content/Maps/Facility_Residence.umap	9082716		DEFENSE SECTOR	방어 구역
+AbioticFactor/Content/Maps/Facility_Residence.umap	9082853		ENGINEERING	엔지니어링
+AbioticFactor/Content/Maps/Facility_Residence.umap	9082987		ATHLETICS	체육관
+AbioticFactor/Content/Maps/Facility_Residence.umap	9083119		MAIN LOBBY	메인 로비
+AbioticFactor/Content/Maps/Facility_Residence.umap	9083252		E-SUITES	E-스위트룸
+AbioticFactor/Content/Maps/Facility_Residence.umap	9083383		DORMITORIES (A)	기숙사 (A)
+AbioticFactor/Content/Maps/Facility_Residence.umap	9083521		BARRACKS	병영
+AbioticFactor/Content/Maps/Facility_Residence.umap	9083652		MAIN LOBBY	메인 로비
+AbioticFactor/Content/Maps/Facility_Residence.umap	9083785		BARRACKS	병영
+AbioticFactor/Content/Maps/Facility_Residence.umap	9083916		T. R. ENDERSON	T. R. 엔더슨
+AbioticFactor/Content/Maps/Facility_Residence.umap	9084053		BARRACKS A	병영 A
+AbioticFactor/Content/Maps/Facility_Residence.umap	9084186		TOILETS	화장실
+AbioticFactor/Content/Maps/Facility_Residence.umap	9084316		E-SUITES	E-스위트룸
+AbioticFactor/Content/Maps/Facility_Residence.umap	9084447		EATERY	식당
+AbioticFactor/Content/Maps/Facility_Residence.umap	9084576		EATERY	식당
+AbioticFactor/Content/Maps/Facility_Residence.umap	9084705		MAINTENANCE	관리실
+AbioticFactor/Content/Maps/Facility_Residence.umap	9084839		HYDROPLANT	수력발전소
+AbioticFactor/Content/Maps/Facility_Residence.umap	9084972		HYDROPLANT	수력발전소
+AbioticFactor/Content/Maps/Facility_Residence.umap	9085105		RESIDENCES	주거 구역
+AbioticFactor/Content/Maps/Facility_Residence.umap	9085238		RESIDENCES	주거 구역
+AbioticFactor/Content/Maps/Facility_Residence.umap	9085371		DR. DEREK MANSE	데릭 맨스 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9085509		RESIDENCES	주거 구역
+AbioticFactor/Content/Maps/Facility_Residence.umap	9085642		DR. STEWART WAKEMAN	스튜워트 웨이크먼 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9085784		SHOPPING DISTRICT	상업가
+AbioticFactor/Content/Maps/Facility_Residence.umap	9085924		DORMITORIES (E)	기숙사 (E)
+AbioticFactor/Content/Maps/Facility_Residence.umap	9086062		TOILETS	화장실
+AbioticFactor/Content/Maps/Facility_Residence.umap	9086192		DR. AJAY KALAM	에이제이 칼람 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9086329		JANE KARENSKI	제인 카렌스키
+AbioticFactor/Content/Maps/Facility_Residence.umap	9086465		DR. MICHAEL HUTTON	마이클 허튼 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9086606		DR. DINA KHATTAR	디나 카타르 박사
+AbioticFactor/Content/Maps/Facility_Residence.umap	9086745		HYDROPLANT	수력발전소
+AbioticFactor/Content/Maps/Facility_Residence.umap	9086878		FIONA GARNER	피오나 가너
+AbioticFactor/Content/Maps/Facility_Security.umap	4738370		FIREARMS RANGE	사격장
+AbioticFactor/Content/Maps/Facility_Security.umap	4738508		FITNESS COURSE	운동 코스
+AbioticFactor/Content/Maps/Facility_Security.umap	4738646		FIREARMS RANGE	사격장
+AbioticFactor/Content/Maps/Facility_Security.umap	4738783		FIREARMS RANGE	사격장
+AbioticFactor/Content/Maps/Facility_Security.umap	4738920		VEHICLE DEPOT	차고지
+AbioticFactor/Content/Maps/Facility_Security.umap	4739056		SURFACE LIFT	지표 승강기
+AbioticFactor/Content/Maps/Facility_Security.umap	4739191		REPAIR BAY	정비소
+AbioticFactor/Content/Maps/Facility_Security.umap	4739324		FITNESS COURSE	운동 코스
+AbioticFactor/Content/Maps/Facility_Security.umap	4739461		VEHICLE DEPOT	차고지
+AbioticFactor/Content/Maps/Facility_Security.umap	4739597		DEPOT ACCESS	차고 접근로
+AbioticFactor/Content/Maps/Facility_Security.umap	4739732		SURFACE ACCESS	지표 접근로
+AbioticFactor/Content/Maps/Facility_Security.umap	4739869		OFFICE SECTOR	사무 구역
+AbioticFactor/Content/Maps/Facility_Security.umap	4740005		OFFICE SECTOR	사무 구역
+AbioticFactor/Content/Maps/Facility_Security.umap	4740141		SURFACE ACCESS	지표 접근로
+AbioticFactor/Content/Maps/Facility_Security.umap	4740278		OFFICE SECTOR	사무 구역
+AbioticFactor/Content/Maps/Facility_Security.umap	4740414		HYDROPLANT	수력발전소
+AbioticFactor/Content/Maps/Facility_Security.umap	4740547		SURFACE ACCESS	지표 접근로
+AbioticFactor/Content/Maps/Facility_Security.umap	4740684		OFFICE SECTOR	사무 구역
+AbioticFactor/Content/Maps/Facility_Security.umap	4740820		HYDROPLANT	수력발전소
+AbioticFactor/Content/Maps/Facility_Security.umap	4740953		HYDROPLANT	수력발전소
+AbioticFactor/Content/Maps/Facility_Security.umap	4741086		REPAIR BAY	정비소
+AbioticFactor/Content/Maps/Facility_Security.umap	4741219		HYDROPLANT	수력발전소
+AbioticFactor/Content/Maps/Facility_Security.umap	4741352		REPAIR BAY	정비소
+AbioticFactor/Content/Maps/Facility_Security.umap	4741485		TOWER	탑
+AbioticFactor/Content/Maps/Facility_Security.umap	4741613		STORAGE UNIT C	창고 구역 C
+AbioticFactor/Content/Maps/Facility_Security.umap	4741750		SURFACE ACCESS	지표 접근로
+AbioticFactor/Content/Maps/Facility_Security.umap	4741887		LABORATORIES	연구소
+AbioticFactor/Content/Maps/Facility_Security.umap	4742022		REPAIR BAY	정비소
+AbioticFactor/Content/Maps/Facility_Security.umap	4742155		FIREARMS RANGE	사격장
+AbioticFactor/Content/Maps/Facility_Security.umap	4742292		VEHICLE DEPOT	차고지
+AbioticFactor/Content/Maps/Facility_Security.umap	4742428		REPAIR BAY	정비소
+AbioticFactor/Content/Maps/Facility_Security.umap	4742561		REPAIR BAY	정비소
+AbioticFactor/Content/Maps/Facility_Security.umap	4742694		SURFACE ACCESS	지표 접근로
+AbioticFactor/Content/Maps/Facility_Security.umap	4742831		OFFICE SECTOR	사무 구역
+AbioticFactor/Content/Maps/Facility_Security.umap	4742967		REPAIR BAY	정비소
+AbioticFactor/Content/Maps/Facility_Security.umap	4743100		HYDROPLANT	수력발전소
+AbioticFactor/Content/Maps/Facility_Security.umap	4743233		STORAGE UNIT C	창고 구역 C
+AbioticFactor/Content/Maps/Facility_Security.umap	4743370		REPAIR BAY	정비소
+AbioticFactor/Content/Maps/MainMenu_Labs.umap	723723		ADJUSTMENT	조정동
+AbioticFactor/Content/Maps/MainMenu_Labs.umap	723856		LENS EPICENTRE	렌즈 중심점
+AbioticFactor/Content/Maps/MainMenu_MFWest.umap	1241181		SYNCHROTRON	싱크로트론
+AbioticFactor/Content/Maps/MainMenu_MFWest.umap	1241315		TRAM ACCESS	트램 접근로
+AbioticFactor/Content/Maps/MainMenu_MFWest.umap	1241449		MINE ENTRANCE B	광산 입구 B
+AbioticFactor/Content/Maps/MainMenu_MFWest.umap	1241587		SHIPPING	물류 배송지
+AbioticFactor/Content/Maps/MainMenu_MFWest.umap	1241718		OFFICE SECTOR	사무 구역
+AbioticFactor/Content/Maps/MainMenu_MFWest.umap	1241854		MINE ENTRANCE B	광산 입구 B
+AbioticFactor/Content/Maps/MainMenu_MFWest.umap	1241992		GARAGE	차고
+AbioticFactor/Content/Maps/MainMenu_Offices.umap	827237		TRAM - B SIDE	트램 - 역방향
+AbioticFactor/Content/Maps/MainMenu_Offices.umap	827373		TRAM STATION	트램 정거장
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2282916	Sign_ModularDormitory_C	DR. MANJINDER SANA	만진더 사나 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2283057	Sign_ModularDormitory_C	DR. A. PETERS	A. 피터스 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2283193	Sign_ModularDormitory_C	DR. REYNA BELL	레이나 벨 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2283330	Sign_ModularDormitory_C	DR. JESSICA LAMBERT	제시카 램버트 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2283472	Sign_ModularDormitory_C	DR. SOPHIA TZIRKOTI	소피아 치르코티 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2283614	Sign_ModularDormitory_C	DR. ZOE KINCHIN-WALLER	조이 킨친-월러 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2283759	Sign_ModularDormitory_C	DR. PIOTR RANDONJIC	피오트르 란도니치 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2283901	Sign_ModularDormitory_C	DR. MARIJA KRYZSTYNIAK	마리야 크리스티니악 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2284046	Sign_ModularDormitory_C	DR. NAMAN HAMAYUN	나만 하마윤 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2284186	Sign_ModularDormitory_C	DR. MARIO GARBARINO	마리오 가르바리노 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2284328	Sign_ModularDormitory_C	DR. OSCAR BEVILACQUA	오스카 베빌아쿠아 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2284471	Sign_ModularDormitory_C	DR. MAJID ACHEAMPONG	마지드 아참퐁 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2284614	Sign_ModularDormitory_C	DR. YANG HONG	양 홍 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2284750	Sign_ModularDormitory_C	DR. RICH MELANCHTON	리치 멜란히톤 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2284892	Sign_ModularDormitory_C	DR. MACHIKO ISODA	마치코 이소다 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2285032	Sign_ModularDormitory_C	DR. GAYUSH ADIVAR	게이유시 아디바르 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2285172	Sign_ModularDormitory_C	DR. YUSUF AZIZ	유수프 아지즈 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2285309	Sign_ModularDormitory_C	DR. ABDULRAZAK OTHMAN	압둘라자크 오스만 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2285453	Sign_ModularDormitory_C	DR. MANUEL MARCOS	마누엘 마르코스 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2285593	Sign_ModularDormitory_C	DR. NASRA BADAR	나스라 바다르 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2285731	Sign_ModularDormitory_C	DR. LLOYD GARBIT	로이드 가빗 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2285870	Sign_ModularDormitory_C	DR. SAMEER MISHOD	사미르 미쇼드 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2286010	Sign_ModularDormitory_C	DR. JUDITH ANDERSON	주디스 안더슨 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2286152	Sign_ModularDormitory_C	DR. ZHAO LI	자오 리 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2286286	Sign_ModularDormitory_C	DR. ALEXANDER HANNITY	알렉산더 해니티 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2286430	Sign_ModularDormitory_C	DR. PERRY BUTLER	페리 버틀러 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2286569	Sign_ModularDormitory_C	DR. SVETLANA PRICE	스베틀라나 프라이스 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2286710	Sign_ModularDormitory_C	DR. JANET ROSS	자넷 로스 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2286847	Sign_ModularDormitory_C	DR. LUKAS BENES	루카스 베네스 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2286985	Sign_ModularDormitory_C	DR. DANIEL FLINT	다니엘 플린트 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2287124	Sign_ModularDormitory_C	DR. GARRISON SOYINKA	개리슨 소잉카 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2287267	Sign_ModularDormitory_C	DR. AIDAN OSBORNE	에이든 오스본 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2287407	Sign_ModularDormitory_C	DR. RASHAD DERRICK	라샤드 데릭 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2287548	Sign_ModularDormitory_C	DR. STEPHEN WINCKOWSKI	스티븐 윈카우스키 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2287693	Sign_ModularDormitory_C	DR. EDWARD KRAUS	에드워드 크라우스 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2287832	Sign_ModularDormitory_C	DR. ABRAHAM STERN	에이브라함 스턴 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2287972		E-SUITES	E-스위트룸
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2288103		BARRACKS	병영
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2288234		BARRACKS A	병영 A
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2288367		EATERY	식당
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2288496		DR. STEWART WAKEMAN	스튜워트 웨이크먼 박사
+AbioticFactor/Content/Maps/MainMenu_Residence.umap	2288638		TOILETS	화장실
+AbioticFactor/Content/Maps/MainMenu_Security.umap	244871		OFFICE SECTOR	사무 구역
+AbioticFactor/Content/Maps/MainMenu_Security.umap	245007		DEFENSE SECTOR	방어 구역
+AbioticFactor/Content/Maps/MainMenu_Security.umap	245144		VAC CHAMBER	진공 챔버
+AbioticFactor/Content/Maps/Vignette_MirrorWorld.umap	50510134	TextRenderActor	For L.W. --\r\nLove, B.B.	L.W.에게 --\r\n사랑을 담아, B.B.
+AbioticFactor/Content/Maps/V_Alps.umap	5274058		OBSERVATOIRE	천문대
+AbioticFactor/Content/Maps/V_BOTANICAL.umap	3419955		DOOR CONTROL	출입 제어실
+AbioticFactor/Content/Maps/V_BOTANICAL.umap	3420090		BIOLAB SECURITY	생물학연구소 보안실
+AbioticFactor/Content/Maps/V_BOTANICAL.umap	3420228		BIOLAB SECURITY	생물학연구소 보안실
+AbioticFactor/Content/Maps/V_BOTANICAL.umap	3420366		BIOLABS	생물학 연구소
+AbioticFactor/Content/Maps/V_BOTANICAL.umap	3420496		01 BLAST DOOR	01 방폭문
+AbioticFactor/Content/Maps/V_BOTANICAL.umap	3420632		VAULT DOOR	강화문
+AbioticFactor/Content/Maps/V_BOTANICAL.umap	3420765		PROCESSING	처리실
+AbioticFactor/Content/Maps/V_BOTANICAL.umap	3420898		EQUIPMENT	장비실
+AbioticFactor/Content/Maps/V_BOTANICAL.umap	3421030		DELTA LAB	델타 연구실
+AbioticFactor/Content/Maps/V_Intro.umap	9550332		PACKAGE	포장
+AbioticFactor/Content/Maps/V_Intro.umap	9550462		KITCHEN	주방
+AbioticFactor/Content/Maps/V_Intro.umap	9550592		CRUCIS STUDY	크루시스 연구
+AbioticFactor/Content/Maps/V_Intro.umap	9550727		POWER SOURCE	동력원
+AbioticFactor/Content/Maps/V_Intro.umap	9550862		RESIDENCES	주거 구역
+AbioticFactor/Content/Maps/V_Intro.umap	9550995		SYNAPTIC LABS	시냅스 연구소
+AbioticFactor/Content/Maps/V_Intro.umap	9551131		ORDO ACCESS	오르도 접근로
+AbioticFactor/Content/Maps/V_Intro.umap	9551265		RESIDENCES	주거 구역
+AbioticFactor/Content/Maps/V_Intro.umap	9551398		ORDO STORAGE	오르도 보관실
+AbioticFactor/Content/Maps/V_Intro.umap	9551533		SYNAPTIC LABS	시냅스 연구소
