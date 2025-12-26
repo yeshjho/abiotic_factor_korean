@@ -233,31 +233,45 @@ def build_pak():
 
 
 def build_io_store(skip_binary_overrides: bool, skip_images: bool):
+    def _build_io_store(name: str):
+        subprocess.run([f'{cwd}/tools/UnrealReZen_V01/UnrealReZen.exe',
+                        f'--content-path',
+                        f'{cwd}/out/{name}',
+                        f'--engine-version',
+                        f'GAME_UE5_4',
+                        f'--game-dir',
+                        f'{cwd}/archive/pack/vanilla/{GAME_VERSION}',
+                        f'--output-path',
+                        f'{cwd}/out/{name}.utoc'])
+
+    shutil.rmtree('out/pakchunk0-Windows_Font_P/', ignore_errors=True)
+    shutil.rmtree('out/pakchunk0-Windows_Binary_P/', ignore_errors=True)
+    shutil.rmtree('out/pakchunk0-Windows_Image_P/', ignore_errors=True)
+
+    shutil.copytree('ucas_template', 'out/pakchunk0-Windows_Font_P')
+    shutil.copy2(f'{cwd}/tools/UnrealReZen_V01/oo2core_9_win64.dll', 'oo2core_9_win64.dll')
+    print('폰트 IOStore 파일 생성 중...')
+    _build_io_store('pakchunk0-Windows_Font_P')
+
     if skip_binary_overrides and skip_images:
+        os.remove('oo2core_9_win64.dll')
         return []
 
-    shutil.rmtree('out/pakchunk0-Windows_P/', ignore_errors=True)
-    shutil.copytree('ucas_template', 'out/pakchunk0-Windows_P')
-
-
     output = []
-    if not skip_binary_overrides:
-        output += build_binary_overrides()
-    if not skip_images:
-        output += build_image_overrides()
 
-    print('IOStore 파일 생성 중...')
-    subprocess.run([f'{cwd}/tools/UnrealReZen_V01/UnrealReZen.exe',
-                    f'--content-path',
-                    f'{cwd}/out/pakchunk0-Windows_P',
-                    f'--engine-version',
-                    f'GAME_UE5_4',
-                    f'--game-dir',
-                    f'{cwd}/archive/pack/vanilla/{GAME_VERSION}',
-                    f'--output-path',
-                    f'{cwd}/out/pakchunk0-Windows_P.utoc'])
-    if os.path.exists(f'oo2core_9_win64.dll'):
-        os.remove('oo2core_9_win64.dll')
+    if not skip_binary_overrides:
+        os.mkdir('out/pakchunk0-Windows_Binary_P')
+        output += build_binary_overrides('pakchunk0-Windows_Binary_P')
+        print('바이너리 IOStore 파일 생성 중...')
+        _build_io_store('pakchunk0-Windows_Binary_P')
+
+    if not skip_images:
+        os.mkdir('out/pakchunk0-Windows_Image_P')
+        output += build_image_overrides('pakchunk0-Windows_Image_P')
+        print('이미지 IOStore 파일 생성 중...')
+        _build_io_store('pakchunk0-Windows_Image_P')
+
+    os.remove('oo2core_9_win64.dll')
 
     return output
 
@@ -394,7 +408,7 @@ def default_uobject_override(file, data, pairs):
 
 
 
-def build_binary_overrides():
+def build_binary_overrides(dest_name: str):
     file_overriders = [
         (lambda x: any([e in x for e in ('DT_Compendium',)]), datatable_override),
         (lambda x: True, default_uobject_override),
@@ -425,8 +439,8 @@ def build_binary_overrides():
                     files_no_fixes.append(file)
                 break
 
-        os.makedirs('/'.join(f'out/pakchunk0-Windows_P/{file}'.split('/')[:-1]), exist_ok=True)
-        with open(f'out/pakchunk0-Windows_P/{file}', 'wb') as f:
+        os.makedirs('/'.join(f'out/{dest_name}/{file}'.split('/')[:-1]), exist_ok=True)
+        with open(f'out/{dest_name}/{file}', 'wb') as f:
             f.write(bytes(data))
 
     if files_no_fixes:
@@ -441,7 +455,7 @@ def build_binary_overrides():
     ]
 
 
-def build_image_overrides():
+def build_image_overrides(dest_name: str):
     for file in glob.glob(f'data/image/{PATCH_VERSION}/*.*'):
         file = file.split('/')[-1].split('\\')[-1]
         directory_n_file = file.replace('+', '/')
@@ -450,7 +464,7 @@ def build_image_overrides():
         file_name = file_name.split('.')[0]
         wo_extension, _ = directory_n_file.split('.')
 
-        os.makedirs(f'out/pakchunk0-Windows_P/{directory}', exist_ok=True)
+        os.makedirs(f'out/{dest_name}/{directory}', exist_ok=True)
 
         with open('tools/UE4-DDS-Tools-v0.6.1-Batch/src/_file_path_.txt', 'w') as f:
             f.write(f'{cwd}/archive/pack/vanilla_extracted/{GAME_VERSION}/{wo_extension}.uasset')
@@ -458,21 +472,24 @@ def build_image_overrides():
                         f'{cwd}/data/image/{PATCH_VERSION}/{file}'])
         
         shutil.move(f'tools/UE4-DDS-Tools-v0.6.1-Batch/injected/{file_name}.uasset',
-                    f'out/pakchunk0-Windows_P/{wo_extension}.uasset')
+                    f'out/{dest_name}/{wo_extension}.uasset')
         if os.path.exists(f'tools/UE4-DDS-Tools-v0.6.1-Batch/injected/{file_name}.ubulk'):
             shutil.move(f'tools/UE4-DDS-Tools-v0.6.1-Batch/injected/{file_name}.ubulk',
-                        f'out/pakchunk0-Windows_P/{wo_extension}.ubulk')
+                        f'out/{dest_name}/{wo_extension}.ubulk')
 
     return []
 
 
 def main():
-    if os.path.exists('out/pakchunk0-Windows_P.pak'):
-        os.remove('out/pakchunk0-Windows_P.pak')
-    if os.path.exists('out/pakchunk0-Windows_P.utoc'):
-        os.remove('out/pakchunk0-Windows_P.utoc')
-    if os.path.exists('out/pakchunk0-Windows_P.ucas'):
-        os.remove('out/pakchunk0-Windows_P.ucas')
+    file_list = ['pakchunk0-Windows_P',
+                 'pakchunk0-Windows_Binary_P', 'pakchunk0-Windows_Font_P', 'pakchunk0-Windows_Image_P']
+    extensions = ['.pak', '.utoc', '.ucas']
+
+    for file_name in file_list:
+        for extension in extensions:
+            path = f'out/{file_name}{extension}'
+            if os.path.exists(path):
+                os.remove(path)
 
     output = []
 
@@ -483,12 +500,13 @@ def main():
     pak_out_dir = f'out/abiotic_korean_{GAME_VERSION}_{PATCH_VERSION}/AbioticFactor/Content/Paks'
     shutil.rmtree(f'out/abiotic_korean_{GAME_VERSION}_{PATCH_VERSION}/', ignore_errors=True)
     shutil.copytree('patch_template', f'out/abiotic_korean_{GAME_VERSION}_{PATCH_VERSION}')
-    if os.path.exists('out/pakchunk0-Windows_P.pak'):
-        shutil.move('out/pakchunk0-Windows_P.pak', f'{pak_out_dir}/pakchunk0-Windows_P.pak')
-    if os.path.exists('out/pakchunk0-Windows_P.utoc'):
-        shutil.move('out/pakchunk0-Windows_P.utoc', f'{pak_out_dir}/pakchunk0-Windows_P.utoc')
-    if os.path.exists('out/pakchunk0-Windows_P.ucas'):
-        shutil.move('out/pakchunk0-Windows_P.ucas', f'{pak_out_dir}/pakchunk0-Windows_P.ucas')
+
+    for file_name in file_list:
+        for extension in extensions:
+            src = f'out/{file_name}{extension}'
+            if os.path.exists(src):
+                shutil.move(src, f'{pak_out_dir}/{file_name}{extension}')
+
     shutil.make_archive(f'out/abiotic_korean_{GAME_VERSION}_{PATCH_VERSION}{"+XboxGamePass" if IS_XBOX_GAME_PASS else ""}',
                         'zip',
                         f'out/abiotic_korean_{GAME_VERSION}_{PATCH_VERSION}')
